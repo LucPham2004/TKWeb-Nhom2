@@ -1,0 +1,204 @@
+.header {
+    height: var(--header-height);
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+}
+
+/* header left */
+.header-left {
+    height: var(--header-height);
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: -72px;
+}
+
+.header-left__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-left__logo img {
+    height: 120px;
+}
+
+.header-left__name {
+    margin-left: 20px;
+}
+
+.header-left__vietnamese-name {
+    display: block;
+    font-size: 30px;
+    color: var(--white-color);
+    position: relative;
+    top: 60px;
+    font-weight: bold;
+}
+
+.header-left__english-name {
+    font-size: 16px;
+    position: relative;
+    top: 81px;
+    color: var(--white-color);
+}
+
+
+ /* header with search  */
+.header-with-search {
+    height: 30px;
+    align-items: center;
+    margin: 0 8px;
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    right: -70px;
+    top: 92px;
+}
+
+.header__search {
+    width: 500px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    /* display: none; */
+}
+
+.header__search-input-wrap {
+    flex: 1;
+    height: 100%;
+    border-radius: 40px;
+    position: relative;
+}
+
+.header__search-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    padding: 0 16px;
+    border-radius: 20px;
+}
+
+.header__search-btn {
+    background-color: var(--primary-color);
+    border: none;
+    width: 40px;
+    height: 23px;
+    border-radius: 20px;
+    margin-right: 3px;
+    outline: none;
+}
+
+.header__search-btn:hover {
+    background-color: #2f8dea;
+    cursor: pointer;
+}
+
+.header__search-btn-icon {
+    font-size: 1.4rem;
+    color: var(--white-color);
+}
+
+/* search history */
+.header__search-history {
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    width: calc(100% - 16px);
+    background-color: var(--white-color);
+    border-radius: 10px;
+    box-shadow: 0 1px 3px #666;
+    overflow: hidden;
+    display: none;
+    z-index: 1;
+}
+
+.header__search-input:focus ~ .header__search-history {
+    display: block;
+}
+
+.header__search-history-heading {
+    margin: 6px 12px;
+    font-size: 1.4rem;
+    color: #999;
+    font-weight: 400;
+}
+
+.header__search-history-list {
+    padding-left: 0;
+    list-style: none;
+    margin: 8px 0 0;
+}
+
+.header__search-history-item {
+    height: 38px;
+    padding: 0 12px;
+}
+
+.header__search-history-item:hover {
+    background-color: #ddd;
+}
+
+.header__search-history-item a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    line-height: 38px;
+    display: block;
+}
+
+.header__search-navbar {
+    height: 100%;
+}
+
+.header__search-navbar-list {
+    font-size: 19px;
+    color: var(--white-color);
+    margin-left: 1px;
+    list-style: none;
+    display: flex;
+    width: 500px;
+    position: relative;
+    right: -9px;
+    top: -15px;
+    padding-left: 0;
+    height: 34px;
+    margin: 0 4px;
+    text-align: center;
+    
+}
+
+.header__search-navbar-item {
+    padding: 0 8px;
+    width: auto;
+}
+
+.header__search-navbar-item a {
+    font-size: 19px;
+    text-decoration: none;
+    color: var(--white-color);
+    line-height: 34px;
+}
+
+.p-test {
+    margin-top: 100px;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
