@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phòng công tác chính trị và quản lý sinh viên</title>
+    <title>Phòng Quản Lý Đào Tạo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/app_news.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 </head>
 <body>
@@ -25,7 +27,7 @@
                         </div>
                         <div class="header-left__name">
                             <span class="header-left__vietnamese-name">ĐẠI HỌC KINH TẾ QUỐC DÂN</span>
-                            <span class="header-left__english-name">PHÒNG CÔNG TÁC CHÍNH TRỊ VÀ QUẢN LÝ SINH VIÊN</span>
+                            <span class="header-left__english-name">PHÒNG QUẢN LÝ ĐÀO TẠO</span>
                         </div>
                     </div>
     
@@ -74,10 +76,105 @@
             </div>
         </header>
 
-        <div class="app__news">
-            <div class="grid">
-                <div class="grid__row grid__block">
-                    <p class="p-test" style="font-size: 20px; color: black; z-index: 999;">TIN TỨC Ở ĐÂY</p>
+        <div class="app_news">
+            <div class="news_container">
+                <p class="p-title">TIN TỨC <div style="width: 150px; margin: auto; margin-bottom: 2%; background-color:blue; height: 5px;"></div></p>
+                <div class="d-flex flex-sm-column flex-md-row ms-5 me-5">
+                    <div id="hot_news">
+                        <div id="hot_news_title">
+                            <span style="color: blue; position: absolute; top: -2px;">| </span>
+                            <span style="color: blue; font-family:Arial, Helvetica, sans-serif; margin-left:10px">TIN HOT</span>
+                            <button id="prev">
+                                <div style="margin-top: -4px; margin-left: -3px;"><i class="fas fa-chevron-left"></i>
+                                </div>
+                            </button>
+                            <button id="next">
+                                <div style="margin-top: -4px; margin-left: -3px;"><i class="fas fa-chevron-right"></i></div>
+                            </button>
+                        </div>
+                        <div class="d-flex col-12 col-md-6" style="width: 85%; height:90%;">
+                            <div class="news_card d-flex flex-column col-6">
+                                <a href="#">
+                                    <img src="https://dean1665.vn/uploads/school/neu2.jpg">
+                                </a>
+                                <a href="#" class="news_title">Khai mạc Tuần Nghề nghiệp và Việc làm - NEU Career Week 2024</a>
+                                <p class="news_desc">Sáng ngày 22/3/2024, Trường Đại học Kinh tế Quốc dân đã khai mạc Tuần Nghề nghiệp và Việc làm - NEU Career Week 2024 với chủ đề "Nguồn nhân lực thích ứng với toàn cầu hoá", hứa hẹn mang đến một chuỗi hoạt động thú vị, kết nối đặc biệt dành riêng cho sinh viên Kinh tế Quốc dân cùng các doanh nghiệp.</p>
+                                <p class="ngay"><i class="far fa-clock"></i> 22/03/2024</p>
+                            </div>
+                            <div class="news_card d-flex flex-column col-6">
+                                <a href="#">
+                                    <img src="https://neu.daotaotuxa.net/wp-content/uploads/2022/08/dai-hoc-kinh-te-quoc-dan-ngoi-truong-mo-uoc-cua-nhieu-sinh-vien-2.webp">
+                                </a>
+                                <a href="#" class="news_title">Trường Đại học Kinh tế Quốc dân và Trường Bách khoa Ngee Ann Polytechnic, Singapore khai mạc chương trình trao đổi sinh viên năm 2024</a>
+                                <p class="news_desc">Sáng nay (19/3/2024), tại Trường Đại học Kinh tế Quốc dân đã diễn ra chương trình khai mạc trao đổi sinh viên “Overseas Immersion Programme” giữa Trường Đại học Kinh tế Quốc dân và Trường Bách khoa Ngee Ann Polytechnic, Singapore năm 2024.</p>
+                                <p class="ngay"><i class="far fa-clock"></i> 19/03/2024</p>
+                            </div>
+                            <!-- <div class="news_card d-flex flex-column col-6">
+                                <img src="https://neu.edu.vn/Resources/Images/SubDomain/HomePage/2024/3_2024/Andrews%202/DSC_9895%20(Copy).JPG">
+                                <span class="news_title">Lễ trao bằng Thạc sỹ Quản trị kinh doanh liên kết giữa Trường Đại học Kinh tế Quốc dân và Đại học Andrews, Hoa Kỳ</span>
+                                <p class="news_desc">Chiều ngày 18/3/2024, tại Nhà Văn hóa - Hội trường A, Viện Quản trị Kinh doanh, Trường Đại học Kinh tế Quốc dân đã tổ chức Lễ trao bằng tốt nghiệp cho các tân Thạc sỹ chương trình đào tạo Thạc sĩ Quản trị Kinh doanh liên kết giữa Trường Đại học Kinh tế Quốc dân và Đại học Andrews, Hoa Kỳ.</p>
+                                <p class="ngay"><i class="far fa-clock"></i> 19/03/2024</p>
+                            </div>
+                            <div class="news_card d-flex flex-column col-6">
+                                <img src="https://neu.edu.vn/Temp/ArticleImage/5f51d84a-cb46-499a-89be-58ea51c1045e.JPG">
+                                <span class="news_title">Trường Đại học Kinh tế Quốc dân hợp tác đào tạo với Đại học Andrews, Hoa Kỳ</span>
+                                <p class="news_desc">Chiều ngày 18/3/2024, Trường Đại học Kinh tế Quốc dân đã tổ chức Lễ trao thỏa thuận hợp tác đào tạo với Đại học Andrews, Hoa Kỳ. Đây là chương trình liên kết đào tạo với nước ngoài bậc đại học, nhằm cung cấp nguồn nhân lực chất lượng và chuyên nghiệp, có kỹ năng tốt, có trình độ chuyên môn cao, có khả năng thích ứng với sự phát triển của công nghệ và làm việc trong môi trường quốc tế.</p>
+                                <p class="ngay"><i class="far fa-clock"></i> 18/03/2024</p>
+                            </div> -->
+                        </div>
+                        <div class="more">
+                            <a href="#"><i>Xem thêm...</i></a>
+                        </div>
+                    </div>
+                    <div id="the_right_div" class="d-flex col-12 col-md-6">
+                        <div id="poster" class="col-6">
+                            <img src="https://cdn.shoplightspeed.com/shops/607723/files/30902316/poster-new-york-wonder-city.jpg">
+                        </div>
+                        <div id="announce" class="col-6">
+                            <div id="announcement">Thông báo</div>
+                            <div style="height: 90%;">
+                                <ul class="list-group" style="height: 100%;">
+                                    <li class="list-group-item">
+                                        <i class="fas fa-check"></i>
+                                        <div style="margin-left: 6%">
+                                            <a class="announce_title">Lộ trình "chuyển mình" thành đại học của Trường ĐH Kinh tế Quốc dân</a>
+                                        </div>
+                                        <p class="ngay"><i class="far fa-clock"></i> 1/1/2024</p>
+                                        <hr>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <i class="fas fa-check"></i>
+                                        <div style="margin-left: 6%">
+                                            <a class="announce_title">Thông tin tuyển sinh Đại học Chính quy năm 2024 của trường Đại học Kinh tế quốc dân (dự kiến tháng 3.2024)</a>
+                                        </div>
+                                        <p class="ngay"><i class="far fa-clock"></i> 2/1/2024</p>
+                                        <hr>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <i class="fas fa-check"></i>
+                                        <div style="margin-left: 6%">
+                                            <a class="announce_title">Thông báo danh sách sinh viên tốt nghiệp Đại học chính quy đợt tháng 3 năm 2024</a>
+                                        </div>
+                                        <p class="ngay"><i class="far fa-clock"></i> 3/1/2024</p>
+                                        <hr>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <i class="fas fa-check"></i>
+                                        <div style="margin-left: 6%">
+                                            <a class="announce_title"> Công văn số 493/ĐHKTQD-QLDT về việc không dậy học trực tuyến/online với Đại học Chính quy</a>
+                                        </div>
+                                        <p class="ngay"><i class="far fa-clock"></i> 4/1/2024</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="more">
+                                <a href="#"><i>Xem thêm...</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="news_link">
+                    <a href="#">Xem tất cả</a>
                 </div>
             </div>
         </div>
@@ -115,15 +212,11 @@
         </div>
 
         <footer class="footer">
-            <div class="grid">
-                <div class="grid__row grid__block">
-                    <p class="p-test" style="font-size: 20px; color: black; z-index: 999;">FOOTER Ở ĐÂY</p>
-                </div>
-            </div>
+            <div style="height: 50vh; background-color:#0065CA;"></div>
         </footer>
     </div>
 
     
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
