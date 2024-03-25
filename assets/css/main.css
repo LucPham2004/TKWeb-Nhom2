@@ -1,10 +1,10 @@
 .header {
     height: var(--header-height);
     background-color: var(--primary-color);
-    position: fixed;
+    /* position: fixed;
     top: 0;
     left: 0;
-    right: 0;
+    right: 0; */
     
 }
 
@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: row;
     position: relative;
-    left: -72px;
+    left: -25px;
 }
 
 .header-left__logo {
@@ -50,19 +50,22 @@
 
  /* header with search  */
 .header-with-search {
-    height: 30px;
+    height: 100px;
     align-items: center;
     margin: 0 8px;
     display: flex;
     flex-direction: column-reverse;
     position: relative;
-    right: -70px;
+    right: -38px;
     top: 92px;
 }
 
 .header__search {
-    width: 500px;
-    height: 40px;
+    position: relative;
+    top: -74px;
+    right: 11px;
+    width: 528px;
+    height: 50px;
     border-radius: 40px;
     background-color: var(--white-color);
     display: flex;
@@ -92,7 +95,7 @@
     background-color: var(--primary-color);
     border: none;
     width: 40px;
-    height: 23px;
+    height: 27px;
     border-radius: 20px;
     margin-right: 3px;
     outline: none;
@@ -163,23 +166,23 @@
 .header__search-navbar-list {
     font-size: 19px;
     color: var(--white-color);
-    margin-left: 1px;
     list-style: none;
     display: flex;
-    width: 500px;
+    width: 600px;
     position: relative;
     right: -9px;
-    top: -15px;
+    top: -52px;
     padding-left: 0;
     height: 34px;
-    margin: 0 4px;
+    margin: 0;
     text-align: center;
     
 }
 
 .header__search-navbar-item {
-    padding: 0 8px;
+    padding: 4px 8px;
     width: auto;
+    margin: 0 8px;
 }
 
 .header__search-navbar-item a {
@@ -189,16 +192,233 @@
     line-height: 34px;
 }
 
-.p-test {
-    margin-top: 100px;
-    display: block;
+.header__search-navbar-item:hover a {
+    opacity: 0.8;
 }
 
+.header__search-flags {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 351px;
+    top: 57px;
+}
 
+.header__search-flags img {
+    font-size: 1px;
+    height: 24px;
+    padding: 4px 0;
+    border: 10px;
+    border-color: black;
+    cursor: pointer;
+}
 
+/* navigation bar */
+.app__nav {
+    border-bottom: 2px solid #c3bebe;
+    box-shadow: 2px 2px 5px 2px #ded5d5;
+}
 
+.app__nav-list {
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
 
+.app__nav-item a {
+    font-weight: bold;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 14px;
+    position: relative;
+}
 
+.app__nav-item a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 4px;
+    background-color: #1684f2;
+    transition: width 0.3s ease, left 0.3s ease;
+}
 
+.app__nav-item a::before {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 100px;
+    color: #545151;
+    top: 1px;
+}
 
+.app__nav-item > a:hover::after {
+    width: 60%;
+    left: 20%;
+    border-radius: 20px;
+}
 
+.app__nav-subnav:hover .app__nav-item > a::after {
+    width: 100%;
+    left: 0;
+}
+
+.app__nav-item > a:hover {   
+    color: #1460ad;
+}
+/* subnav */
+.app__nav-subnav {
+    padding: 0;
+    position: absolute;
+    min-width: 200px;
+    background-color: #fff;
+    box-shadow: 0 20px 45px #f4f4f4;
+    margin-top: 18px;
+    opacity: 0;
+    z-index: -999;
+    transition: all linear 0.5s;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 0;
+}
+
+.app__nav-item:hover .app__nav-subnav {
+    z-index: 99;
+    opacity: 1;
+    height: fit-content;
+    /* margin-top: 20px; */
+}
+
+.app__nav-subnav-item {
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    font-weight: 300;
+    font-size: 16px;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+}
+
+.app__nav-subnav-item:hover,
+.app__nav-subnav-item:hover a {
+    background-color: #4d90e3;
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+.app__nav-subnav-item a {
+    flex: 1;
+    width: 100%;
+    font-weight: 400;
+    padding: 16px;
+    border-bottom: #f51f1f  ;
+}
+
+/* banner */
+.app__banner {
+    width: 100%;
+}
+
+.app__banner-background {
+    /* height: 200px;
+    margin-top: 1px;
+    padding-top: 50%;
+    background-size: auto;
+    background: url(../img/banner1.jpg) top center / cover no-repeat; */
+    width: 100%;
+    height: 100%;
+}
+
+/* nghiencuu-hoptac */
+    .app__nghiencuu-hoptac-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+    
+}
+
+.app__nghiencuu-hoptac-item {
+    font-size: var(--text-size);
+}
+
+.app__nghiencuu-hoptac-title {
+    text-align: center;
+    font-size: var(--title-size);
+    margin-bottom: 80px;
+    font-weight: 600;
+}
+
+.app__nghiencuu-hoptac-title span {
+    padding-bottom: 10px;
+    color: var(--text-color);
+    border-bottom: 4px solid var(--text-color);
+}
+
+.app__nghiencuu-hoptac-img {
+    height: 404.82px;
+    width: calc(404.82px / 0.6984);
+    margin: 0 8px;
+    background: url(../img/nghiencuu.png) top center / cover no-repeat;
+}
+
+.app__nghiencuu-hoptac-img-wrapper {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: var(--text-size);
+    color: white;
+    transition: opacity .8s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.app__nghiencuu-hoptac-img:hover .app__nghiencuu-hoptac-img-wrapper {
+    opacity: 1;
+}
+
+.app__nghiencuu-hoptac-img > .app__nghiencuu-hoptac-img-wrapper > * {
+    transform: translateY(25px);
+    transition: transform .8s;
+}
+
+.app__nghiencuu-hoptac-img:hover .app__nghiencuu-hoptac-img-wrapper > * {
+    transform: translateY(0px);
+}
+
+.app__nghiencuu-hoptac-content {
+    font-size: var(--text-size);
+    width: 70%;
+    text-align: left;
+    margin-left: 76px;
+    line-height: 1.4;
+}
+
+.app__nghiencuu-hoptac-content li {
+    padding: 8px 0;
+}
+
+.app__nghiencuu-hoptac-btn {
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #545151;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px 2px #cccccc;
+    margin-left: 252px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1px;
+    transition: background-color .5s ease;
+}
