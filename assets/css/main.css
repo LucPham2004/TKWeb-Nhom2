@@ -217,6 +217,9 @@
 .app__nav {
     border-bottom: 2px solid #c3bebe;
     box-shadow: 2px 2px 5px 2px #ded5d5;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .app__nav-list {

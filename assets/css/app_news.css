@@ -100,32 +100,26 @@
     transition: transform 0.8s ease;
 }
 
-.Đang{
+.Show{
     display: flex;
 }
-.Tiếp_theo{
-    display: none;
+.slideLeft{
+    transform: translateX(-100%);
 }
-.Trước{
-    display: none;
-}
-.moveToLeft{
-    transform: translateX(120%);
-}
-.moveToRight{
-    transform: translateX(-120%);
+.slideRight{
+    transform: translateX(100%);
 }
 .blur_img{
     position: absolute;
-    height: 190px;
-    width: 100%;
-    top: -5px;
+    height: 195px;
+    width: 102%;
+    top: -7px;
+    left: -3px;
     filter: blur(5px);
     z-index: -2;
 }
 .news_card:hover{
     transform: scale(1.02);
-    transition: all .2s ease-in-out;
     box-shadow: 0 0 8px rgb(0, 145, 255);
 }
 .news_card_main_img{
@@ -321,4 +315,16 @@
     #footer_container{
         flex-direction: column;
     }
+}
+
+.side_social_link{
+    position: fixed;
+    float: right;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    height: 100vh;
+    width: 4vw;
+    background-color: transparent;
+    border-left: 2px solid black;
 }
