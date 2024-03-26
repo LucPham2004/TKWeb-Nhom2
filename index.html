@@ -170,7 +170,7 @@
 
         <!-- banner -->
         <div class="app__banner">
-                <img src="./assets/img/banner2.jpg" style="z-index: -9999;" class="app__banner-background"></img>
+                <video src="./assets/img/video-banner.mp4" loop autoplay style="z-index: -9999;" class="app__banner-background"></video>
         </div>
 
         <div class="app_news">
@@ -412,7 +412,7 @@
                         Địa chỉ Email
                     </label>
                     <input type="text" name="email" id="email" class="modal-input" placeholder="Nhập email của bạn">
-                    <span class="error-message"></span>
+                    <span class="error-message">hello</span>
                 </div>
 
                 <div class="modal-body-group">
@@ -435,22 +435,53 @@
         </div>
     </div>
 
-    <script src="./js/validator.js">
-        Validator({
-            form: '#modal-form',
-            formGroupSelector: '.modal-body-group',
-            errorSelector: '.error-message',
-            rules: [
-                Validator.isEmail('#email'),
-                Validator.isRequired('#email'),
-                Validator.isRequired('#ticket-quantity'),
-            ],
-            onsubmit: function(data) {
-                console.log(data)
-            }
+    <script>
+        const respondBtn = document.querySelector('.js-respond')
+        const modalClose = document.querySelector('.js-modal-close')
+        const modal = document.querySelector('.js-modal')
+        const modalContainer = document.querySelector('.js-modal-container')
+
+        // hàm hiển thị modal mua vé (thêm class open vào modal)
+        function showBuyTickets() {
+            modal.classList.add('open')
+        }
+
+        // hàm ẩn modal mua vé (gỡ bỏ class open của modal)
+        function hideBuyTickets() {
+            modal.classList.remove('open')
+        }
+
+        // lặp qua từng button và nghe hành vi click
+        respondBtn.addEventListener('click', showBuyTickets)
+
+        // nghe hành vi click vào button close
+        modalClose.addEventListener('click', hideBuyTickets)
+
+        modal.addEventListener('click', hideBuyTickets) 
+
+        modalContainer.addEventListener('click', function (event) {
+            event.stopPropagation()
         })
     </script>
-    <script src="./js/respond.js"></script>
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            var header = document.querySelector('.header');
+            var navigation = document.querySelector('.app__nav');
+            var subnav = document.querySelector('.app__nav-item a')
+            var sticky = navigation.offsetTop;
+            
+            if (window.pageYOffset > sticky) {
+                navigation.classList.add("scrolled");
+                subnav.classList.add("scrolled");
+            } else if (window.pageYOffset === sticky * 10){
+                navigation.classList.remove("scrolled");
+            }
+        }
+
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
