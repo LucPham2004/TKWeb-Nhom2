@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phòng công tác chính trị và quản lý siu viên</title>
+    <title>Phòng Quản Lý Đào Tạo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -176,7 +176,7 @@
         <div class="app_news">
             <div class="news_container">
                 <p class="p-title">TIN TỨC <div style="width: 150px; margin: auto; margin-bottom: 2%; background-color:blue; height: 5px;"></div></p>
-                <div class="d-flex flex-sm-column flex-md-row ms-5 me-5">
+                <div id="news_content" class="d-flex flex-sm-column flex-md-row ms-5 me-5">
                     <div id="hot_news">
                         <div id="hot_news_title">
                             <span style="color: blue; position: absolute; top: -2px;">| </span>
@@ -189,36 +189,46 @@
                                 <div style="margin-top: -4px; margin-left: -3px;"><i class="fas fa-chevron-right"></i></div>
                             </button>
                         </div>
-                        <div class="d-flex col-12 col-md-6" style="width: 85%; height:90%;">
-                            <div class="news_card d-flex flex-column col-6">
+                        <div id="carousel">
+                        <div id="carousel-inner" class="d-flex col-12 col-md-6">
+                            <div class="news_card col-6">
+                                <img class="blur_img" src="https://dean1665.vn/uploads/school/neu2.jpg">
                                 <a href="#">
-                                    <img src="https://dean1665.vn/uploads/school/neu2.jpg">
+                                    <img class="news_card_main_img" src="https://dean1665.vn/uploads/school/neu2.jpg">
                                 </a>
                                 <a href="#" class="news_title">Khai mạc Tuần Nghề nghiệp và Việc làm - NEU Career Week 2024</a>
                                 <p class="news_desc">Sáng ngày 22/3/2024, Trường Đại học Kinh tế Quốc dân đã khai mạc Tuần Nghề nghiệp và Việc làm - NEU Career Week 2024 với chủ đề "Nguồn nhân lực thích ứng với toàn cầu hoá", hứa hẹn mang đến một chuỗi hoạt động thú vị, kết nối đặc biệt dành riêng cho sinh viên Kinh tế Quốc dân cùng các doanh nghiệp.</p>
                                 <p class="ngay"><i class="far fa-clock"></i> 22/03/2024</p>
                             </div>
-                            <div class="news_card d-flex flex-column col-6">
+                            <div class="news_card col-6">
+                                <img class="blur_img" src="https://neu.daotaotuxa.net/wp-content/uploads/2022/08/dai-hoc-kinh-te-quoc-dan-ngoi-truong-mo-uoc-cua-nhieu-sinh-vien-2.webp">
                                 <a href="#">
-                                    <img src="https://neu.daotaotuxa.net/wp-content/uploads/2022/08/dai-hoc-kinh-te-quoc-dan-ngoi-truong-mo-uoc-cua-nhieu-sinh-vien-2.webp">
+                                    <img class="news_card_main_img" src="https://neu.daotaotuxa.net/wp-content/uploads/2022/08/dai-hoc-kinh-te-quoc-dan-ngoi-truong-mo-uoc-cua-nhieu-sinh-vien-2.webp">
                                 </a>
                                 <a href="#" class="news_title">Trường Đại học Kinh tế Quốc dân và Trường Bách khoa Ngee Ann Polytechnic, Singapore khai mạc chương trình trao đổi sinh viên năm 2024</a>
                                 <p class="news_desc">Sáng nay (19/3/2024), tại Trường Đại học Kinh tế Quốc dân đã diễn ra chương trình khai mạc trao đổi sinh viên “Overseas Immersion Programme” giữa Trường Đại học Kinh tế Quốc dân và Trường Bách khoa Ngee Ann Polytechnic, Singapore năm 2024.</p>
                                 <p class="ngay"><i class="far fa-clock"></i> 19/03/2024</p>
                             </div>
-                            <!-- <div class="news_card d-flex flex-column col-6">
-                                <img src="https://neu.edu.vn/Resources/Images/SubDomain/HomePage/2024/3_2024/Andrews%202/DSC_9895%20(Copy).JPG">
+                            <div class="news_card col-6">
+                                <img class="blur_img" src="https://neu.daotaotuxa.net/wp-content/uploads/2023/10/Le-be-giang-NEU-Elearnin-2023-daotaotuxa-22.webp">
+                                <a href="#">
+                                    <img class="news_card_main_img" src="https://neu.daotaotuxa.net/wp-content/uploads/2023/10/Le-be-giang-NEU-Elearnin-2023-daotaotuxa-22.webp">
+                                </a>
                                 <span class="news_title">Lễ trao bằng Thạc sỹ Quản trị kinh doanh liên kết giữa Trường Đại học Kinh tế Quốc dân và Đại học Andrews, Hoa Kỳ</span>
                                 <p class="news_desc">Chiều ngày 18/3/2024, tại Nhà Văn hóa - Hội trường A, Viện Quản trị Kinh doanh, Trường Đại học Kinh tế Quốc dân đã tổ chức Lễ trao bằng tốt nghiệp cho các tân Thạc sỹ chương trình đào tạo Thạc sĩ Quản trị Kinh doanh liên kết giữa Trường Đại học Kinh tế Quốc dân và Đại học Andrews, Hoa Kỳ.</p>
                                 <p class="ngay"><i class="far fa-clock"></i> 19/03/2024</p>
                             </div>
-                            <div class="news_card d-flex flex-column col-6">
-                                <img src="https://neu.edu.vn/Temp/ArticleImage/5f51d84a-cb46-499a-89be-58ea51c1045e.JPG">
+                            <div class="news_card col-6">
+                                <img class="blur_img" src="https://langmaster.edu.vn/storage/images/2022/05/21/review-dai-hoc-kinh-te-quoc-dan-mau-do-800x500.webp">
+                                <a href="#">
+                                    <img class="news_card_main_img" src="https://langmaster.edu.vn/storage/images/2022/05/21/review-dai-hoc-kinh-te-quoc-dan-mau-do-800x500.webp">
+                                </a>
                                 <span class="news_title">Trường Đại học Kinh tế Quốc dân hợp tác đào tạo với Đại học Andrews, Hoa Kỳ</span>
                                 <p class="news_desc">Chiều ngày 18/3/2024, Trường Đại học Kinh tế Quốc dân đã tổ chức Lễ trao thỏa thuận hợp tác đào tạo với Đại học Andrews, Hoa Kỳ. Đây là chương trình liên kết đào tạo với nước ngoài bậc đại học, nhằm cung cấp nguồn nhân lực chất lượng và chuyên nghiệp, có kỹ năng tốt, có trình độ chuyên môn cao, có khả năng thích ứng với sự phát triển của công nghệ và làm việc trong môi trường quốc tế.</p>
                                 <p class="ngay"><i class="far fa-clock"></i> 18/03/2024</p>
-                            </div> -->
+                            </div>
                         </div>
+                    </div>
                         <div class="more">
                             <a href="#"><i>Xem thêm...</i></a>
                         </div>
@@ -387,7 +397,33 @@
         </div>
     </div>
         <footer class="footer">
-            <div style="height: 50vh; background-color:#0065CA;"></div>
+            <div style="height: 100%; width: 100%">
+                <div id="footer_container">
+                    <div id="footer_info" class="col-md-6 col-sm-12">
+                        <h1 style="margin-top: 5%; margin-bottom:5%;">PHÒNG QUẢN LÝ ĐÀO TẠO</h1>
+                        <h3 style="margin-bottom:5%;">ĐỊA CHỈ: 210 - 211 - 213 TẦNG 2 - NHÀ A1 - TRƯỜNG ĐẠI HỌC KINH TẾ QUỐC DÂN</h3>
+                        <h4>207 Giải Phòng, Đồng Tâm, Quận Hai Bà Trưng, Hà Nội, Việt Nam</h4>
+                        <h4>Điện thoại: 02436280280 / Máy lẻ: 5222</h4>
+                        <h4>Email: phqldt@neu.edu.vn</h4>
+                        <h4>Mạng xã hội: facebook.com/tvtsneu</h4>
+                    </div>
+                    <div id="footer_map" class="d-flex flex-row col-md-6 col-sm-12">
+                        <div id="footer_map_map" class="col-md-6">
+                            <h2>BẢN ĐỒ CHỈ DẪN</h3>
+                            <h4>Đại học Kinh tế Quốc Dân</h4>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.813938858119!2d105.83992427492826!3d21.000094180642105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac71752d8f79%3A0xd2ec575c01017afa!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBLaW5oIFThur8gUXXhu5FjIETDom4gKE5FVSk!5e0!3m2!1svi!2s!4v1711436984277!5m2!1svi!2s" width="240" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="col-md-6" style="margin-top: 5%;">
+                            <h2>SƠ ĐỒ WEBSITE</h3>
+                            <a style="font-size: 15px; cursor:pointer;">XEM SƠ ĐỒ TRANG...</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="footer_copyright">
+                    <h4 style="margin-left: 10%;">Copyright@2024 - Trường Đại học Kinh Tế Quốc Dân - All Rights Reserved</h4>
+                    <h6 style="margin-left: 75%; margin-top:-20px;">Design and Developed by Nhóm 3 - TKWeb</h6>
+                </div>
+            </div>
         </footer>
     </div>
 
@@ -463,6 +499,7 @@
             event.stopPropagation()
         })
     </script>
+<<<<<<< HEAD
 
     <script>
         window.onscroll = function() {scrollFunction()};
@@ -482,6 +519,10 @@
         }
 
     </script>
+=======
+    <script src="./assets/js/respond.js"></script>
+    <script src="./assets/js/app_news.js"></script>
+>>>>>>> c73ad5d6d7d1b2c3cec54c531d96d4d59d248346
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
