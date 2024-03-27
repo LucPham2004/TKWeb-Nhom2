@@ -27,10 +27,10 @@
 
 .app__daotao-sinhvien-img img {
     width: 100%;
-    
+    height: 250px;
 }
 
-.app__daotao-sinhvien-content {
+.app__daotao-sinhvien-content h3{
     font-size: var(--text-size) ;
     margin-top: 30px;
     margin-bottom: 30px;  
@@ -38,6 +38,10 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    text-align: justify;
+  /*text-align: justify;  */
+    transition: all 0.2s ease;
 }
-
+.app__daotao-sinhvien-content h3:hover {
+color: var(--primary-color);
+transform: translateX(5px);
+}
