@@ -220,14 +220,14 @@
 
 /* navigation bar */
 .app__nav.scrolled {
-    background-color: #3f85cc;
+    background-color: var(--primary-color);
     top: 0;
     position: fixed;
     z-index: 1000;
     right: 0;
     left: 0;
     color: #fff;
-    height: 50px;
+    height: 66px;
 }
 
 .app__nav {
@@ -236,8 +236,9 @@
     top: 0;
     background-color: #fdfbfb;
     transition: background-color .3s ease-in-out;
-    border-bottom: 2px solid #c3bebe;
+    border-bottom: 1px solid #0a0a0a;
     box-shadow: 2px 2px 5px 2px #ded5d5;
+    padding: 8px 0;
 }
 
 .app__nav-list {
@@ -254,7 +255,7 @@
     font-weight: bold;
     color: var(--text-color);
     text-decoration: none;
-    padding: 14px;
+    padding: 19px;
     position: relative;
 }
 
@@ -269,7 +270,11 @@
     transition: width 0.3s ease, left 0.3s ease;
 }
 
-.app__nav-item a::after.scrolled {
+.app__nav.scrolled .app__nav-item-link {
+    color: #fff;
+}
+
+.app__nav.scrolled a::after {
     background-color: #fff;
 }
 
@@ -302,7 +307,7 @@
 .app__nav-subnav {
     padding: 0;
     position: absolute;
-    top: 30px;
+    top: 42px;
     min-width: 200px;
     background-color: #ffffff;
     box-shadow: 1px 10px 10px #666464;
@@ -482,7 +487,7 @@
 
 .modal-container {
     font-size: var(--text-size);
-    width: 900px;
+    width: 800px;
     max-width: calc(100% - 10%);
     min-height: 200px;
     position: relative;
@@ -492,7 +497,7 @@
 
 .modal .modal-close {
     font-size: var(--text-size);
-    background-color: #3085d6;
+    background-color: var(--primary-color);
     position: absolute;
     right: 0;
     top: 0;
@@ -507,7 +512,7 @@
 }
 
 .modal .modal-header {
-    background-color: #3085d6;
+    background-color: var(--primary-color);
     text-align: center;
     line-height: 130px;
     height: 130px;
@@ -539,7 +544,7 @@
 .modal-body #mua-tickets {
     padding: 16px;
     margin: 16px 0;
-    background-color: #3085d6;
+    background-color: var(--primary-color);
     color: #fff;
     width: 100%;
     border: none;
