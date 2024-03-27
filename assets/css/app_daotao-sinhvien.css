@@ -37,8 +37,8 @@
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    text-align: justify;
     overflow: hidden;
-  /*text-align: justify;  */
     transition: all 0.2s ease;
 }
 .app__daotao-sinhvien-content h3:hover {
