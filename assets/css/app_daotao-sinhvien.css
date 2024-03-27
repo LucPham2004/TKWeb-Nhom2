@@ -1,26 +1,43 @@
 /* daotao-sinhvien */
 .app__daotao-sinhvien-wrapper {
     display: flex;
-    
+    justify-content: space-between;
 }
 
 
 .app__daotao-sinhvien-item {
-
+    width: 33.33333%;
+    margin: 0 30px;
 }
 
 .app__daotao-sinhvien-text {
+    margin-bottom: 30px;
+    text-align: center;
+    
+}
+
+.app__daotao-sinhvien-text a {
+    font-size: 30px;
+    text-decoration: none;
+    border-bottom: 3px solid var(--primary-color);
+    padding: 0 0 5px;
+    color: var(--primary-color);
 
 }
 
 .app__daotao-sinhvien-img img {
-    height: 250px;
-    width: 350px;
+    width: 100%;
     
-
 }
 
 .app__daotao-sinhvien-content {
-
+    font-size: var(--text-size) ;
+    margin-top: 30px;
+    margin-bottom: 30px;  
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: justify;
 }
 
