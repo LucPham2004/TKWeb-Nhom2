@@ -111,10 +111,9 @@
 }
 .blur_img{
     position: absolute;
-    height: 195px;
-    width: 102%;
-    top: -7px;
-    left: -3px;
+    height: 190px;
+    width: 100%;
+    top: -5px;
     filter: blur(5px);
     z-index: -2;
 }
