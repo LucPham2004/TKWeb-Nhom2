@@ -17,6 +17,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         newsCards[currentFirstIndex].classList.add('Show');
         newsCards[currentSecondIndex].classList.add('Show');
+        // newsCards[currentFirstIndex].classList.add('fade');
+        // newsCards[currentSecondIndex].classList.add('fade');
+        // setTimeout(() => {
+        //     newsCards[currentFirstIndex].classList.remove('fade');
+        //     newsCards[currentSecondIndex].classList.remove('fade');
+        // }, 1);
     }
 
     function toTheLeft(){
@@ -58,19 +64,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
     prevButton.addEventListener('click', function() {
         currentIndex = (currentIndex === 0) ? newsCards.length - 2 : (currentIndex - 1) % newsCards.length;
-        toTheLeft();
+        
         setTimeout(updateClasses(),0.8);
     });
 
     nextButton.addEventListener('click', function() {
         currentIndex = (currentIndex === newsCards.length - 2) ? 0 : (currentIndex + 1) % newsCards.length;
-        toTheRight();
+        
         setTimeout(updateClasses(),0.8);
     });
 
     updateClasses();
     setInterval(() =>{currentIndex = (currentIndex === newsCards.length - 2) ? 0 : (currentIndex + 1) % newsCards.length;
-        toTheRight();
+        
         setTimeout(updateClasses(),0.8);
     }, 7000)
 });
