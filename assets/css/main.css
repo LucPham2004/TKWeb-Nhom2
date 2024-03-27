@@ -325,6 +325,8 @@
     display: block;
 }
 
+<<<<<<< HEAD
+=======
 @keyframes scrollNav {
     from {
         z-index: -999;
@@ -427,6 +429,7 @@
     flex-direction: column;
     justify-content: center;
 }
+>>>>>>> c73ad5d6d7d1b2c3cec54c531d96d4d59d248346
 
 .app__nghiencuu-hoptac-img:hover .app__nghiencuu-hoptac-img-wrapper {
     opacity: 1;
