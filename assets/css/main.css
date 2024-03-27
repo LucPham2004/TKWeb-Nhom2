@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     right: 0; */
-    
+
 }
 
 /* header left */
@@ -48,7 +48,7 @@
 }
 
 
- /* header with search  */
+/* header with search  */
 .header-with-search {
     height: 100px;
     align-items: center;
@@ -125,7 +125,7 @@
     z-index: 1;
 }
 
-.header__search-input:focus ~ .header__search-history {
+.header__search-input:focus~.header__search-history {
     display: block;
 }
 
@@ -176,7 +176,7 @@
     height: 34px;
     margin: 0;
     text-align: center;
-    
+
 }
 
 .header__search-navbar-item {
@@ -257,20 +257,21 @@
     top: 1px;
 }
 
-.app__nav-item > a:hover::after {
+.app__nav-item>a:hover::after {
     width: 80%;
     left: 10%;
     border-radius: 20px;
 }
 
-.app__nav-subnav:hover .app__nav-item > a::after {
+.app__nav-subnav:hover .app__nav-item>a::after {
     width: 100%;
     left: 0;
 }
 
-.app__nav-item > a:hover {   
+.app__nav-item>a:hover {
     color: #1460ad;
 }
+
 /* subnav */
 .app__nav-subnav {
     padding: 0;
@@ -296,8 +297,10 @@
     from {
         z-index: -999;
         opacity: 0;
-        transform:translateY(-50px);
-    } to {
+        transform: translateY(-50px);
+    }
+
+    to {
         z-index: 999;
         opacity: 1;
         transform: translateY(0);
@@ -328,7 +331,7 @@
     width: 100%;
     font-weight: 400;
     padding: 16px;
-    border-bottom: #f51f1f  ;
+    border-bottom: #f51f1f;
 }
 
 /* banner */
@@ -346,8 +349,10 @@
     height: 100%;
 }
 
+
+
 /* nghiencuu-hoptac */
-    .app__nghiencuu-hoptac-wrapper {
+.app__nghiencuu-hoptac-wrapper {
     display: flex;
     flex-direction: row;
     flex: 1;
@@ -355,7 +360,7 @@
     align-items: center;
     width: 100%;
     margin-top: 60px;
-    
+
 }
 
 .app__nghiencuu-hoptac-item {
@@ -399,12 +404,12 @@
     opacity: 1;
 }
 
-.app__nghiencuu-hoptac-img > .app__nghiencuu-hoptac-img-wrapper > * {
+.app__nghiencuu-hoptac-img>.app__nghiencuu-hoptac-img-wrapper>* {
     transform: translateY(25px);
     transition: transform .8s;
 }
 
-.app__nghiencuu-hoptac-img:hover .app__nghiencuu-hoptac-img-wrapper > * {
+.app__nghiencuu-hoptac-img:hover .app__nghiencuu-hoptac-img-wrapper>* {
     transform: translateY(0px);
 }
 
@@ -445,7 +450,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     align-items: center;
     justify-content: center;
     display: none;
@@ -468,7 +473,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    padding:12px;
+    padding: 12px;
     opacity: 0.7;
     color: #fff;
 }
@@ -542,7 +547,9 @@
     from {
         transform: translateY(-100px);
 
-    } to {
+    }
+
+    to {
         transform: translateY(0);
 
     }
