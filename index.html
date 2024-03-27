@@ -171,9 +171,10 @@
 
         <!-- banner -->
         <div class="app__banner">
-            <video src="./assets/img/video-banner.mp4" loop autoplay style="z-index: -9999;" class="app__banner-background"></video>
+            <video src="./assets/img/video-banner.mp4" loop autoplay class="app__banner-background"></video>
         </div>
         
+        <!-- Rightside bar of social media links-->
         <div class="side_social_link">
             <div id="share_icon">
                 <img src="/assets/img/share.png">
@@ -190,6 +191,7 @@
             </div>
         </div>
 
+        <!-- News and Announcement Section -->
         <div class="app_news">
             <div class="news_container">
                 <p class="p-title">TIN TỨC <div style="width: 150px; margin: auto; margin-bottom: 2%; background-color:blue; height: 5px;"></div></p>
@@ -211,7 +213,7 @@
                             <div class="news_card col-6">
                                 <img class="blur_img" src="https://dean1665.vn/uploads/school/neu2.jpg">
                                 <a href="#">
-                                    <img class="news_card_main_img" src="https://dean1665.vn/uploads/school/neu2.jpg">
+                                    <img class="news_card_main_img" src="https://checkinvietnam.vtc.vn/media/20210723/images/neu-ngoi-truong-so-huu-nhung-goc-song-ao-cuc-chat-4(1).jpg">
                                 </a>
                                 <a href="#" class="news_title">Khai mạc Tuần Nghề nghiệp và Việc làm - NEU Career Week 2024</a>
                                 <p class="news_desc">Sáng ngày 22/3/2024, Trường Đại học Kinh tế Quốc dân đã khai mạc Tuần Nghề nghiệp và Việc làm - NEU Career Week 2024 với chủ đề "Nguồn nhân lực thích ứng với toàn cầu hoá", hứa hẹn mang đến một chuỗi hoạt động thú vị, kết nối đặc biệt dành riêng cho sinh viên Kinh tế Quốc dân cùng các doanh nghiệp.</p>
@@ -414,36 +416,39 @@
 
         </div>
     </div>
-        <footer class="footer">
-            <div style="height: 100%; width: 100%">
-                <div id="footer_container">
-                    <div id="footer_info" class="col-md-6 col-sm-12">
-                        <h1 style="margin-top: 5%; margin-bottom:5%;">PHÒNG QUẢN LÝ ĐÀO TẠO</h1>
-                        <h3 style="margin-bottom:5%;">ĐỊA CHỈ: 210 - 211 - 213 TẦNG 2 - NHÀ A1 - TRƯỜNG ĐẠI HỌC KINH TẾ QUỐC DÂN</h3>
-                        <h4>207 Giải Phòng, Đồng Tâm, Quận Hai Bà Trưng, Hà Nội, Việt Nam</h4>
-                        <h4>Điện thoại: 02436280280 / Máy lẻ: 5222</h4>
-                        <h4>Email: phqldt@neu.edu.vn</h4>
-                        <h4>Mạng xã hội: facebook.com/tvtsneu</h4>
-                    </div>
-                    <div id="footer_map" class="d-flex flex-row col-md-6 col-sm-12">
-                        <div id="footer_map_map" class="col-md-6">
-                            <h2>BẢN ĐỒ CHỈ DẪN</h3>
-                            <h4>Đại học Kinh tế Quốc Dân</h4>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.813938858119!2d105.83992427492826!3d21.000094180642105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac71752d8f79%3A0xd2ec575c01017afa!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBLaW5oIFThur8gUXXhu5FjIETDom4gKE5FVSk!5e0!3m2!1svi!2s!4v1711436984277!5m2!1svi!2s" width="240" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                        <div class="col-md-6" style="margin-top: 5%;">
-                            <h2>SƠ ĐỒ WEBSITE</h3>
-                            <a style="font-size: 15px; cursor:pointer;">XEM SƠ ĐỒ TRANG...</a>
-                        </div>
-                    </div>
+
+    <!-- Button scroll to top -->
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">▲</button>
+
+    <footer class="footer">
+        <div style="height: 100%; width: 100%">
+            <div id="footer_container">
+                <div id="footer_info" class="col-md-6 col-sm-12">
+                    <h1 style="margin-top: 5%; margin-bottom:5%;">PHÒNG QUẢN LÝ ĐÀO TẠO</h1>
+                    <h3 style="margin-bottom:5%;">ĐỊA CHỈ: 210 - 211 - 213 TẦNG 2 - NHÀ A1 - TRƯỜNG ĐẠI HỌC KINH TẾ QUỐC DÂN</h3>
+                    <h4>207 Giải Phòng, Đồng Tâm, Quận Hai Bà Trưng, Hà Nội, Việt Nam</h4>
+                    <h4>Điện thoại: 02436280280 / Máy lẻ: 5222</h4>
+                    <h4>Email: phqldt@neu.edu.vn</h4>
+                    <h4>Mạng xã hội: facebook.com/tvtsneu</h4>
                 </div>
-                <div id="footer_copyright">
-                    <h4 style="margin-left: 10%;">Copyright@2024 - Trường Đại học Kinh Tế Quốc Dân - All Rights Reserved</h4>
-                    <h6 style="margin-left: 75%; margin-top:-20px;">Design and Developed by Nhóm 3 - TKWeb</h6>
+                <div id="footer_map" class="d-flex flex-row col-md-6 col-sm-12">
+                    <div id="footer_map_map" class="col-md-6">
+                        <h2>BẢN ĐỒ CHỈ DẪN</h3>
+                        <h4>Đại học Kinh tế Quốc Dân</h4>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.813938858119!2d105.83992427492826!3d21.000094180642105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac71752d8f79%3A0xd2ec575c01017afa!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBLaW5oIFThur8gUXXhu5FjIETDom4gKE5FVSk!5e0!3m2!1svi!2s!4v1711436984277!5m2!1svi!2s" width="240" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col-md-6" style="margin-top: 5%;">
+                        <h2>SƠ ĐỒ WEBSITE</h3>
+                        <a style="font-size: 15px; cursor:pointer;">XEM SƠ ĐỒ TRANG...</a>
+                    </div>
                 </div>
             </div>
-        </footer>
-
+            <div id="footer_copyright">
+                <h4 style="margin-left: 10%;">Copyright@2024 - Trường Đại học Kinh Tế Quốc Dân - All Rights Reserved</h4>
+                <h6 style="margin-left: 75%; margin-top:-20px;">Design and Developed by Nhóm 3 - TKWeb</h6>
+            </div>
+        </div>
+    </footer>
 
     <!-- create modal -->
     <div class="modal js-modal">
@@ -534,6 +539,24 @@
             }
         }
 
+    </script>
+
+    <!-- Button scroll to top -->
+    <script>
+        window.onscroll = function() {scrollFunction()};
+    
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scrollToTopBtn").style.display = "block";
+            } else {
+                document.getElementById("scrollToTopBtn").style.display = "none";
+            }
+        }
+    
+        function scrollToTop() {
+            document.body.scrollTop = 0; // Dành cho Safari
+            document.documentElement.scrollTop = 0; //Dành cho Chrome, Firefox, IE với Opera
+        }
     </script>
 
     <script src="./assets/js/respond.js"></script>

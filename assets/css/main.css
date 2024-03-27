@@ -205,13 +205,13 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    right: 351px;
-    top: 52px;
+    right: 151px;
+    top: 45px;
 }
 
 .header__search-flags img {
     font-size: 1px;
-    height: 24px;
+    height: 30px;
     padding: 4px 0;
     border: 10px;
     border-color: black;
@@ -368,6 +368,7 @@
 /* banner */
 .app__banner {
     width: 100%;
+    overflow: hidden;
 }
 
 .app__banner-background {
@@ -376,8 +377,11 @@
     padding-top: 50%;
     background-size: auto;
     background: url(../img/banner1.jpg) top center / cover no-repeat; */
-    width: 100%;
-    height: 100%;
+    z-index: -9999;
+    width: 124.5%;
+    height: auto;
+    display: block; 
+    margin: 0 auto;
 }
 
 /* nghiencuu-hoptac */

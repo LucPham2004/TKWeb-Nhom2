@@ -12,71 +12,55 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const currentFirstIndex = currentIndex % newsCards.length;
         const currentSecondIndex = (currentIndex + 1) % newsCards.length;
-        //const prevIndex = (currentIndex === 0) ? newsCards.length - 1 : currentIndex - 1;
-        //const nextIndex = (currentIndex === newsCards.length - 2) ? 0 : (currentIndex + 2) % newsCards.length;
 
         newsCards[currentFirstIndex].classList.add('Show');
         newsCards[currentSecondIndex].classList.add('Show');
-        // newsCards[currentFirstIndex].classList.add('fade');
-        // newsCards[currentSecondIndex].classList.add('fade');
-        // setTimeout(() => {
-        //     newsCards[currentFirstIndex].classList.remove('fade');
-        //     newsCards[currentSecondIndex].classList.remove('fade');
-        // }, 1);
-    }
 
-    function toTheLeft(){
-        const currentFirstIndex = currentIndex % newsCards.length;
-        const currentSecondIndex = (currentIndex + 1) % newsCards.length;
-        
-        newsCards[currentFirstIndex].classList.add('slideLeft');
-        newsCards[currentSecondIndex].classList.add('slideLeft');
+        newsCards[currentFirstIndex].classList.add('fadeout');
+        newsCards[currentSecondIndex].classList.add('fadeout');
         
         setTimeout(() => {
-            newsCards[currentFirstIndex].classList.remove('slideLeft');
-            newsCards[currentSecondIndex].classList.remove('slideLeft');
+            newsCards[currentFirstIndex].classList.remove('fadeout');
+            newsCards[currentSecondIndex].classList.remove('fadeout');
+            newsCards[currentFirstIndex].classList.add('fadein');
+            newsCards[currentSecondIndex].classList.add('fadein');
         }, 1);
         
         setTimeout(() => {
-            updateClasses();
-        }, 800);
-        
-    }
-
-    function toTheRight()
-    {
-        const currentFirstIndex = currentIndex % newsCards.length;
-        const currentSecondIndex = (currentIndex + 1) % newsCards.length;
-        
-        newsCards[currentFirstIndex].classList.add('slideRight');
-        newsCards[currentSecondIndex].classList.add('slideRight');
-        
-        setTimeout(() => {
-            newsCards[currentFirstIndex].classList.remove('slideRight');
-            newsCards[currentSecondIndex].classList.remove('slideRight');
+            newsCards[currentFirstIndex].classList.remove('fadein');
+            newsCards[currentSecondIndex].classList.remove('fadein');
         }, 1);
-        
-        setTimeout(() => {
-            updateClasses();
-        }, 800);
-        
+    }
+    
+    let intervalId; // Biến lưu trữ ID của interval
+    let isIntervalRunning = false; // Biến kiểm tra xem interval đã được khởi động chưa
+
+    function startInterval() {
+        if (!isIntervalRunning) {
+            intervalId = setInterval(() => {
+                currentIndex = (currentIndex === newsCards.length - 2) ? 0 : newsCards.length - 2;
+                setTimeout(updateClasses(), 0.8);
+            }, 8000);
+            isIntervalRunning = true;
+        }
     }
 
     prevButton.addEventListener('click', function() {
-        currentIndex = (currentIndex === 0) ? newsCards.length - 2 : (currentIndex - 1) % newsCards.length;
-        
+        currentIndex = (currentIndex === 0) ? newsCards.length - 2 : 0;
         setTimeout(updateClasses(),0.8);
+        clearInterval(intervalId);
+        isIntervalRunning = false;
+        startInterval();
     });
 
     nextButton.addEventListener('click', function() {
-        currentIndex = (currentIndex === newsCards.length - 2) ? 0 : (currentIndex + 1) % newsCards.length;
-        
+        currentIndex = (currentIndex === newsCards.length - 2) ? 0 : newsCards.length - 2;
         setTimeout(updateClasses(),0.8);
+        clearInterval(intervalId);
+        isIntervalRunning = false;
+        startInterval();
     });
 
     updateClasses();
-    setInterval(() =>{currentIndex = (currentIndex === newsCards.length - 2) ? 0 : (currentIndex + 1) % newsCards.length;
-        
-        setTimeout(updateClasses(),0.8);
-    }, 7000)
-});
+    startInterval();
+})
