@@ -1,0 +1,184 @@
+/* events */
+.app__events {
+  background-color: var(--primary-color);
+  padding: 16px;
+}
+
+.app__events-container {
+  margin: auto;
+  width: 1200px;
+  max-width: 100%;
+}
+
+.app__events-header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__events-title {
+  font-size: var(--title-size);
+  color: var(--white-color);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.app__events-body {}
+
+.app__events-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__events-item {
+  width: 33.3333%;
+  height: 400px;
+  margin: 0 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.5s ease-out;
+}
+
+
+
+.app__events-item:hover {
+  transform: translateY(-8px);
+}
+
+.app__events-item-img {
+  width: 100%;
+  height: 250px;
+  border-radius: 5px 5px 0 0;
+  transition: transform 0.5s ease-out;
+}
+
+
+.app__events-item:hover .app__events-item-img {
+  transform: scale(1.1);
+}
+
+.app__events-item-header {
+  position: relative;
+  overflow: hidden;
+}
+
+.app__events-date {
+  position: absolute;
+  padding: 8px;
+  border-radius: 5px;
+  right: 12px;
+  bottom: 4px;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 127, 0.8);
+  mix-blend-mode: multiply;
+}
+
+.app__events-date-month {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.app__events-date-day {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.app__events-item-content {
+  height: 112px;
+  padding: 8px 16px;
+  background-color: var(--white-color);
+  border-radius: 0 0 5px 5px;
+}
+
+.app__events-item-title {
+  font-size: 14px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.app__events-item-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: var(--text-size);
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.app__events-notifi {
+  width: 33.3333%;
+  height: 365px;
+  margin: 0 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.app__events-notifi-list {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white-color);
+  padding: 16px 8px;
+  border-radius: 5px;
+}
+
+.app__events-notifi-list:first-child {
+  margin-bottom: 24px;
+}
+
+.app__events-notifi-item {
+  display: flex;
+}
+
+
+
+.app__events-notifi-item:first-child {
+  margin: 12px 0 24px;
+}
+
+.app__events-notifi-time {
+  width: 30%;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 8px 2px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 3px;
+}
+
+.app__events-notifi-time-month {
+  font-size: 16px;
+}
+
+.app__events-notifi-time-day {
+  font-size: 18px;
+}
+
+.app__event-notifi-content {
+  width: 70%;
+  font-size: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: transform 0.2s ease-out;
+}
+
+.app__events-notifi-item:hover .app__event-notifi-content {
+  color: var(--primary-color);
+  transform: translateX(5px);
+}
+
+.app__events-notifi-title {
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  margin-bottom: 12px;
+}
