@@ -186,10 +186,9 @@
         <div class="side_social_link">
             <div id="share_icon">
                 <img src="./assets/img/share.png">
-                <img src="./assets/img/share.png">
             </div>
             <div style="margin-top: 20px; font-size:15px;writing-mode: vertical-rl;
-            text-orientation: mixed; margin-left:20px;font-weight:bold;">FOLLOW -----------------</div>
+            text-orientation: mixed; margin-left:15px;margin-bottom:70px;font-weight:bold;color:red;">FOLLOW -----------------</div>
             <div id="social_media_icons">
                 <img src="./assets/img/linkedin.png" alt="social media icons">
                 <img src="./assets/img/youtube.png" alt="social media icons">
@@ -203,7 +202,7 @@
         <div class="app_news">
             <div class="news_container">
                 <p class="p-title">TIN TỨC
-                <div style="width: 150px; margin: auto; margin-bottom: 2%; background-color:blue; height: 5px;"></div>
+                    <div style="width: 150px; margin: auto; margin-bottom: 2%; background-color:blue; height: 5px;"></div>
                 </p>
                 <div id="news_content" class="d-flex flex-sm-column flex-md-row ms-5 me-5">
                     <div id="hot_news">
@@ -461,8 +460,6 @@
 
 
         <div class="app__daotao-sinhvien">
-
-
             <div class="grid">
                 <div class="grid__row">
                     <div class="app__daotao-sinhvien-wrapper">
@@ -631,7 +628,7 @@
 
     </script>
 
-    <!-- stick navbar -->
+    <!-- stick navbar and scroll to top button -->
     <script>
         window.onscroll = function () { 
             scrollFunction()
@@ -647,15 +644,8 @@
             } else {
                 navigation.classList.remove("scrolled");
             }
-        }
 
-    </script>
-
-    <!-- Button scroll to top -->
-    <script>
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
+            // <!-- Button scroll to top -->
             if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
                 document.getElementById("scrollToTopBtn").style.display = "block";
             } else {
