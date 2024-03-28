@@ -9,8 +9,9 @@
 
 
 .app__daotao-sinhvien-item {
-    width: 25%;
+    width: 24%;
     margin: 0 20px;
+
     box-shadow:
         /* Bóng đổ chính */
     5px 5px 10px rgba(0, 0, 0, 0.5),
@@ -20,7 +21,7 @@
       
 }
 .app__daotao-sinhvien-text {
-    margin-bottom: 60px;
+    margin-bottom: 70px;
     text-align: center;
     
 }
@@ -57,4 +58,66 @@ transform: translateX(5px);
 .app__daotao-sinhvien-content
 {
     padding: 0px 20px ;
+}
+
+
+.app__daotao-sinhvien-date h3{
+    font-size: var(--text-size);
+    margin-top: 30px;
+    margin-bottom: 30px;  
+}
+.app__daotao-sinhvien-poster {
+    width: 24%;
+    margin: 0 20px;
+    box-shadow:
+        /* Bóng đổ chính */
+    5px 5px 10px rgba(0, 0, 0, 0.5),
+        /* Bóng đổ phụ */
+    inset 0 0 5px rgba(255, 255, 255, 0.2);
+    background-color: var(--primary-color);
+}
+
+.app__daotao-sinhvien-poster-title1 h3 {
+    text-align: center;
+    color: var(--white-color);
+    font-size: 30px;
+    margin-top: 70px;
+}
+.app__daotao-sinhvien-poster-title2 h3 {
+    color: var(--white-color);
+    font-size: 30px;
+    margin-top: 30px;
+    
+}
+.app__daotao-sinhvien-poster-title2 {
+   padding: 0px 50px ;
+   margin-bottom: 30px;
+}
+.app__daotao-sinhvien-poster-focus{
+    padding: 10px 10px ;
+    padding-left: 5px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #fabd05;
+    width: 240px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.app__daotao-sinhvien-poster-focus a{
+    font-size: 16px;
+
+}
+.app__daotao-sinhvien-poster-alert{
+    padding: 6px 8px ;
+    text-align: center;
+    border-radius: 20px;
+    background-color: white;
+    width: 180px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    border: 3px solid #ababab;
+}
+.app__daotao-sinhvien-poster-alert a{
+    font-size: 16px;
 }
