@@ -186,6 +186,7 @@
         <div class="side_social_link">
             <div id="share_icon">
                 <img src="./assets/img/share.png">
+                <img src="./assets/img/share.png">
             </div>
             <div style="margin-top: 20px; font-size:15px;writing-mode: vertical-rl;
             text-orientation: mixed; margin-left:20px;font-weight:bold;">FOLLOW -----------------</div>
@@ -630,13 +631,16 @@
 
     </script>
 
+    <!-- stick navbar -->
     <script>
-        window.onscroll = function () { scrollFunction() };
+        window.onscroll = function () { 
+            scrollFunction()
+        };
 
         function scrollFunction() {
             var header = document.querySelector('.header');
             var navigation = document.querySelector('.app__nav');
-            var sticky = navigation.offsetTop;
+            var sticky = header.offsetTop;
 
             if (window.pageYOffset > sticky) {
                 navigation.classList.add("scrolled");
@@ -663,6 +667,7 @@
             document.body.scrollTop = 0; // Dành cho Safari
             document.documentElement.scrollTop = 0; //Dành cho Chrome, Firefox, IE với Opera
         }
+
     </script>
 
     <script src="./assets/js/respond.js"></script>
