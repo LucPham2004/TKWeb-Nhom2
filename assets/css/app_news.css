@@ -12,7 +12,8 @@
 .p-title{
     text-align: center;
     color: rgb(0, 81, 255);
-    font-size: 3.5rem;
+    font-size: var(--title-size);
+    font-weight: 600;
 }
 /* some responsive changes */
 @media screen and (max-width: 576px) {
@@ -50,6 +51,7 @@
     font-size: 2.8rem;
     margin-left: 5%;
     margin-top: 2%;
+    font-weight: 600;
 }
 #hot_news_title button{
     display: none;
@@ -256,7 +258,7 @@
 /* button for more news */
 #news_link{
     position: absolute;
-    background: linear-gradient(180deg, rgb(200, 220, 255),rgb(210, 230, 255));
+    background: linear-gradient(180deg, rgb(250, 252, 255),rgb(234, 242, 255));
     border: 2px solid  rgb(0, 128, 255);
     width: 180px;
     height: 50px;
@@ -350,6 +352,8 @@
 #scrollToTopBtn {
     display: none;
     position: fixed;
+    height: 50px;
+    width: 50px;
     font-size: 15px;
     bottom: 10px;
     right: 80px;

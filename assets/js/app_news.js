@@ -1,12 +1,15 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() 
+{
     const prevButton = document.getElementById('prev');
     const nextButton = document.getElementById('next');
     const newsCards = document.querySelectorAll('.news_card');
 
     let currentIndex = 0;
 
+    //Hàm hiển thị thẻ tin tức luân phiên và hiệu ứng xuất hiện
     function updateClasses() {
-        for (let i = 0; i < newsCards.length; i++) {
+        for (let i = 0; i < newsCards.length; i++) 
+        {
             newsCards[i].classList.remove('Show');
         }
 
@@ -19,14 +22,16 @@ document.addEventListener('DOMContentLoaded', function() {
         newsCards[currentFirstIndex].classList.add('fadeout');
         newsCards[currentSecondIndex].classList.add('fadeout');
         
-        setTimeout(() => {
+        setTimeout(() => 
+        {
             newsCards[currentFirstIndex].classList.remove('fadeout');
             newsCards[currentSecondIndex].classList.remove('fadeout');
             newsCards[currentFirstIndex].classList.add('fadein');
             newsCards[currentSecondIndex].classList.add('fadein');
         }, 1);
         
-        setTimeout(() => {
+        setTimeout(() => 
+        {
             newsCards[currentFirstIndex].classList.remove('fadein');
             newsCards[currentSecondIndex].classList.remove('fadein');
         }, 1);
@@ -35,9 +40,13 @@ document.addEventListener('DOMContentLoaded', function() {
     let intervalId; // Biến lưu trữ ID của interval
     let isIntervalRunning = false; // Biến kiểm tra xem interval đã được khởi động chưa
 
-    function startInterval() {
-        if (!isIntervalRunning) {
-            intervalId = setInterval(() => {
+    // Thêm sự kiện: Tự động chuyển sang tin tức khác
+    function startInterval() 
+    {
+        if (!isIntervalRunning) 
+        {
+            intervalId = setInterval(() => 
+            {
                 currentIndex = (currentIndex === newsCards.length - 2) ? 0 : newsCards.length - 2;
                 setTimeout(updateClasses(), 0.8);
             }, 8000);
@@ -45,7 +54,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    prevButton.addEventListener('click', function() {
+    // Hàm dừng interval nếu người dùng di chuyển và tin tức
+    newsCards.forEach(function(newsCard) {
+        newsCard.addEventListener('mouseenter', function() {
+            clearInterval(intervalId);
+            isIntervalRunning = false;
+        });
+    
+        newsCard.addEventListener('mouseleave', function() {
+            startInterval();
+        });
+    });
+
+    // Chuyển sang tin tức khác khi bấm nút
+    prevButton.addEventListener('click', function() 
+    {
         currentIndex = (currentIndex === 0) ? newsCards.length - 2 : 0;
         setTimeout(updateClasses(),0.8);
         clearInterval(intervalId);
@@ -53,7 +76,8 @@ document.addEventListener('DOMContentLoaded', function() {
         startInterval();
     });
 
-    nextButton.addEventListener('click', function() {
+    nextButton.addEventListener('click', function() 
+    {
         currentIndex = (currentIndex === newsCards.length - 2) ? 0 : newsCards.length - 2;
         setTimeout(updateClasses(),0.8);
         clearInterval(intervalId);
