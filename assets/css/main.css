@@ -222,7 +222,7 @@
 .app__nav.scrolled {
     background-color: var(--primary-color);
     top: 0;
-    position: fixed;
+    position: sticky;
     z-index: 1000;
     right: 0;
     left: 0;
@@ -266,7 +266,7 @@
     left: 50%;
     width: 0;
     height: 4px;
-    background-color: #1684f2;
+    background-color: #115fad;
     transition: width 0.3s ease, left 0.3s ease;
 }
 
@@ -317,7 +317,7 @@
     /* transition: all linear 0.5s; */
     border-radius: 4px;
     overflow: hidden;
-    animation: scrollNav .3s ease forwards;
+    animation: scrollNav .9s ease forwards;
     display: none;
 }
 
@@ -329,12 +329,12 @@
 @keyframes scrollNav {
     from {
         z-index: -999;
-        opacity: 0;
-        transform:translateY(-50px);
+        opacity: .5;
+        transform: translateX(50px);
     } to {
         z-index: 999;
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0);
     }
 }
 
@@ -385,7 +385,12 @@
 }
 
 /* nghiencuu-hoptac */
-    .app__nghiencuu-hoptac-wrapper {
+.app__nghiencuu-hoptac {
+    background-color: #0C1541;
+    padding-bottom: 150px;
+}
+
+.app__nghiencuu-hoptac-wrapper {
     display: flex;
     flex-direction: row;
     flex: 1;
@@ -409,8 +414,8 @@
 
 .app__nghiencuu-hoptac-title span {
     padding-bottom: 10px;
-    color: var(--text-color);
-    border-bottom: 4px solid var(--text-color);
+    color: var(--white-color);
+    border-bottom: 4px solid var(--white-color);
 }
 
 .app__nghiencuu-hoptac-img {

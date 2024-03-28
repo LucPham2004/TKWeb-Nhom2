@@ -184,16 +184,16 @@
         <!-- Rightside bar of social media links-->
         <div class="side_social_link">
             <div id="share_icon">
-                <img src="/assets/img/share.png">
+                <img src="./assets/img/share.png">
             </div>
             <div style="margin-top: 20px; font-size:15px;writing-mode: vertical-rl;
             text-orientation: mixed; margin-left:20px;font-weight:bold;">FOLLOW -----------------</div>
             <div id="social_media_icons">
-                <img src="/assets/img/linkedin.png" alt="social media icons">
-                <img src="/assets/img/youtube.png" alt="social media icons">
-                <img src="/assets/img/instagram.png" alt="social media icons">
-                <img src="/assets/img/facebook.png" alt="social media icons">
-                <img src="/assets/img/twitter.png" alt="social media icons">
+                <img src="./assets/img/linkedin.png" alt="social media icons">
+                <img src="./assets/img/youtube.png" alt="social media icons">
+                <img src="./assets/img/instagram.png" alt="social media icons">
+                <img src="./assets/img/facebook.png" alt="social media icons">
+                <img src="./assets/img/twitter.png" alt="social media icons">
 
             </div>
         </div>
@@ -657,28 +657,24 @@
 
     </script>
 
+    <!-- stick navbar -->
     <script>
-        window.onscroll = function () { scrollFunction() };
+        window.onscroll = function () { 
+            scrollFunction()
+        };
 
         function scrollFunction() {
             var header = document.querySelector('.header');
             var navigation = document.querySelector('.app__nav');
-            var sticky = navigation.offsetTop;
+            var sticky = header.offsetTop;
 
             if (window.pageYOffset > sticky) {
                 navigation.classList.add("scrolled");
             } else {
                 navigation.classList.remove("scrolled");
             }
-        }
 
-    </script>
-
-    <!-- Button scroll to top -->
-    <script>
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
+            // <!-- Button scroll to top -->
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 document.getElementById("scrollToTopBtn").style.display = "block";
             } else {
@@ -690,6 +686,7 @@
             document.body.scrollTop = 0; // Dành cho Safari
             document.documentElement.scrollTop = 0; //Dành cho Chrome, Firefox, IE với Opera
         }
+
     </script>
 
     <script src="./assets/js/respond.js"></script>
