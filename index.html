@@ -200,7 +200,7 @@
 
         <!-- News and Announcement Section -->
         <div class="app_news">
-            <div class="news_container">
+            <div class="news_container reveal">
                 <p class="p-title">TIN TỨC
                 <div style="width: 150px; margin: auto; margin-bottom: 2%; background-color:blue; height: 5px;"></div>
                 </p>
@@ -351,7 +351,7 @@
         </div>
 
         <div class="app__events">
-            <div class="app__events-container">
+            <div class="app__events-container reveal">
                 <div class="app__events-header">
                     <h2 class="app__events-title">Sự kiện nổi bật</h2>
                 </div>
@@ -435,10 +435,13 @@
         <div class="app__nghiencuu-hoptac">
             <div class="grid">
                 <div class="grid__row">
-                    <div class="app__nghiencuu-hoptac-wrapper">
+                    <div class="app__nghiencuu-hoptac-wrapper reveal">
                         <div class="app__nghiencuu-hoptac-item">
                             <div class="app__nghiencuu-hoptac-title">
-                                <span>NGHIÊN CỨU</span>
+                                <span>
+                                    <i class="fa-solid fa-book"></i>
+                                    NGHIÊN CỨU                             
+                                </span>
                             </div>
                             <div class="app__nghiencuu-hoptac-img">
                                 <div class="app__nghiencuu-hoptac-img-wrapper">
@@ -451,10 +454,16 @@
                                     <button class="app__nghiencuu-hoptac-btn">Xem thêm</button>
                                 </div>
                             </div>
+                            <p class="app__nghiencuu-hoptac-description">
+                                Kết nối các thế hệ cựu sinh viên Kinh tế Quốc dân. Mang đến cơ hội hợp tác, chia sẻ thông tin về gương mặt, cựu sinh viên tiêu biểu
+                            </p>
                         </div>
                         <div class="app__nghiencuu-hoptac-item">
                             <div class="app__nghiencuu-hoptac-title">
-                                <span>HỢP TÁC ĐỐI NGOẠI</span>
+                                <span>
+                                    <i class="fa-solid fa-handshake"></i>
+                                    HỢP TÁC ĐỐI NGOẠI
+                                </span>
                             </div>
                             <div class="app__nghiencuu-hoptac-img"
                                 style="background: url(./assets/img/hoptac.png) top center / cover no-repeat;">
@@ -471,6 +480,9 @@
                                     <button class="app__nghiencuu-hoptac-btn">Xem thêm</button>
                                 </div>
                             </div>
+                            <p class="app__nghiencuu-hoptac-description">
+                                Kết nối các thế hệ cựu sinh viên Kinh tế Quốc dân. Mang đến cơ hội hợp tác, chia sẻ thông tin về gương mặt, cựu sinh viên tiêu biểu
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -487,11 +499,9 @@
 
 
         <div class="app__daotao-sinhvien">
-
-
             <div class="grid">
                 <div class="grid__row">
-                    <div class="app__daotao-sinhvien-wrapper">
+                    <div class="app__daotao-sinhvien-wrapper reveal">
 
                         <div class="app__daotao-sinhvien-item">
                             <div class="app__daotao-sinhvien-text">
@@ -687,6 +697,27 @@
             document.documentElement.scrollTop = 0; //Dành cho Chrome, Firefox, IE với Opera
         }
 
+    </script>
+
+    <!-- reveal function -->
+    <script>
+        window.addEventListener('scroll', reveal)
+
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal')
+            
+            for(var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight
+                var revealTop = reveals[i].getBoundingClientRect().top
+                var viewPoint = 150
+                
+                if(revealTop < windowHeight - viewPoint) {
+                    reveals[i].classList.add('active')
+                } else {
+                    reveals[i].classList.remove('active')
+                }
+            }
+        }
     </script>
 
     <script src="./assets/js/respond.js"></script>
