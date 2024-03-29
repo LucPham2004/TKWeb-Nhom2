@@ -235,9 +235,9 @@
     position: relative;
     top: 0;
     background-color: #fdfbfb;
-    transition: background-color .3s ease-in-out;
-    border-bottom: 1px solid #0a0a0a;
-    
+    transition: background-color .5s ease-in-out;
+    /* box-shadow: 1px 1px 2px 2px #ded5d5; */
+    border: 1px solid #fff;
     padding: 8px 0;
 }
 
@@ -389,12 +389,14 @@
 
 /* nghiencuu-hoptac */
 .app__nghiencuu-hoptac {
-    background-color: #0C1541;
+    min-height: 100vh;
+    background-color: #283ca2;
     padding-bottom: 150px;
-    margin-bottom: 32px;
 }
 
 .app__nghiencuu-hoptac-wrapper {
+    position: relative;
+    top: 70px;
     display: flex;
     flex-direction: row;
     flex: 1;
@@ -406,6 +408,13 @@
 }
 
 .app__nghiencuu-hoptac-item {
+    font-size: var(--text-size);
+}
+
+.app__nghiencuu-hoptac-description {
+    color: var(--white-color);
+    width: 95%;
+    padding: 40px 5px;
     font-size: var(--text-size);
 }
 
@@ -597,8 +606,14 @@
     }
 }
 
-.error-message {
-    height: 10px;
-    width: 20px;
-    display: block;
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1.5s ease;
+} 
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
 }

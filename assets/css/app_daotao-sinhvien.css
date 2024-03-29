@@ -26,8 +26,8 @@
     
 }
 
-.app__daotao-sinhvien-text a {
-    font-size: 30px;
+.app__daotao-sinhvien-text h2 {
+    font-size: var(--title-size);
     text-decoration: none;
     border-bottom: 3px solid var(--primary-color);
     padding: 0 0 5px;
