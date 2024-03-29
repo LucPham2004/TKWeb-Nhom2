@@ -203,13 +203,13 @@
         <div class="app_news">
             <div class="news_container reveal">
                 <p class="p-title">TIN TỨC
-                <div style="width: 150px; margin: auto; margin-bottom: 2%; background-color:blue; height: 5px;"></div>
+                <div style="width: 150px; margin: auto; margin-bottom: 2%; background-color: var(--primary-color); height: 5px;"></div>
                 </p>
                 <div id="news_content" class="d-flex flex-sm-column flex-md-row ms-5 me-5">
                     <div id="hot_news">
                         <div id="hot_news_title">
-                            <span style="color: blue; position: absolute; top: -2px;">| </span>
-                            <span style="color: blue; font-family:Arial, Helvetica, sans-serif; margin-left:10px">TIN
+                            <span style="color: var(--primary-color); position: absolute; top: -2px;">| </span>
+                            <span style="color: var(--primary-color); font-family:Arial, Helvetica, sans-serif; margin-left:10px">TIN
                                 HOT</span>
                             <button id="prev">
                                 <div style="margin-top: -4px; margin-left: -3px;"><i class="fas fa-chevron-left"></i>
@@ -518,7 +518,7 @@
             </div>
         </div>
 
-    <!-- đào tạo sinh viên -->
+        <!-- đào tạo sinh viên -->
         <div class="app__daotao-sinhvien">
             <div class="grid">
                 <div class="grid__row">
@@ -573,39 +573,44 @@
     </div>
 
     <!-- Button scroll to top -->
-    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">▲</button>
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top"><span class="ti-angle-double-up"></span></button>
 
     <footer class="footer">
         <div style="height: 100%; width: 100%">
             <div id="footer_container">
-                <div id="footer_info" class="col-md-6 col-sm-12">
-                    <h1 style="margin-top: 5%; margin-bottom:5%;">PHÒNG QUẢN LÝ ĐÀO TẠO</h1>
-                    <h3 style="margin-bottom:5%;">ĐỊA CHỈ: 210 - 211 - 213 TẦNG 2 - NHÀ A1 - TRƯỜNG ĐẠI HỌC KINH TẾ QUỐC
-                        DÂN</h3>
-                    <h4>207 Giải Phòng, Đồng Tâm, Quận Hai Bà Trưng, Hà Nội, Việt Nam</h4>
-                    <h4>Điện thoại: 02436280280 / Máy lẻ: 5222</h4>
-                    <h4>Email: phqldt@neu.edu.vn</h4>
-                    <h4>Mạng xã hội: facebook.com/tvtsneu</h4>
+                <div id="footer_info" class="col-md-4 col-sm-12">
+                    <h1>PHÒNG QUẢN LÝ ĐÀO TẠO</h1>
+                    <img style="height: 70px;width:70px;" src="./assets/img/Logo-NEU.png"> 
+                    <h2 style="margin-top: 5%;" class="footer_info_schoolName">NATIONAL ECONOMICS</h2>
+                    <h2 style="margin-bottom: 10%;" class="footer_info_schoolName">UNIVERSITY</h2>
+                    <h3 style="margin-bottom: 5%;">ĐỊA CHỈ</h3>
+                    <h4>Phòng 210 - 211 - 213 TẦNG 2 - NHÀ A1 </h4>
+                    <h4 style="margin-bottom: 5%;">Trường Đại học Kinh tế Quốc dân</h4>
+                    <h4>207 Giải Phòng, Đồng Tâm, </h4>
+                    <h4>Quận Hai Bà Trưng, </h4>
+                    <h4>Hà Nội, Việt Nam</h4>
                 </div>
-                <div id="footer_map" class="d-flex flex-row col-md-6 col-sm-12">
-                    <div id="footer_map_map" class="col-md-6">
-                        <h2>BẢN ĐỒ CHỈ DẪN</h3>
-                            <h4>Đại học Kinh tế Quốc Dân</h4>
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.813938858119!2d105.83992427492826!3d21.000094180642105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac71752d8f79%3A0xd2ec575c01017afa!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBLaW5oIFThur8gUXXhu5FjIETDom4gKE5FVSk!5e0!3m2!1svi!2s!4v1711436984277!5m2!1svi!2s"
-                                width="240" height="180" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <div class="col-md-6" style="margin-top: 5%;">
-                        <h2>SƠ ĐỒ WEBSITE</h3>
-                            <a style="font-size: 15px; cursor:pointer;">XEM SƠ ĐỒ TRANG...</a>
-                    </div>
+                <div id="footer_quote" class="col-md-4 col-sm-12">
+                    <img style="height:30px;margin-bottom:5%;" src="./assets/img/quote-left.png">
+                    <h2 style="margin-bottom: 3%;">Đổi mới, hội nhập, phát triển.</h2>
+                    <h2>Kết nối tri thức - Vững bước</h2>
+                    <h2 style="margin-bottom: 5%;">tương lai.</h2>
+                    <h4><i>Đại học Kinh tế Quốc dân</i></h4>
+                    <h4><i>est. 1956.</i></h4>
+                </div>
+                <div id="footer_contact" class="col-md-4 col-sm-12">
+                    <h3>LIÊN HỆ</h3>
+                    <h4>Điện thoại: 0243 6280 280 / Máy lẻ: 5222</h4>
+                    <h4>Mạng xã hội: facebook.com/tvtsneu</h4>
+                    <h4 style="margin-bottom: 10%;">Email: phqldt@neu.edu.vn</h4>
+                    <h3>ĐÀO TẠO</h3>
+                    <h4>Cổng nhập học trực tuyến</h4>
+                    <h4>Tuyển sinh 2024</h4>
+                    <h4>Neu Future</h4>
                 </div>
             </div>
             <div id="footer_copyright">
-                <h4 style="margin-left: 10%;">Copyright@2024 - Trường Đại học Kinh Tế Quốc Dân - All Rights Reserved
-                </h4>
-                <h6 style="margin-left: 75%; margin-top:-20px;">Design and Developed by Nhóm 3 - TKWeb</h6>
+                <h4>Copyright 2024© - Group 3 - Web design</h4>
             </div>
         </div>
     </footer>
