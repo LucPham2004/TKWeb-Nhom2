@@ -201,9 +201,9 @@
 
         <!-- News and Announcement Section -->
         <div class="app_news">
-            <div class="news_container">
-                <p class="p-title"><i class="fas fa-bell"></i>TIN TỨC
-                    <div style="width: 150px; margin: auto; margin-bottom: 2%; background-color:blue; height: 5px;"></div>
+            <div class="news_container reveal">
+                <p class="p-title">TIN TỨC
+                <div style="width: 150px; margin: auto; margin-bottom: 2%; background-color:blue; height: 5px;"></div>
                 </p>
                 <div id="news_content" class="d-flex flex-sm-column flex-md-row ms-5 me-5">
                     <div id="hot_news">
@@ -325,7 +325,7 @@
         </div>
 
         <div class="app__events">
-            <div class="app__events-container">
+            <div class="app__events-container reveal">
                 <div class="app__events-header">
                     <i class="fa-regular fa-calendar-days app__events-header-icon"></i>
                     <h2 class="app__events-title">Sự kiện</h2>
@@ -416,10 +416,13 @@
         <div class="app__nghiencuu-hoptac">
             <div class="grid">
                 <div class="grid__row">
-                    <div class="app__nghiencuu-hoptac-wrapper">
+                    <div class="app__nghiencuu-hoptac-wrapper reveal">
                         <div class="app__nghiencuu-hoptac-item">
                             <div class="app__nghiencuu-hoptac-title">
-                                <span>NGHIÊN CỨU</span>
+                                <span>
+                                    <i class="fa-solid fa-book"></i>
+                                    NGHIÊN CỨU                             
+                                </span>
                             </div>
                             <div class="app__nghiencuu-hoptac-img">
                                 <div class="app__nghiencuu-hoptac-img-wrapper">
@@ -432,10 +435,16 @@
                                     <button class="app__nghiencuu-hoptac-btn">Xem thêm</button>
                                 </div>
                             </div>
+                            <p class="app__nghiencuu-hoptac-description">
+                                Kết nối các thế hệ cựu sinh viên Kinh tế Quốc dân. Mang đến cơ hội hợp tác, chia sẻ thông tin về gương mặt, cựu sinh viên tiêu biểu
+                            </p>
                         </div>
                         <div class="app__nghiencuu-hoptac-item">
                             <div class="app__nghiencuu-hoptac-title">
-                                <span>HỢP TÁC ĐỐI NGOẠI</span>
+                                <span>
+                                    <i class="fa-solid fa-handshake"></i>
+                                    HỢP TÁC ĐỐI NGOẠI
+                                </span>
                             </div>
                             <div class="app__nghiencuu-hoptac-img"
                                 style="background: url(./assets/img/hoptac.png) top center / cover no-repeat;">
@@ -452,6 +461,9 @@
                                     <button class="app__nghiencuu-hoptac-btn">Xem thêm</button>
                                 </div>
                             </div>
+                            <p class="app__nghiencuu-hoptac-description">
+                                Kết nối các thế hệ cựu sinh viên Kinh tế Quốc dân. Mang đến cơ hội hợp tác, chia sẻ thông tin về gương mặt, cựu sinh viên tiêu biểu
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -506,11 +518,11 @@
             </div>
         </div>
 
-
+    <!-- đào tạo sinh viên -->
         <div class="app__daotao-sinhvien">
             <div class="grid">
                 <div class="grid__row">
-                    <div class="app__daotao-sinhvien-wrapper">
+                    <div class="app__daotao-sinhvien-wrapper reveal">
 
                         <div class="app__daotao-sinhvien-item">
                             <div class="app__daotao-sinhvien-text">
@@ -525,14 +537,13 @@
                                 <h3>Thông tin tuyển sinh Đại học Chính quy năm 2024 của trường Đại học Kinh tế quốc dân
                                     (dự kiến tháng 3.2024)</h3>
                             </div>
+                            <div class="app_daotao-sinhvien-date">
+                                <h3> Tháng 3, 2024</h3>
+                            </div>
                         </div>
 
                         <div class="app__daotao-sinhvien-item">
-                            <div class="app__daotao-sinhvien-text">
-                                <h2>
-                                    <a href="">SINH VIÊN</a>
-                                </h2>
-                            </div>
+                            
                             <div class="app__daotao-sinhvien-img">
                                 <img src="assets/img/sinhvien.jpg" alt="">
                             </div>
@@ -542,18 +553,17 @@
                         </div>
 
                         <div class="app__daotao-sinhvien-item">
-                            <div class="app__daotao-sinhvien-text">
-                                <h2>
-                                    <a href="">CỰU SINH VIÊN</a>
-                                </h2>
-                            </div>
+                            
+                           
                             <div class="app__daotao-sinhvien-img">
                                 <img src="assets/img/cuusv.jpg" alt="">
                             </div>
                             <div class="app__daotao-sinhvien-content">
                                 <h3>Giải Golf toàn quốc cựu học viên, sinh viên Đại học Kinh tế Quốc dân 2024 chính thức
                                     quay trở lại</h3>
-                            </div>
+                            </div> 
+                        </div>
+
                         </div>
                     </div>
                 </div>
@@ -706,6 +716,27 @@
             document.documentElement.scrollTop = 0; //Dành cho Chrome, Firefox, IE với Opera
         }
 
+    </script>
+
+    <!-- reveal function -->
+    <script>
+        window.addEventListener('scroll', reveal)
+
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal')
+            
+            for(var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight
+                var revealTop = reveals[i].getBoundingClientRect().top
+                var viewPoint = 150
+                
+                if(revealTop < windowHeight - viewPoint) {
+                    reveals[i].classList.add('active')
+                } else {
+                    reveals[i].classList.remove('active')
+                }
+            }
+        }
     </script>
 
     <script src="./assets/js/respond.js"></script>
