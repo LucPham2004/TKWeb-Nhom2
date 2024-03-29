@@ -700,7 +700,8 @@
         function scrollFunction() {
             var header = document.querySelector('.header');
             var navigation = document.querySelector('.app__nav');
-            var sticky = header.offsetTop;
+            // var sticky = header.offsetTop;
+            var sticky = 160;
 
             if (window.pageYOffset > sticky) {
                 navigation.classList.add("scrolled");
