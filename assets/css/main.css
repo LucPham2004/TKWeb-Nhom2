@@ -389,6 +389,7 @@
     right: -20px;
     cursor: pointer;
     margin-bottom: 10px;
+    color: #302c2c;
 }
 
 @media (max-width: 1023px) {
@@ -481,7 +482,7 @@
     background: url(../img/banner1.jpg) top center / cover no-repeat; */
     z-index: -9999;
     width: 124.5%;
-    height: auto;
+    height: 100vh;
     display: block;
     margin: 0 auto;
 }
@@ -489,7 +490,7 @@
 /* nghiencuu-hoptac */
 .app__nghiencuu-hoptac {
     min-height: 100vh;
-    background-color: #283ca2;
+    background-color: #0c1636;
     padding-bottom: 150px;
 }
 
