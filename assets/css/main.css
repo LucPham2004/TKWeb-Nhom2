@@ -220,7 +220,7 @@
 
 /* navigation bar */
 .app__nav.scrolled {
-    background-color: var(--primary-color);
+    background-color: rgba(0, 101, 202, 0.799);
     top: 0;
     position: sticky;
     z-index: 1000;
@@ -390,8 +390,18 @@
 /* nghiencuu-hoptac */
 .app__nghiencuu-hoptac {
     min-height: 100vh;
-    background-color: #0C1541;
-    padding-bottom: 50px;
+    position: relative;
+    background-color: #283ca2;
+    padding-bottom: 150px;
+}
+#app__nghiencuu-hoptac-backgroundImg{
+    background-image: url(/assets/img/background-NCDT.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(10px);
 }
 
 .app__nghiencuu-hoptac-wrapper {

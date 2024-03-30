@@ -13,7 +13,7 @@
 
 .p-title {
     text-align: center;
-    color: rgb(0, 81, 255);
+    color: var(--primary-color);
     font-size: var(--title-size);
     font-weight: 600;
 }
@@ -52,7 +52,7 @@
     width: 100%;
     margin-right: 1%;
     margin-bottom: 2.5%;
-    border: 2px solid rgb(0, 145, 255);
+    border: 2px solid rgb(0, 100, 255);
 }
 
 #hot_news_title {
@@ -67,7 +67,6 @@
     display: none;
     position: absolute;
     border-radius: 100%;
-    background-color: rgba(238, 30, 30, 0.378);
     color: blue;
     height: 40px;
     width: 40px;
@@ -92,7 +91,6 @@
 #hot_news:hover #hot_news_title button:hover {
     background: linear-gradient(180deg, rgb(0, 100, 255), rgb(70, 150, 255));
     color: yellow;
-    transition: all .2s ease-in-out;
 }
 
 #carousel {
@@ -116,7 +114,7 @@
     margin-left: 6%;
     flex: 0 0 auto;
     width: 100%;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .Show {
@@ -142,7 +140,7 @@
 
 .news_card:hover {
     transform: scale(1.02);
-    box-shadow: 0 0 8px rgb(0, 145, 255);
+    box-shadow: 0 0 8px rgb(0, 101, 202);
 }
 
 .news_card_main_img {
@@ -212,14 +210,12 @@
 }
 
 .more a:hover {
-    color: blue;
-    transform: translateX(8px);
+    color: rgb(0, 101, 202);
     transform: scale(1.1);
 }
 
 /* Poster and Announcement on the right */
 #the_right_div {
-    margin-left: 1%;
     margin-bottom: 2.5%;
 }
 
@@ -230,12 +226,11 @@
 
 #announce {
     border: 2px solid rgb(0, 145, 255);
-    margin-left: 20px;
 }
 
 #announcement {
     width: 100%;
-    color: blue;
+    color: var(--primary-color);
     font-size: 2.8rem;
     font-family: Arial, Helvetica, sans-serif;
     height: 10%;
@@ -291,7 +286,16 @@
     right: 2%;
     bottom: 13%;
 }
-
+@media screen and (max-width: 1536px) {
+    #announce {
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 800px) {
+    #announce {
+        margin-left: 0px;
+    }
+}
 /* button for more news */
 .block-news_link {
     display: flex;
@@ -328,7 +332,7 @@
 
 /* Footer */
 .footer {
-    height: 50vh;
+    height: 70vh;
     background-color: #0065CA;
 }
 
@@ -336,29 +340,46 @@
     display: flex;
     flex-direction: row;
     height: 90%;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
     color: white;
 }
-
+/* Left */
 #footer_info {
-    height: 100%;
+    position: relative;
+    margin-top: 5%;
 }
-
-#footer_map {
-    height: 100%;
+#footer_info img{
+    position: absolute;
+    top: 12%;
+}
+.footer_info_schoolName{
+    margin-left: 18%;
+}
+/* Middle */
+#footer_quote{
+    margin-top: 8%;
+    text-align: center;
+}
+/* Right */
+#footer_contact{
+    margin-top: 6%;
+    text-align: right;
+}
+#footer_contact h3{
     margin-bottom: 5%;
 }
-
-#footer_map_map {
-    margin-top: 5%;
-    margin-left: 10%;
+#footer_contact h4{
+    margin-bottom: 3%;
 }
 
 #footer_copyright {
     height: 10%;
+    background-color:  rgb(69, 69, 69);
     color: white;
+    text-align: center;
+    padding-top: 15px;
 }
 
 @media screen and (max-width: 800px) {
@@ -375,8 +396,7 @@
 .side_social_link {
     position: sticky;
     float: right;
-    top: 0;
-    right: 0;
+    z-index: 999;
     height: 100vh;
     width: 3vw;
     background-color: transparent;
@@ -405,7 +425,18 @@
 #share_icon img:hover {
     transform: translateY(-3px);
 }
-
+@media screen and (max-width: 1536px) {
+    .side_social_link {
+        top: 0;
+        right: 0;
+    }
+}
+@media screen and (max-width: 800px) {
+    .side_social_link {
+        top: -20px;
+        right:30px;
+    }
+}
 /* Button scroll to top*/
 #scrollToTopBtn {
     display: none;
