@@ -91,7 +91,6 @@
 #hot_news:hover #hot_news_title button:hover {
     background: linear-gradient(180deg, rgb(0, 100, 255), rgb(70, 150, 255));
     color: yellow;
-    transition: all .2s ease-in-out;
 }
 
 #carousel {
@@ -115,7 +114,7 @@
     margin-left: 6%;
     flex: 0 0 auto;
     width: 100%;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .Show {
@@ -212,13 +211,11 @@
 
 .more a:hover {
     color: rgb(0, 101, 202);
-    transform: translateX(8px);
     transform: scale(1.1);
 }
 
 /* Poster and Announcement on the right */
 #the_right_div {
-    margin-left: 1%;
     margin-bottom: 2.5%;
 }
 
@@ -229,7 +226,6 @@
 
 #announce {
     border: 2px solid rgb(0, 145, 255);
-    margin-left: 20px;
 }
 
 #announcement {
@@ -290,7 +286,16 @@
     right: 2%;
     bottom: 13%;
 }
-
+@media screen and (max-width: 1536px) {
+    #announce {
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 800px) {
+    #announce {
+        margin-left: 0px;
+    }
+}
 /* button for more news */
 .block-news_link {
     display: flex;
@@ -391,8 +396,7 @@
 .side_social_link {
     position: sticky;
     float: right;
-    top: 0;
-    right: 0;
+    z-index: 999;
     height: 100vh;
     width: 3vw;
     background-color: transparent;
@@ -421,7 +425,18 @@
 #share_icon img:hover {
     transform: translateY(-3px);
 }
-
+@media screen and (max-width: 1536px) {
+    .side_social_link {
+        top: 0;
+        right: 0;
+    }
+}
+@media screen and (max-width: 800px) {
+    .side_social_link {
+        top: -20px;
+        right:30px;
+    }
+}
 /* Button scroll to top*/
 #scrollToTopBtn {
     display: none;

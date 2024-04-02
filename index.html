@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phòng Quản Lý Đào Tạo</title>
-    <link rel="icon"  href="/assets/img/Logo-NEU.png" type="image/x-icon"/>
+    <link rel="icon" href="/assets/img/Logo-NEU.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/app_news.css">
     <link rel="stylesheet" href="./assets/css/app_events.css">
-    <link rel="stylesheet" href="./assets/css/app__enrollment.css">
+    <link rel="stylesheet" href="./assets/css/app__branch.css">
     <link rel="stylesheet" href="./assets/css/app_daotao-sinhvien.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -257,7 +257,8 @@
                 <img src="./assets/img/share.png">
             </div>
             <div style="margin-top: 20px; font-size:15px;writing-mode: vertical-rl;
-            text-orientation: mixed; margin-left:15px;margin-bottom:70px;font-weight:bold;color:red;">FOLLOW -----------------</div>
+            text-orientation: mixed; margin-left:15px;margin-bottom:70px;font-weight:bold;color:red;">FOLLOW
+                -----------------</div>
             <div id="social_media_icons">
                 <img src="./assets/img/linkedin.png" alt="social media icons">
                 <img src="./assets/img/youtube.png" alt="social media icons">
@@ -267,6 +268,162 @@
             </div>
         </div>
 
+        <!-- News and Announcement Section -->
+        <div class="app_news">
+            <div class="news_container reveal">
+                <p class="p-title"><i class="far fa-bell"></i> TIN TỨC
+                <div
+                    style="width: 150px; margin: auto; margin-bottom: 2%; background-color: var(--primary-color); height: 5px;">
+                </div>
+                </p>
+                <div id="news_content" class="d-flex flex-sm-column flex-md-row ms-5 me-5">
+                    <div id="hot_news">
+                        <div id="hot_news_title">
+                            <span style="color: var(--primary-color); position: absolute; top: -2px;">| </span>
+                            <span
+                                style="color: var(--primary-color); font-family:Arial, Helvetica, sans-serif; margin-left:10px">TIN
+                                HOT</span>
+                            <button id="prev">
+                                <div style="margin-top: -4px; margin-left: -3px;"><i class="fas fa-chevron-left"></i>
+                                </div>
+                            </button>
+                            <button id="next">
+                                <div style="margin-top: -4px; margin-left: -3px;"><i class="fas fa-chevron-right"></i>
+                                </div>
+                            </button>
+                        </div>
+                        <div id="carousel">
+                            <div id="carousel-inner" class="d-flex col-12 col-md-6">
+                                <div class="news_card col-6">
+                                    <img class="blur_img" src="https://dean1665.vn/uploads/school/neu2.jpg">
+                                    <a href="#">
+                                        <img class="news_card_main_img"
+                                            src="https://checkinvietnam.vtc.vn/media/20210723/images/neu-ngoi-truong-so-huu-nhung-goc-song-ao-cuc-chat-4(1).jpg">
+                                    </a>
+                                    <a href="#" class="news_title">Khai mạc Tuần Nghề nghiệp và Việc làm - NEU Career
+                                        Week 2024</a>
+                                    <p class="news_desc">Sáng ngày 22/3/2024, Trường Đại học Kinh tế Quốc dân đã khai
+                                        mạc Tuần Nghề nghiệp và Việc làm - NEU Career Week 2024 với chủ đề "Nguồn nhân
+                                        lực thích ứng với toàn cầu hoá", hứa hẹn mang đến một chuỗi hoạt động thú vị,
+                                        kết nối đặc biệt dành riêng cho sinh viên Kinh tế Quốc dân cùng các doanh
+                                        nghiệp.</p>
+                                    <p class="ngay"><i class="far fa-clock"></i> 22/03/2024</p>
+                                </div>
+                                <div class="news_card col-6">
+                                    <img class="blur_img"
+                                        src="https://neu.daotaotuxa.net/wp-content/uploads/2022/08/dai-hoc-kinh-te-quoc-dan-ngoi-truong-mo-uoc-cua-nhieu-sinh-vien-2.webp">
+                                    <a href="#">
+                                        <img class="news_card_main_img"
+                                            src="https://neu.daotaotuxa.net/wp-content/uploads/2022/08/dai-hoc-kinh-te-quoc-dan-ngoi-truong-mo-uoc-cua-nhieu-sinh-vien-2.webp">
+                                    </a>
+                                    <a href="#" class="news_title">Trường Đại học Kinh tế Quốc dân và Trường Bách khoa
+                                        Ngee Ann Polytechnic, Singapore khai mạc chương trình trao đổi sinh viên năm
+                                        2024</a>
+                                    <p class="news_desc">Sáng nay (19/3/2024), tại Trường Đại học Kinh tế Quốc dân đã
+                                        diễn ra chương trình khai mạc trao đổi sinh viên “Overseas Immersion Programme”
+                                        giữa Trường Đại học Kinh tế Quốc dân và Trường Bách khoa Ngee Ann Polytechnic,
+                                        Singapore năm 2024.</p>
+                                    <p class="ngay"><i class="far fa-clock"></i> 19/03/2024</p>
+                                </div>
+                                <div class="news_card col-6">
+                                    <img class="blur_img"
+                                        src="https://neu.daotaotuxa.net/wp-content/uploads/2023/10/Le-be-giang-NEU-Elearnin-2023-daotaotuxa-22.webp">
+                                    <a href="#">
+                                        <img class="news_card_main_img"
+                                            src="https://neu.daotaotuxa.net/wp-content/uploads/2023/10/Le-be-giang-NEU-Elearnin-2023-daotaotuxa-22.webp">
+                                    </a>
+                                    <span class="news_title">Lễ trao bằng Thạc sỹ Quản trị kinh doanh liên kết giữa
+                                        Trường Đại học Kinh tế Quốc dân và Đại học Andrews, Hoa Kỳ</span>
+                                    <p class="news_desc">Chiều ngày 18/3/2024, tại Nhà Văn hóa - Hội trường A, Viện Quản
+                                        trị Kinh doanh, Trường Đại học Kinh tế Quốc dân đã tổ chức Lễ trao bằng tốt
+                                        nghiệp cho các tân Thạc sỹ chương trình đào tạo Thạc sĩ Quản trị Kinh doanh liên
+                                        kết giữa Trường Đại học Kinh tế Quốc dân và Đại học Andrews, Hoa Kỳ.</p>
+                                    <p class="ngay"><i class="far fa-clock"></i> 19/03/2024</p>
+                                </div>
+                                <div class="news_card col-6">
+                                    <img class="blur_img"
+                                        src="https://langmaster.edu.vn/storage/images/2022/05/21/review-dai-hoc-kinh-te-quoc-dan-mau-do-800x500.webp">
+                                    <a href="#">
+                                        <img class="news_card_main_img"
+                                            src="https://langmaster.edu.vn/storage/images/2022/05/21/review-dai-hoc-kinh-te-quoc-dan-mau-do-800x500.webp">
+                                    </a>
+                                    <span class="news_title">Trường Đại học Kinh tế Quốc dân hợp tác đào tạo với Đại học
+                                        Andrews, Hoa Kỳ</span>
+                                    <p class="news_desc">Chiều ngày 18/3/2024, Trường Đại học Kinh tế Quốc dân đã tổ
+                                        chức Lễ trao thỏa thuận hợp tác đào tạo với Đại học Andrews, Hoa Kỳ. Đây là
+                                        chương trình liên kết đào tạo với nước ngoài bậc đại học, nhằm cung cấp nguồn
+                                        nhân lực chất lượng và chuyên nghiệp, có kỹ năng tốt, có trình độ chuyên môn
+                                        cao, có khả năng thích ứng với sự phát triển của công nghệ và làm việc trong môi
+                                        trường quốc tế.</p>
+                                    <p class="ngay"><i class="far fa-clock"></i> 18/03/2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="more">
+                            <a href="#"><i>Xem thêm...</i></a>
+                        </div>
+                    </div>
+                    <div id="the_right_div" class="d-flex col-12 col-md-6">
+                        <div id="poster" class="col-6">
+                            <img
+                                src="https://cdn.shoplightspeed.com/shops/607723/files/30902316/poster-new-york-wonder-city.jpg">
+                        </div>
+                        <div id="announce" class="col-6">
+                            <div id="announcement">Thông báo</div>
+                            <div style="height: 90%;">
+                                <ul class="list-group" style="height: 100%;">
+                                    <li class="list-group-item">
+                                        <i class="fas fa-check"></i>
+                                        <div style="margin-left: 6%;margin-right:10px">
+                                            <a class="announce_title">Lộ trình "chuyển mình" thành đại học của Trường ĐH
+                                                Kinh tế Quốc dân</a>
+                                        </div>
+                                        <p class="ngay"><i class="far fa-clock"></i> 1/1/2024</p>
+                                        <hr>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <i class="fas fa-check"></i>
+                                        <div style="margin-left: 6%;margin-right:10px">
+                                            <a class="announce_title">Thông tin tuyển sinh Đại học Chính quy năm 2024
+                                                của trường Đại học Kinh tế quốc dân (dự kiến tháng 3.2024)</a>
+                                        </div>
+                                        <p class="ngay"><i class="far fa-clock"></i> 2/1/2024</p>
+                                        <hr>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <i class="fas fa-check"></i>
+                                        <div style="margin-left: 6%;margin-right:10px">
+                                            <a class="announce_title">Thông báo danh sách sinh viên tốt nghiệp Đại học
+                                                chính quy đợt tháng 3 năm 2024</a>
+                                        </div>
+                                        <p class="ngay"><i class="far fa-clock"></i> 3/1/2024</p>
+                                        <hr>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <i class="fas fa-check"></i>
+                                        <div style="margin-left: 6%;margin-right:10px">
+                                            <a class="announce_title"> Công văn số 493/ĐHKTQD-QLDT về việc không dậy học
+                                                trực tuyến/online với Đại học Chính quy</a>
+                                        </div>
+                                        <p class="ngay"><i class="far fa-clock"></i> 4/1/2024</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="more">
+                                <a href="#"><i>Xem thêm...</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-news_link">
+                    <div id="news_link">
+                        <a href="#">Xem tất cả</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Events Section -->
         <div class="app__events">
             <div class="app__events-container reveal">
                 <div class="app__events-header">
@@ -356,134 +513,8 @@
             </div>
         </div>
 
-        <!-- News and Announcement Section -->
-        <div class="app_news">
-            <div class="news_container reveal">
-                <p class="p-title">TIN TỨC
-                <div style="width: 150px; margin: auto; margin-bottom: 2%; background-color: var(--primary-color); height: 5px;"></div>
-                </p>
-                <div id="news_content" class="d-flex flex-sm-column flex-md-row ms-5 me-5">
-                    <div id="hot_news">
-                        <div id="hot_news_title">
-                            <span style="color: var(--primary-color); position: absolute; top: -2px;">| </span>
-                            <span style="color: var(--primary-color); font-family:Arial, Helvetica, sans-serif; margin-left:10px">TIN
-                                HOT</span>
-                            <button id="prev">
-                                <div style="margin-top: -4px; margin-left: -3px;"><i class="fas fa-chevron-left"></i>
-                                </div>
-                            </button>
-                            <button id="next">
-                                <div style="margin-top: -4px; margin-left: -3px;"><i class="fas fa-chevron-right"></i>
-                                </div>
-                            </button>
-                        </div>
-                        <div id="carousel">
-                            <div id="carousel-inner" class="d-flex col-12 col-md-6">
-                                <div class="news_card col-6">
-                                    <img class="blur_img" src="https://dean1665.vn/uploads/school/neu2.jpg">
-                                    <a href="#">
-                                        <img class="news_card_main_img" src="https://checkinvietnam.vtc.vn/media/20210723/images/neu-ngoi-truong-so-huu-nhung-goc-song-ao-cuc-chat-4(1).jpg">
-                                    </a>
-                                    <a href="#" class="news_title">Khai mạc Tuần Nghề nghiệp và Việc làm - NEU Career Week 2024</a>
-                                    <p class="news_desc">Sáng ngày 22/3/2024, Trường Đại học Kinh tế Quốc dân đã khai mạc Tuần Nghề nghiệp và Việc làm - NEU Career Week 2024 với chủ đề "Nguồn nhân lực thích ứng với toàn cầu hoá", hứa hẹn mang đến một chuỗi hoạt động thú vị, kết nối đặc biệt dành riêng cho sinh viên Kinh tế Quốc dân cùng các doanh nghiệp.</p>
-                                    <p class="ngay"><i class="far fa-clock"></i> 22/03/2024</p>
-                                </div>
-                                <div class="news_card col-6">
-                                    <img class="blur_img" src="https://neu.daotaotuxa.net/wp-content/uploads/2022/08/dai-hoc-kinh-te-quoc-dan-ngoi-truong-mo-uoc-cua-nhieu-sinh-vien-2.webp">
-                                    <a href="#">
-                                        <img class="news_card_main_img" src="https://neu.daotaotuxa.net/wp-content/uploads/2022/08/dai-hoc-kinh-te-quoc-dan-ngoi-truong-mo-uoc-cua-nhieu-sinh-vien-2.webp">
-                                    </a>
-                                    <a href="#" class="news_title">Trường Đại học Kinh tế Quốc dân và Trường Bách khoa Ngee Ann Polytechnic, Singapore khai mạc chương trình trao đổi sinh viên năm 2024</a>
-                                    <p class="news_desc">Sáng nay (19/3/2024), tại Trường Đại học Kinh tế Quốc dân đã diễn ra “Overseas Immersion Programme”, chương trình khai mạc trao đổi sinh viên giữa Trường Đại học Kinh tế Quốc dân và Trường Bách khoa Ngee Ann Polytechnic, Singapore năm 2024.</p>
-                                    <p class="ngay"><i class="far fa-clock"></i> 19/03/2024</p>
-                                </div>
-                                <div class="news_card col-6">
-                                    <img class="blur_img" src="https://neu.daotaotuxa.net/wp-content/uploads/2023/10/Le-be-giang-NEU-Elearnin-2023-daotaotuxa-22.webp">
-                                    <a href="#">
-                                        <img class="news_card_main_img" src="https://neu.daotaotuxa.net/wp-content/uploads/2023/10/Le-be-giang-NEU-Elearnin-2023-daotaotuxa-22.webp">
-                                    </a>
-                                    <span class="news_title">Lễ trao bằng Thạc sỹ Quản trị kinh doanh liên kết giữa Trường Đại học Kinh tế Quốc dân và Đại học Andrews, Hoa Kỳ</span>
-                                    <p class="news_desc">Chiều ngày 18/3/2024, tại Nhà Văn hóa - Hội trường A, Viện Quản trị Kinh doanh, Trường Đại học Kinh tế Quốc dân đã tổ chức Lễ trao bằng tốt nghiệp cho các tân Thạc sỹ chương trình đào tạo Thạc sĩ Quản trị Kinh doanh liên kết giữa Trường Đại học Kinh tế Quốc dân và Đại học Andrews, Hoa Kỳ.</p>
-                                    <p class="ngay"><i class="far fa-clock"></i> 19/03/2024</p>
-                                </div>
-                                <div class="news_card col-6">
-                                    <img class="blur_img" src="https://langmaster.edu.vn/storage/images/2022/05/21/review-dai-hoc-kinh-te-quoc-dan-mau-do-800x500.webp">
-                                    <a href="#">
-                                        <img class="news_card_main_img" src="https://langmaster.edu.vn/storage/images/2022/05/21/review-dai-hoc-kinh-te-quoc-dan-mau-do-800x500.webp">
-                                    </a>
-                                    <span class="news_title">Trường Đại học Kinh tế Quốc dân hợp tác đào tạo với Đại học Andrews, Hoa Kỳ</span>
-                                    <p class="news_desc">Chiều ngày 18/3/2024, Trường Đại học Kinh tế Quốc dân đã tổ chức Lễ trao thỏa thuận hợp tác đào tạo với Đại học Andrews, Hoa Kỳ. Đây là chương trình liên kết đào tạo với nước ngoài bậc đại học, nhằm cung cấp nguồn nhân lực chất lượng và chuyên nghiệp, có kỹ năng tốt, có trình độ chuyên môn cao, có khả năng thích ứng với sự phát triển của công nghệ và làm việc trong môi trường quốc tế.</p>
-                                    <p class="ngay"><i class="far fa-clock"></i> 18/03/2024</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="more">
-                            <a href="#"><i>Xem thêm...</i></a>
-                        </div>
-                    </div>
-                    <div id="the_right_div" class="d-flex col-12 col-md-6">
-                        <div id="poster" class="col-6">
-                            <img
-                                src="https://cdn.shoplightspeed.com/shops/607723/files/30902316/poster-new-york-wonder-city.jpg">
-                        </div>
-                        <div id="announce" class="col-6">
-                            <div id="announcement">Thông báo</div>
-                            <div style="height: 90%;">
-                                <ul class="list-group" style="height: 100%;">
-                                    <li class="list-group-item">
-                                        <i class="fas fa-check"></i>
-                                        <div style="margin-left: 6%">
-                                            <a class="announce_title">Lộ trình "chuyển mình" thành đại học của Trường ĐH
-                                                Kinh tế Quốc dân</a>
-                                        </div>
-                                        <p class="ngay"><i class="far fa-clock"></i> 1/1/2024</p>
-                                        <hr>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <i class="fas fa-check"></i>
-                                        <div style="margin-left: 6%">
-                                            <a class="announce_title">Thông tin tuyển sinh Đại học Chính quy năm 2024
-                                                của trường Đại học Kinh tế quốc dân (dự kiến tháng 3.2024)</a>
-                                        </div>
-                                        <p class="ngay"><i class="far fa-clock"></i> 2/1/2024</p>
-                                        <hr>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <i class="fas fa-check"></i>
-                                        <div style="margin-left: 6%">
-                                            <a class="announce_title">Thông báo danh sách sinh viên tốt nghiệp Đại học
-                                                chính quy đợt tháng 3 năm 2024</a>
-                                        </div>
-                                        <p class="ngay"><i class="far fa-clock"></i> 3/1/2024</p>
-                                        <hr>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <i class="fas fa-check"></i>
-                                        <div style="margin-left: 6%">
-                                            <a class="announce_title"> Công văn số 493/ĐHKTQD-QLDT về việc không dậy học
-                                                trực tuyến/online với Đại học Chính quy</a>
-                                        </div>
-                                        <p class="ngay"><i class="far fa-clock"></i> 4/1/2024</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="more">
-                                <a href="#"><i>Xem thêm...</i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="block-news_link">
-                    <div id="news_link">
-                        <a href="#">Xem tất cả</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-
         <div class="app__nghiencuu-hoptac">
+            <div id="app__nghiencuu-hoptac-backgroundImg"></div>
             <div class="grid">
                 <div class="grid__row">
                     <div class="app__nghiencuu-hoptac-wrapper reveal">
@@ -491,7 +522,7 @@
                             <div class="app__nghiencuu-hoptac-title">
                                 <span>
                                     <i class="fa-solid fa-book"></i>
-                                    NGHIÊN CỨU                             
+                                    NGHIÊN CỨU
                                 </span>
                             </div>
                             <div class="app__nghiencuu-hoptac-img">
@@ -506,7 +537,8 @@
                                 </div>
                             </div>
                             <p class="app__nghiencuu-hoptac-description">
-                                Kết nối các thế hệ cựu sinh viên Kinh tế Quốc dân. Mang đến cơ hội hợp tác, chia sẻ thông tin về gương mặt, cựu sinh viên tiêu biểu
+                                Kết nối các thế hệ cựu sinh viên Kinh tế Quốc dân. Mang đến cơ hội hợp tác, chia sẻ
+                                thông tin về gương mặt, cựu sinh viên tiêu biểu
                             </p>
                         </div>
                         <div class="app__nghiencuu-hoptac-item">
@@ -525,14 +557,14 @@
                                         <li>Các mạng lưới hợp tác, đối tác học thuật, doanh nghiệp của Trường ĐH Bách
                                             khoa Hà Nội</li>
                                         <li>Các dự án hợp tác lớn, chương trình trao đổi cán bộCác dự án hợp tác lớn,
-                                            chương trình trao đổi cán bộ, trao đổi sinh viên của Trường ĐH Bách khoa Hà
-                                            Nội</li>
+                                            chương trình trao đổi cán bộ</li>
                                     </ul>
                                     <button class="app__nghiencuu-hoptac-btn">Xem thêm</button>
                                 </div>
                             </div>
                             <p class="app__nghiencuu-hoptac-description">
-                                Kết nối các thế hệ cựu sinh viên Kinh tế Quốc dân. Mang đến cơ hội hợp tác, chia sẻ thông tin về gương mặt, cựu sinh viên tiêu biểu
+                                Kết nối các thế hệ cựu sinh viên Kinh tế Quốc dân. Mang đến cơ hội hợp tác, chia sẻ
+                                thông tin về gương mặt, cựu sinh viên tiêu biểu
                             </p>
                         </div>
                     </div>
@@ -540,50 +572,117 @@
             </div>
         </div>
 
-        <div class="app__enrollment">
-            <div class="app__enrollment-header">
-                <h2 class="app__enrollment-title">Tuyển sinh</h2>
-            </div>
-            <div class="app__enrollment-body">
-                <div class="app__enrollment-img">
-                    <img src="./assets/img/Tuyển Sinh.png" alt="" class="app_ernollment-picture">
+        <!-- branch Section -->
+        <div class="app__branch ">
+            <div class="app__branch-container reveal">
+                <div class="app__branch-header">
+                    <i class="fa-solid fa-chart-line app__branch-header-icon"></i>
+                    <h2 class="app__branch-header-title">Lĩnh vực</h2>
                 </div>
-                <div class="app__enrollment-content">
-                    <p class="app__enrollment-message">
-                        Thông tin tuyển sinh Đại học Chính quy năm 2024 của trường Đại học Kinh tế quốc dân (dự kiến
-                        tháng 3.2024)
-                    </p>
-                    <div class="app__enrollment-message-list">
-                        <div class="app__enrollment-message-block">
-                            <div class="app__enrollment-message-item">
-                                <i class="fa-solid fa-check"></i>
-                                Đại học
-                            </div>
-                            <div class="app__enrollment-message-item">
-                                <i class="fa-solid fa-check"></i>
-                                Vừa làm vừa học
-                            </div>
-                            <div class="app__enrollment-message-item">
-                                <i class="fa-solid fa-check"></i>
-                                Văn bằng 2
-                            </div>
-                        </div>
-                        <div class="app__enrollment-message-block">
-                            <div class="app__enrollment-message-item">
-                                <i class="fa-solid fa-check"></i>
-                                Cao học
-                            </div>
-                            <div class="app__enrollment-message-item">
-                                <i class="fa-solid fa-check"></i>
-                                Nghiên cứu sinh
-                            </div>
-                            <div class="app__enrollment-message-item">
-                                <i class="fa-solid fa-check"></i>
-                                Trao đổi sinh viên
+                <div class="app__branch-body">
+                    <div class="app__branch-body-box">
+                        <div class="app__branch-body-container">
+                            <div class="app__branch-body-container-card">
+                                <div class="app__branch-body-item">
+                                    <div class="app__branch-body-img">
+                                        <img src="./assets/img/Luật.png" class="app__branch-body-photo" alt="">
+                                    </div>
+                                    <div class="app__branch-body-content">
+                                        <h3 class="app__branch-body-title">Luật kinh tế</h3>
+                                    </div>
+                                </div>
+                                <div class="app__branch-body-icon">
+                                    <i class="fa-solid fa-scale-balanced"></i>
+                                </div>
                             </div>
                         </div>
 
+                        <div class="app__branch-body-container">
+                            <div class="app__branch-body-container-card">
+                                <div class="app__branch-body-item">
+                                    <div class="app__branch-body-img">
+                                        <img src="./assets/img/kinh Doanh.png" class="app__branch-body-photo" alt="">
+                                    </div>
+                                    <div class="app__branch-body-content">
+                                        <h3 class="app__branch-body-title">
+                                            Chứng khoán
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="app__branch-body-icon">
+                                    <i class="fa-solid fa-chart-column"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="app__branch-body-container">
+                            <div class="app__branch-body-container-card">
+                                <div class="app__branch-body-item">
+                                    <div class="app__branch-body-img">
+                                        <img src="./assets/img/Công nghệ.png" class="app__branch-body-photo" alt="">
+                                    </div>
+                                    <div class="app__branch-body-content">
+                                        <h3 class="app__branch-body-title">Quan hệ công chúng</h3>
+                                    </div>
+                                </div>
+                                <div class="app__branch-body-icon">
+                                    <i class="fa-solid fa-people-line"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="app__branch-body-box">
+                        <div class="app__branch-body-container">
+                            <div class="app__branch-body-container-card">
+                                <div class="app__branch-body-item">
+                                    <div class="app__branch-body-img">
+                                        <img src="./assets/img/Kinh doanh thương mại.png" class="app__branch-body-photo"
+                                            alt="">
+                                    </div>
+                                    <div class="app__branch-body-content">
+                                        <h3 class="app__branch-body-title">Kinh doanh & thương mại</h3>
+                                    </div>
+                                </div>
+                                <div class="app__branch-body-icon">
+                                    <i class="fa-solid fa-briefcase"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="app__branch-body-container">
+                            <div class="app__branch-body-container-card">
+                                <div class="app__branch-body-item">
+                                    <div class="app__branch-body-img">
+                                        <img src="./assets/img/môi trường.png" class="app__branch-body-photo" alt="">
+                                    </div>
+                                    <div class="app__branch-body-content">
+                                        <h3 class="app__branch-body-title">Tài nguyên môi trường</h3>
+                                    </div>
+                                </div>
+                                <div class="app__branch-body-icon">
+                                    <i class="fa-solid fa-seedling"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="app__branch-body-container">
+                            <div class="app__branch-body-container-card">
+                                <div class="app__branch-body-item">
+                                    <div class="app__branch-body-img">
+                                        <img src="./assets/img/kĩ thuật.png" class="app__branch-body-photo" alt="">
+                                    </div>
+                                    <div class="app__branch-body-content">
+                                        <h3 class="app__branch-body-title">kỹ thuật máy tính</h3>
+                                    </div>
+                                </div>
+                                <div class="app__branch-body-icon">
+                                    <i class="fa-solid fa-microchip"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -592,86 +691,98 @@
         <div class="app__daotao-sinhvien reveal">
             <div class="grid">
                 <div class="grid__row">
-                    
 
-                        <div class="app__daotao-sinhvien-text">
-                            <h2><i class="fa-solid fa-graduation-cap"></i> ĐÀO TẠO</h2>
+                    <div class="app__daotao-sinhvien-text">
+                        <h2><i class="fa-solid fa-graduation-cap"></i> ĐÀO TẠO</h2>
+                    </div>
+
+                    <div class="app__daotao-sinhvien-wrapper">
+
+                        <div class="app__daotao-sinhvien-poster">
+
+                            <div class="app__daotao-sinhvien-poster-title1">
+                                <h3>NEU <span style="font-weight: bold;">FOCUS</span> </h3>
+                            </div> 
+                            <div class="app__daotao-sinhvien-poster-title2">
+                                <h3>All of NEU, all in one place</h3>
+                            </div>    
+
+                            <div class="app__daotao-sinhvien-poster-focus">
+
+                                <h3><i class="fas fa-play" style="padding-right: 30px ;">
+                                </i>Neu FOCUS</h3>
+                            </div>
+                            <div class="app__daotao-sinhvien-poster-alert">
+                                <h3><i class="fas fa-play" style="padding-right: 20px;"></i>Alert</h3>
+                            </div>
                         </div>
 
-                        <div class="app__daotao-sinhvien-wrapper">
-                            
-                            
-                            <div class="app__daotao-sinhvien-poster">
-
-                                <div class="app__daotao-sinhvien-poster-title1">
-                                    <h3>NEU FOCUS </h3>
-                                </div> 
-                                <div class="app__daotao-sinhvien-poster-title2">
-                                    <h3>All of NEU, all in one place</h3>
-                                </div>    
-    
-                                <div class="app__daotao-sinhvien-poster-focus">
-    
-                                    <h3><i class="fas fa-play" style="padding-right: 30px ;">
-                                    </i>Neu FOCUS</h3>
-                                </div>
-                                <div class="app__daotao-sinhvien-poster-alert">
-                                    <h3><i class="fas fa-play" style="padding-right: 30px;"></i>Alert</h3>
-                                </div>
+                        <div class="app__daotao-sinhvien-item">                          
+                            <div class="app__daotao-sinhvien-img">
+                                <img src="assets/img/daotao.jpg" alt="">
                             </div>
-                            
+                            <div class="app__daotao-sinhvien-content">
+                                <h3>Thông tin tuyển sinh Đại học Chính quy năm 2024 của trường Đại học Kinh tế quốc dân
+                                </h3>                          
+                                <h3> Tháng 3, 2024</h3>
+                            </div>
+                            <div class="app__daotao-sinhvien-button">
+                                <h3>Bảo hiểm</h3>
+                            </div>
+                        </div>
 
-                            <div class="app__daotao-sinhvien-item">
-                                <div class="app__daotao-sinhvien-img">
-                                    <img src="assets/img/daotao.jpg" alt="">
-                                </div>
-                                <div class="app__daotao-sinhvien-content">
-                                    <h3>Thông tin tuyển sinh Đại học Chính quy năm 2024 của trường Đại học Kinh tế quốc dân
-                                        (dự kiến tháng 3.2024)</h3>
-                                </div>
-                                <div class="app_daotao-sinhvien-date">
+                        <div class="app__daotao-sinhvien-item">
+
+                            <div class="app__daotao-sinhvien-img">
+                                <img src="assets/img/sinhvien.jpg" alt="">
+                            </div>
+                            <div class="app__daotao-sinhvien-content">
+                                <h3>Thông báo danh sách sinh viên tốt nghiệp Đại học chính quy đợt tháng 3 năm 2024</h3>
+                                <h3>Bảo hiểm</h3> 
+                            </div>
+                            <div class="app__daotao-sinhvien-button">
+                                <h3>Luật</h3>
+                            </div>
+                        </div>
+
+                        <div class="app__daotao-sinhvien-item">
+
+
+                            <div class="app__daotao-sinhvien-img">
+                                <img src="assets/img/cuusv.jpg" alt="">
+                            </div>
+                            <div class="app__daotao-sinhvien-content">
+                                <h3>Giải Golf toàn quốc cựu học viên, sinh viên Đại học Kinh tế Quốc dân 2024 chính thức
+                                    quay trở lại</h3>
                                     <h3> Tháng 3, 2024</h3>
-                                </div>
                             </div>
-
-                            <div class="app__daotao-sinhvien-item">
-                                <div class="app__daotao-sinhvien-img">
-                                    <img src="assets/img/sinhvien.jpg" alt="">
+                                <div class="app__daotao-sinhvien-button">
+                                    <h3>Kế toán</h3>
                                 </div>
-                                <div class="app__daotao-sinhvien-content">
-                                    <h3>Thông báo danh sách sinh viên tốt nghiệp Đại học chính quy đợt tháng 3 năm 2024</h3>
-                                </div>
-                            </div>
-
-                            <div class="app__daotao-sinhvien-item">
-                                <div class="app__daotao-sinhvien-img">
-                                    <img src="assets/img/cuusv.jpg" alt="">
-                                </div>
-                                <div class="app__daotao-sinhvien-content">
-                                    <h3>Giải Golf toàn quốc cựu học viên, sinh viên Đại học Kinh tế Quốc dân 2024 chính thức
-                                        quay trở lại</h3>
-                                </div> 
-                            </div>
 
                         </div>
 
+                    </div>
                 </div>
             </div>
         </div>
 
-
-
     </div>
+    
+
+    
+
 
     <!-- Button scroll to top -->
-    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top"><span class="ti-angle-double-up"></span></button>
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top"><span
+            class="ti-angle-double-up"></span></button>
 
     <footer class="footer">
         <div style="height: 100%; width: 100%">
             <div id="footer_container">
                 <div id="footer_info" class="col-md-4 col-sm-12">
                     <h1>PHÒNG QUẢN LÝ ĐÀO TẠO</h1>
-                    <img style="height: 70px;width:70px;" src="./assets/img/Logo-NEU.png"> 
+                    <img style="height: 70px;width:70px;" src="./assets/img/Logo-NEU.png">
                     <h2 style="margin-top: 5%;" class="footer_info_schoolName">NATIONAL ECONOMICS</h2>
                     <h2 style="margin-bottom: 10%;" class="footer_info_schoolName">UNIVERSITY</h2>
                     <h3 style="margin-bottom: 5%;">ĐỊA CHỈ</h3>
@@ -727,16 +838,16 @@
                         Địa chỉ Email
                     </label>
                     <input type="text" name="email" id="email" class="modal-input" placeholder="Nhập email của bạn">
-                    <span class="error-message">hello</span>
+                    <span class="error-message"></span>
                 </div>
 
                 <div class="modal-body-group">
                     <label for="ticket-quantity" class="modal-label">
                         <i class="fa-solid fa-reply"></i>
-                        Thắc mắc cái đéo gì viết ra
+                        Ý kiến phản hồi
                     </label>
                     <input type="text" name="ticket-quantity" id="ticket-quantity" class="modal-input"
-                        placeholder="Ý kiến ý cò gì?">
+                        placeholder="Nhập phản hồi">
                     <span class="error-message"></span>
                 </div>
 
@@ -821,13 +932,14 @@
 
         function reveal() {
             var reveals = document.querySelectorAll('.reveal')
-            
-            for(var i = 0; i < reveals.length; i++) {
+
+            for (var i = 0; i < reveals.length; i++) {
                 var windowHeight = window.innerHeight
                 var revealTop = reveals[i].getBoundingClientRect().top
+                console.log(revealTop);
                 var viewPoint = 150
-                
-                if(revealTop < windowHeight - viewPoint) {
+
+                if (revealTop < windowHeight - viewPoint) {
                     reveals[i].classList.add('active')
                 } else {
                     reveals[i].classList.remove('active')

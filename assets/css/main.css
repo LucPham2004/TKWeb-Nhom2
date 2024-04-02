@@ -220,7 +220,7 @@
 
 /* navigation bar */
 .app__nav.scrolled {
-    background-color: var(--primary-color);
+    background-color: rgba(0, 101, 202, 0.799);
     top: 0;
     position: sticky;
     z-index: 1000;
@@ -482,7 +482,6 @@
     background: url(../img/banner1.jpg) top center / cover no-repeat; */
     z-index: -9999;
     width: 124.5%;
-    height: 100vh;
     display: block;
     margin: 0 auto;
 }
@@ -490,8 +489,18 @@
 /* nghiencuu-hoptac */
 .app__nghiencuu-hoptac {
     min-height: 100vh;
-    background-color: #0c1636;
+    position: relative;
+    background-color: #283ca2;
     padding-bottom: 150px;
+}
+#app__nghiencuu-hoptac-backgroundImg{
+    background-color: #403939;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* filter: blur(10px); */
 }
 
 .app__nghiencuu-hoptac-wrapper {
@@ -499,16 +508,36 @@
     top: 70px;
     display: flex;
     flex-direction: row;
+    flex-wrap: no-wrap;
     flex: 1;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin-top: 60px;
+}
 
+@media (max-width: 1023px) {
+    .app__nghiencuu-hoptac-wrapper {
+        flex-wrap: wrap;
+        flex-direction: column;
+        overflow: hidden;
+        width: 150%;
+    }
+    .app__nghiencuu-hoptac-content {
+        margin-right: 35px;
+    }
+    .app__nghiencuu-hoptac-btn {
+        margin-left: 150px;
+    }
+    .app__nghiencuu-hoptac-item {
+        width: 80%;
+    }
 }
 
 .app__nghiencuu-hoptac-item {
-    font-size: var(--text-size);
+    /* font-size: var(--text-size); */
+    width: 50%;
+    margin: 0 10px;
 }
 
 .app__nghiencuu-hoptac-description {
@@ -526,14 +555,16 @@
 }
 
 .app__nghiencuu-hoptac-title span {
-    padding-bottom: 10px;
+    padding: 0 20px 10px 20px;
     color: var(--white-color);
     border-bottom: 4px solid var(--white-color);
 }
 
 .app__nghiencuu-hoptac-img {
-    height: 404.82px;
-    width: calc(404.82px / 0.6984);
+    /* height: 404.82px;
+    width: calc(404.82px / 0.6984); */
+    height: 400px;
+    width: 100%;
     margin: 0 8px;
     background: url(../img/nghiencuu.png) top center / cover no-repeat;
 }
@@ -641,6 +672,8 @@
     height: 130px;
     font-size: 30px;
     color: #fff;
+    display: flex;
+    justify-content: center;
 }
 
 .modal-heading-icon {
@@ -711,7 +744,7 @@
     transform: translateY(150px);
     opacity: 0;
     transition: all 1.5s ease;
-} 
+}
 
 .reveal.active {
     transform: translateY(0);

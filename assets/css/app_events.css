@@ -2,6 +2,8 @@
 .app__events {
   background-color: var(--primary-color);
   padding: 16px;
+  min-height: 800px;
+  height: 100vh;
 }
 
 .app__events-container {
@@ -16,7 +18,7 @@
   height: 100px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 32px;
 }
 
 .app__events-header-icon {
