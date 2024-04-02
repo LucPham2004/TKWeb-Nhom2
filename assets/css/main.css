@@ -395,7 +395,7 @@
     padding-bottom: 150px;
 }
 #app__nghiencuu-hoptac-backgroundImg{
-    background-image: url(/assets/img/background-NCDT.jpg);
+    background-image: url("./assets/img/background-NCDT.jpg");
     position: absolute;
     top: 0;
     left: 0;

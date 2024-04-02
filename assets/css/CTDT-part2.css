@@ -1,0 +1,111 @@
+.app_journey-title{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+
+}
+.app_journey-grid{
+    width: 1350px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.app_journey-grid-row{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.app_journey-title h2{
+    font-size: 30px;
+    margin-left: 6.5vw;
+    font-weight:500;
+}
+.app_journey-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5vw;
+}
+.app_journey-block{
+    flex-direction: column;
+    width: 25%;
+    
+}
+.app_journey-block-img{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    
+}
+.app_journey-block-img img{    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+.app_journey-block-img-text{
+    position: absolute;  
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    text-align: justify;
+    overflow: hidden;
+    margin: 80px 30px;
+}
+.app_journey-block-img-text h3{
+    font-weight: 350;
+    opacity: 0;
+    transition:all 0.3s ease;
+    font-size: var(--text-size);
+}
+
+.app_journey-block-img-button {
+    position: absolute;
+    opacity: 0;
+    margin:272px 30px 0;
+    text-align: center;
+    padding: 12px 50px;
+    transition: all 0.3s ease;
+}
+.app_journey-block-img-button h3{
+    font-size: var(--text-size);
+    color: white;
+}
+
+.app_journey-block-course-title h3{
+font-size: var(--text-size);
+margin-left: 50px;
+}
+
+.app_journey-block-course-date h3{
+font-size: var(--text-size);
+font-weight: normal;
+color: rgb(129, 129, 145);
+margin-left: 50px;
+
+}
+
+.app_journey-block-course{
+    margin-bottom: 25px;
+    padding: 8px 0 8px;
+    clip-path:polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+    transition: all 0.3s ease ;
+}
+.app_journey-block:hover{
+    .app_journey-block-course{
+        background-color: var(--primary-color);}
+    cursor: pointer;
+    .app_journey-block-img img{
+        opacity: 25%;
+    }
+    .app_journey-block-course-date h3{
+        color: white;
+    }
+    .app_journey-block-course-title h3{
+        color: white;
+    }
+    .app_journey-block-img-text h3{
+        opacity: 1;
+    }
+    .app_journey-block-img-button{
+        background-color: var(--primary-color);
+        opacity: 1;
+    }
+}
