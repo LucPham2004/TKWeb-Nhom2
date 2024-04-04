@@ -131,7 +131,7 @@
                                 <li class="app__nav-subnav-item"><a href="">Tiến sĩ</a></li>
                             </ul>
                         </li>
-                        <li class="app__nav-item"><a href="" class="app__nav-item-link">ĐÀO TẠO</a>
+                        <li class="app__nav-item"><a href="Chuong-trinh-dao-tao.html" class="app__nav-item-link">ĐÀO TẠO</a>
                             <ul class="app__nav-subnav">
                                 <li class="app__nav-subnav-item"><a href="">Chính quy</a></li>
                                 <li class="app__nav-subnav-item"><a href="">Tiên tiến chất lượng cao</a></li>
@@ -178,8 +178,16 @@
         </div>
 
         <!-- banner -->
-        <div class="app__banner">
-            <img style="width:100%;" src="./assets/img/banner2.jpg">
+        <div class="app_banner">
+            <img src="./assets/img/banner4v2.jpg">
+            <div id="app_banner-title">
+                <span id="app_banner-title-link">
+                    <a href="index.html">Trang chủ </a>
+                    <span> / </span>
+                    <a href="Chuong-trinh-dao-tao.html"> Chương trình đào tạo tại NEU</a>
+                </span>
+                <div id="app_banner-title-name">Chương trình đào tạo tại NEU</div>
+            </div>
         </div>
         
         <!-- Rightside bar of social media links-->
@@ -201,10 +209,37 @@
 
         <!-- overview -->
         <div class="app_overview">
-            <div class="grid">
-                <div class="grid__row">
-                    <div style="height: 70vh;"></div>
-                    Tổng quan các chương trình đạo tạo
+            <div class="app_overview-container">
+                <div id="app_overview-title">TỔNG QUAN VỀ CÁC CHƯƠNG TRÌNH ĐÀO TẠO TẠI TRƯỜNG ĐẠI HỌC KINH TẾ QUỐC DÂN</div>
+                <div class="app_overview-picContainer">
+                    <div id="app_overview-picContainer-para1">Trường hiện đào tạo 33 ngành với 80 chương trình đào tạo, trong đó có 08 chương trình đào tạo bằng Tiếng Anh, 03 chương trình Tiên tiến; 10 chương trình Chất lượng cao; 05 chương trình định hướng ứng dụng (POHE) và hơn 20 chương trình liên kết đào tạo với nước ngoài. Các ngành và chương trình đào tạo của Trường bao trùm gần như toàn bộ các lĩnh vực của nền kinh tế. Người học có thể lựa chọn học tập bằng tiếng Việt hoặc bằng tiếng Anh, với phương thức đào tạo và địa điểm linh hoạt phù hợp với từng đối tượng.</div>
+                    <div id="app_overview-picContainer-para2">Trường hiện đào tạo 33 ngành với 80 chương trình đào tạo, trong đó có 08 chương trình đào tạo bằng Tiếng Anh, 03 chương trình Tiên tiến; 10 chương trình Chất lượng cao; 05 chương trình định hướng ứng dụng (POHE) và hơn 20 chương trình liên kết đào tạo với nước ngoài. Các ngành và chương trình đào tạo của Trường bao trùm gần như toàn bộ các lĩnh vực của nền kinh tế.</div>
+                    <div id="app_overview-picContainer-rightPic" style="background-image: url(./assets/img/kinh\ Doanh.png);">
+                        <div id="demo2"></div>
+                        <div id="rightCard-container">
+                            <div id="rightCard-container-text">
+                                Đại học kinh tế quốc dân là một trong những trường đại học đào tạo ngành kinh tế hàng đầu tại khu vực miền Bắc. 
+                            </div>
+                        </div>
+                    </div>
+                    <div id="app_overview-picCardMain">
+                        <div id="midCard-container">
+                            <div id="midCard-container-text">
+                                Đại học kinh tế quốc dân là một trong những trường đại học đào tạo ngành kinh tế hàng đầu tại khu vực miền Bắc. Nơi đây luôn được xem là “ứng cử viên sáng giá” cho các thí sinh lựa chọn theo học ngành kinh tế. Kinh tế quốc dân đang được nhiều các bạn trẻ lựa chọn để gửi gắm ước mơ của mình.
+                            </div>
+                        </div>
+                    </div>
+                    <div id="app_overview-picContainer-leftPic" style="background-image: url(./assets/img/background-NCDT.jpg);">
+                        <div id="demo"></div>
+                        <div id="leftCard-container">
+                            <div id="leftCard-container-text">
+                                Đại học kinh tế quốc dân là một trong những trường đại học đào tạo ngành kinh tế hàng đầu tại khu vực miền Bắc.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="app_overview-more">
+                    <a href="">Xem thêm</a>
                 </div>
             </div>
         </div>
@@ -233,8 +268,13 @@
         <div class="app_questions">
             <div class="grid">
                 <div class="grid__row">
-                    <div style="height: 70vh;"></div>
-                    Các câu hỏi thường gặp
+                    <div class="col-2">
+                        <div>Các câu hỏi thường gặp</div>
+                        <div>Giải đáp các thắc mắc về chương trình học tại đây</div>
+                    </div>
+                    <div class="col-10">
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -252,7 +292,7 @@
     </div>
 
     <!-- Button scroll to top -->
-    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top"><span
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top"><span style="font-size: 12px;"
             class="ti-angle-double-up"></span></button>
 
     <footer class="footer">

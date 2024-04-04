@@ -21,7 +21,7 @@
 /* some responsive changes */
 @media screen and (max-width: 576px) {
     .app_news {
-        height: 160vh;
+        height: 230vh;
     }
 
     #news_content {
@@ -99,12 +99,20 @@
     position: relative;
 }
 
-#carousel-inner {
+#carousel-inner{
     width: 85%;
     height: 90%;
+    flex-direction: row;
 }
-
-.news_card {
+@media screen and (max-width:800px) {
+    #carousel-inner{
+        flex-direction: column;
+    }
+    #hot_news .more{
+        top: 97%;
+    }
+}
+.news_card{
     display: none;
     flex-direction: column;
     position: relative;
@@ -114,19 +122,20 @@
     margin-left: 6%;
     flex: 0 0 auto;
     width: 100%;
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition: transform 0.5s ease;
+    animation: fade 0.5s ease;
 }
 
 .Show {
     display: flex;
 }
-
-.fadeout {
-    opacity: 0;
-}
-
-.fadein {
-    opacity: 1;
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 .blur_img {
@@ -195,7 +204,7 @@
     margin-left: 5%;
 }
 
-#hot_news .more {
+#hot_news .more{
     position: absolute;
     right: 2%;
     bottom: 2%;
@@ -281,7 +290,7 @@
     margin-left: 6%;
 }
 
-#announce .more {
+#announce .more{
     position: absolute;
     right: 2%;
     bottom: 13%;
@@ -295,12 +304,16 @@
     #announce {
         margin-left: 0px;
     }
+    #announce .more{
+        top: 94%;
+        right: 10%;
+    }
 }
 /* button for more news */
 .block-news_link {
     display: flex;
     justify-content: center;
-    margin-bottom: 23px;
+    margin-bottom: 50px;
 }
 
 #news_link {
