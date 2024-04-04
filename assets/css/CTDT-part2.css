@@ -20,14 +20,11 @@
 }
 
 .app_journey-title{
-   
     margin-bottom: 5vh;
-
 }
 .app_journey-title h2{
     font-size: 30px;
     margin-left: 6.5vw;
-    font-weight:500;
 }
 
 .app_journey-block{
@@ -128,7 +125,6 @@ margin-left: 50px;
 .app_inducement-title h2{
     font-size: 30px;
     margin-left: 6.5vw;
-    font-weight:500;
 }
 .app_inducement-grid{
     width: 1350px;
@@ -172,11 +168,10 @@ margin-left: 50px;
     padding-bottom: 10vh;
 }
 .app_questions-title {
-    width: 35%;
+    width: 23%;
 }
 .app_questions-title h2{
     font-size: 30px;
-    font-weight: 500;
     margin-bottom: 5vh;
     /* margin-left: 6.5vw; */
 }
@@ -199,15 +194,51 @@ margin-left: 50px;
     justify-content: space-between;
     margin-right: 5vw;
     flex-wrap: wrap;
+    width: 100%;
 }
-.app_questions-questions {
-  width: 65%;
-  
+.app_questions-questions-wrapper {
+  width: 77%;
 }
-
 .app_questions-questions-content {
-    padding : 5vh 0;
+    padding : 4vh 0;
     background-color: rgb(247, 247, 247);
     font-size: 16px;
-    
+}
+.app_questions-questions-content:hover {
+    cursor: pointer;
+    .fa-solid.fa-plus {
+        rotate: 90deg; 
+        transition: all 0.5s ease;
+    }
+    background-color:  rgb(222, 222, 222);
+}
+
+.app_questions-questions-more {
+    margin-top: 8vh;
+    padding: 12px 25px;
+    width: 20%;
+    background-color: var(--primary-color);
+    color: white;
+}
+.app_questions-questions-more:hover {
+    cursor: pointer;
+}
+
+/* find majors */
+.app_majors {
+    padding-top: 10vh;
+    background-color:rgb(247, 247, 247) ;
+}
+.app_majors-title{
+    margin-left: 6.5vw;
+}
+.app_majors-title h2{
+    font-size: 30px;
+    margin-bottom: 5vh;
+}
+.app_majors-title h3{
+    font-size: 15px;
+    font-weight: normal;
+    margin-left: 3vw;
+    margin-bottom: 8vh;
 }
