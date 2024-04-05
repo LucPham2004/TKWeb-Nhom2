@@ -257,6 +257,7 @@
     text-decoration: none;
     padding: 19px;
     position: relative;
+    z-index: 99999;
 }
 
 .app__nav-item a::after {
@@ -430,8 +431,8 @@
 @keyframes scrollNav {
     from {
         z-index: -999;
-        opacity: .5;
-        transform: translateX(50px);
+        opacity: 0;
+        transform: translateY(-50px);
     }
 
     to {

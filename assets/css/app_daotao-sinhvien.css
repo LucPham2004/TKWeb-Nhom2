@@ -1,6 +1,17 @@
 /* daotao-sinhvien */
 .app__daotao-sinhvien {
     padding: 50px 0;
+    position: relative;
+}
+#app__daotao-sinhvien-backgroundImg{
+    background-image: url("/assets/img/background-daotao-sinhvien.jpg");
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -999;
+    filter: blur(10px);
 }
 .app__daotao-sinhvien-wrapper {
     display: flex;
@@ -11,7 +22,7 @@
 .app__daotao-sinhvien-item {
     width: 24%;
     margin: 0 20px;
-
+    background-color: white;
     box-shadow:
         /* Bóng đổ chính */
     5px 5px 10px rgba(0, 0, 0, 0.5),
