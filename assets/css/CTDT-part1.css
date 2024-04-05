@@ -1,12 +1,10 @@
 /*Overview */
-.app_overview{
-    height: 120vh;
-}
 #app_overview-title{
     height: 10%;
     font-size: 30px;
     margin-top: 8%;
-    margin-left: 5vw;
+    margin-left: 2%;
+    font-weight: 500;
 }
 .app_overview-container{
     position: relative;
@@ -15,269 +13,313 @@
     margin-left: 5vw;
     margin-right: 5vw;
 }
-.app_overview-picContainer{
-    position: relative;
-    width: 100%;
-    height: 80%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(242, 247, 253);
-}
-#app_overview-picContainer-para1{
-    position: absolute;
-    width: 40%;
-    top: 5%;
-    left: 5vw;
-    font-size: 15px;
-    color: black;
-    text-align: justify;
-}
-#app_overview-picContainer-para2{
-    position: absolute;
-    width: 40%;
-    bottom: 10%;
-    right: 5vw;
-    font-size: 15px;
-    color: black;
-    text-align: justify;
-}
-.pic-triangle{
-    position: absolute;
-    width: 330px;
-    height: 300px;
-    overflow: hidden;
-    margin: 0;
-    background-color: rgb(0, 0, 0);
-}
-#app_overview-picContainer-rightPic{
-    position: absolute;
-    background-color: aqua;
-    width: 522px;
-    height: 330px;
-    top: 8%;
-    right: 6%;
-    z-index: 1;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 35% 100%);
-    background-size: cover;
-    cursor: pointer;
-    transition: transform 0.5s ease;
-}
-#app_overview-picContainer-rightPic:hover{
-    transform: scale(1.05);
-}
-#app_overview-picContainer-rightPic:hover #demo2{
-    animation: fadeout 0.8s ease;
-    opacity: 0;
-}
-#app_overview-picContainer-rightPic:hover #rightCard-container{
-    display: block;
-    animation: fadein 0.8s ease;
-}
-/* #app_overview-picCard1{
-    clip-path: polygon(50% 100%, 0 0, 100% 0);
-}
-#app_overview-picCard2{
-    top: 12%;
-    right: 3%;
-    clip-path: polygon(50% 0%, 0 100%, 100% 100%);
-}
-#app_overview-picCard3{
-    right: -31%;
-    clip-path: polygon(50% 100%, 50% 0, 0 0);
-} */
-#app_overview-picContainer-leftPic{
-    position: absolute;
-    background-color: rgb(242, 255, 0);
-    width: 530px;
-    height: 330px;
-    top: 36%;
-    left: 5%;
-    z-index: 1;
-    clip-path: polygon(0 0, 66% 0, 100% 100%, 0 100%);
-    background-size: cover;
-    transition: transform 0.5s ease;
-}
-#app_overview-picContainer-leftPic:hover{
-    transform: scale(1.05);
-}
-#app_overview-picContainer-leftPic:hover #demo{
-    animation: fadeout 0.8s ease;
-    opacity: 0;
-}
-#app_overview-picContainer-leftPic:hover #leftCard-container{
-    display: block;
-    animation: fadein 0.8s ease;
-}
-#app_overview-picContainer-leftPic:not(:hover) #leftCard-container{
-    animation: fadeout 0.8s ease;
-}
-#demo{
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    width: 370px;
-    height: 330px;
-    z-index: 1;
-    clip-path: polygon(0 0, 4% 0, 49% 91%, 95% 0, 100% 9%, 54% 100%, 44% 100%, 0 9%);
-}
-#demo2{
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    width: 370px;
-    height: 330px;
-    right: 0;
-    z-index: 1;
-    clip-path: polygon(3% 92%, 48% 0, 55% 0, 100% 92%, 100% 100%, 94% 100%, 51% 12%, 8% 100%);
-}
-/* #app_overview-picCard4{
-    top: 9%;
-    
-    clip-path: polygon(50% 100%, 0 100%, 0 0);
-}
-#app_overview-picCard5{
-    
-    left: 3%;
-    clip-path: polygon(50% 100%, 0 0, 100% 0);
-}
-#app_overview-picCard6{
-    top: 9%;
-    right: 0;
-    clip-path: polygon(50% 0%, 0 100%, 100% 100%);
-} */
-/* #app_overview-picContainer-midPic{
-    opacity: 0;
-    top: 13%;
-    left: 33%;
-    position: absolute;
-    background-image: url(/assets/img/banner4.jpg);
-    background-size: cover;
-    width: 460px;
-    height: 450px;
-    clip-path: polygon(0 33%, 65.5% 0, 100% 67%, 36% 100%);
-} */
-#app_overview-picCardMain{
-    top: 13%;
-    left: 33%;
-    position: absolute;
-    background-image: url(/assets/img/banner4.jpg);
-    background-size: cover;
-    width: 460px;
-    height: 450px;
-    z-index: 5;
-    clip-path: polygon(0 33%, 40% 33%, 65.5% 0, 100% 67%, 58% 67%, 36% 100%);
-    transition: clip-path 0.5s ease;
-}
-#app_overview-picCardMain:hover{
-    animation: ShowUp1 1s ease;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-} 
-#app_overview-picCardMain:hover #midCard-container{
-    display: block;
-    animation: fadein 0.8s ease;
-}
-#app_overview-picCardMain:not(:hover){
-    animation: Down 0.5s ease;
-}
-#app_overview-picCardMain:not(:hover) #midCard-container{
-    animation: fadeout 0.8s ease;
-}
-#app_overview-picCardMain:hover #app_overview-picContainer-leftPic{
-    bottom: 0;
-}
-@keyframes ShowUp1{
-    0%{
-        clip-path: polygon(0 33%, 40% 33%, 65.5% 0, 100% 67%, 58% 67%, 36% 100%);
+
+@media screen and (min-width:1280px) {
+    .app_overview{
+        height: 120vh;
     }
-    /* 25%{
-        clip-path: polygon(0 33%, 35% 21%, 65.5% 0, 100% 67%, 75% 78%, 36% 100%);
-    } */
-    10%{
-        clip-path: polygon(0 33%, 65.5% 0, 100% 67%, 36% 100%);
+    .app_overview-picContainer{
+        position: relative;
+        width: 100%;
+        height: 80%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(240, 245, 255);
     }
-    100%{
+    #app_overview-picContainer-para1{
+        position: absolute;
+        width: 40%;
+        top: 5%;
+        left: 5vw;
+        font-size: 17px;
+        color: black;
+        text-align: justify;
+    }
+    #app_overview-picContainer-para1 li{
+        list-style: none;
+    }
+    
+    #app_overview-picContainer-para2{
+        position: absolute;
+        width: 40%;
+        bottom: 15%;
+        right: 5vw;
+        font-size: 17px;
+        color: black;
+        text-align: justify;
+    }
+    /* Pic con Right */
+    #app_overview-picContainer-rightPic{
+        position: absolute;
+        background-color: aqua;
+        width: 522px;
+        height: 330px;
+        top: 8%;
+        right: 6%;
+        z-index: 1;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 35% 100%);
+        background-size: cover;
+        cursor: pointer;
+        transition: transform 0.5s ease;
+    }
+    #app_overview-picContainer-rightPic:hover{
+        transform: scale(1.05);
+    }
+    #app_overview-picContainer-rightPic:hover #rightPic-Vline{
+        animation: fadeout 0.8s ease;
+        opacity: 0;
+    }
+    #app_overview-picContainer-rightPic:not(:hover) #rightPic-Vline{
+        animation: fadein 0.8s ease;
+        opacity: 1;
+    }
+    #app_overview-picContainer-rightPic:hover #rightCard-container{
+        display: block;
+        animation: fadein 0.8s ease;
+    }
+    #rightCard-container{
+        display: none;
+        position: absolute;
+        height:25%;
+        width:80%;
+        bottom: 0;
+        right: 0;
+        background-color:rgba(0, 0, 0, 0.8);
+        color: white;
+        font-size:13px;
+        text-align:justify;
+    }
+    #rightPic-Vline{
+        position: absolute;
+        background-color: rgb(240, 245, 255);
+        width: 370px;
+        height: 330px;
+        right: 0;
+        z-index: 1;
+        clip-path: polygon(3% 92%, 48% 0, 55% 0, 100% 92%, 100% 100%, 94% 100%, 51% 12%, 8% 100%);
+    }
+    #rightCard-container-text{
+        
+        margin-top: 2%;
+        margin-left: 17%;
+        margin-right:5%;
+    }
+    
+    
+    /* Pic on Left */
+    #app_overview-picContainer-leftPic{
+        position: absolute;
+        background-color: rgb(242, 255, 0);
+        width: 525px;
+        height: 330px;
+        top: 36.5%;
+        left: 4.5%;
+        z-index: 1;
+        clip-path: polygon(0 0, 66% 0, 100% 100%, 0 100%);
+        background-size: cover;
+        transition: transform 0.5s ease;
+        cursor: pointer;
+    }
+    #app_overview-picContainer-leftPic:hover{
+        transform: scale(1.05);
+    }
+    #app_overview-picContainer-leftPic:hover #leftPic-Vline{
+        animation: fadeout 0.8s ease;
+        opacity: 0;
+    }
+    #app_overview-picContainer-leftPic:not(:hover) #leftPic-Vline{
+        animation: fadein 0.8s ease;
+        opacity: 1;
+    }
+    #app_overview-picContainer-leftPic:hover #leftCard-container{
+        display: block;
+        animation: fadein 0.8s ease;
+    }
+    #app_overview-picContainer-leftPic:not(:hover) #leftCard-container{
+        animation: fadeout 0.8s ease;
+    }
+    #leftCard-container{
+        display: none;
+        position: absolute;
+        height:25%;
+        width:100%;
+        bottom: 0;
+        left: 0;
+        background-color:rgba(0, 0, 0, 0.8);
+        color: white;
+        font-size:13px;
+        text-align:justify;
+    }
+    #leftPic-Vline{
+        position: absolute;
+        background-color: rgb(240, 245, 255);
+        width: 370px;
+        height: 330px;
+        z-index: 1;
+        clip-path: polygon(0 0, 4% 0, 49% 91%, 94% 0, 100% 9%, 54% 100%, 44% 100%, 0 9%);
+    }
+    #leftCard-container-text{
+        margin-top: 2%;
+        margin-left: 5%;
+        margin-right:17%;
+    }
+    
+    /* Pic in Middle */
+    #app_overview-picCardMain{
+        top: 13%;
+        left: 33%;
+        position: absolute;
+        background-size: cover;
+        width: 460px;
+        height: 450px;
+        z-index: 5;
+        clip-path: polygon(0 36%, 40% 36%, 65.5% 0, 100% 67%, 58% 67%, 36% 100%);
+        cursor: pointer;
+    }
+    #midCard-container{
+        display: none;
+        position: absolute;
+        height:40%;
+        width:80%;
+        margin-top:30%;
+        margin-left:10%;
+        margin-right:10%;
+        background-color:rgba(0, 0, 0, 0.8);
+        font-size:17px;
+        text-align:justify;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
+    
+    #midCard-container-text{
+        height:50%; 
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-right:10%;
+        color: white;
+    }
+    
+    
 }
+@media screen and (max-width:1280px) {
+    #app_overview-title{
+        margin-bottom: 10%;
+        font-size: 20px;
+    }
+    .app_overview-picContainer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 80%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(240, 245, 255);
+    }
+    #app_overview-picContainer-para1{
+        width: 100%;
+        font-size: 17px;
+        margin: 5% 5%;
+    }
+    #app_overview-picContainer-para1 li{
+        list-style: none;
+    }
+    #app_overview-picContainer-para2{
+        width: 90%;
+        font-size: 17px;
+        margin: 5% 5%;
+    }
 
-@keyframes Down{
-    0% {
+    /* Pic con Right */
+    #app_overview-picContainer-rightPic{
+        position: relative;
+        align-self: center;
+        background-color: aqua;
+        width: 80%;
+        height: 330px;
+        z-index: 1;
+        background-size: cover;
+        cursor: pointer;
+        transition: transform 0.5s ease;
+        margin-bottom: 6%;
+    }
+    #app_overview-picContainer-rightPic:hover, #app_overview-picContainer-leftPic:hover{
+        transform: scale(1.05);
+    }
+    #app_overview-picContainer-rightPic:hover #rightCard-container{
+        animation: fadein 0.8s ease;
+    }
+    #rightCard-container, #leftCard-container{
+        position: absolute;
+        height:25%;
+        width:100%;
+        bottom: 0;
+        right: 0;
+        background-color:rgba(0, 0, 0, 0.8);
+        color: white;
+        font-size:13px;
+        text-align:justify;
+    }
+    
+    #rightCard-container-text, #leftCard-container-text{
+        margin-top: 2%;
+        margin-left: 5%;
+        margin-right:5%;
+    }
+
+
+    /* Pic on Left */
+    #app_overview-picContainer-leftPic{
+        position: relative;
+        align-self: center;
+        background-color: rgb(242, 255, 0);
+        width: 80%;
+        height: 330px;
+        z-index: 1;
+        background-size: cover;
+        transition: transform 0.5s ease;
+        cursor: pointer;
+    }
+    
+    #app_overview-picContainer-leftPic:hover #leftCard-container{
+        animation: fadein 0.8s ease;
+    }
+    
+
+    /* Pic in Middle */
+    #app_overview-picCardMain{
+        align-self: center;
+        background-size: cover;
+        margin-bottom: 10%;
+        width: 70%;
+        height: 450px;
+        z-index: 5;
+        clip-path: polygon(0 36%, 40% 36%, 65.5% 0, 100% 67%, 58% 67%, 36% 100%);
+        cursor: pointer;
+    }
+    #midCard-container{
+        display: none;
+        position: absolute;
+        height:60%;
+        width:80%;
+        margin-top:30%;
+        margin-left:10%;
+        margin-right:10%;
+        background-color:rgba(0, 0, 0, 0.8);
+        font-size:17px;
+        text-align:justify;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
-    90% {
-        clip-path: polygon(0 33%, 65.5% 0, 100% 67%, 36% 100%);
-    }
-    100% {
-        clip-path: polygon(0 33%, 40% 33%, 65.5% 0, 100% 67%, 58% 67%, 36% 100%);
-    }
-}
-@keyframes fadein{
-    from{opacity: 0;}
-    to{opacity: 1;}
-}
-@keyframes fadeout{
-    from{opacity: 1;}
-    to{opacity: 0;}
-}
-/* #app_overview-picCard8{
-    top: 13%;
-    right: 33%;
-    clip-path: polygon(50% 0%, 0 100%, 100% 100%);
-} */
-#midCard-container{
-    display: none;
-    position: absolute;
-    height:75%;
-    width:70%;
-    margin-top:15%;
-    margin-left:15%;
-    margin-right:15%;
-    background-color:rgba(255, 255, 255, 0.8);
-    font-size:17px;
-    text-align:justify;
-}
-#rightCard-container{
-    display: none;
-    position: absolute;
-    height:25%;
-    width:80%;
-    bottom: 0;
-    right: 0;
-    background-color:rgba(0, 0, 0, 0.8);
-    color: white;
-    font-size:13px;
-    text-align:justify;
-}
-#leftCard-container{
-    display: none;
-    position: absolute;
-    height:25%;
-    width:100%;
-    bottom: 0;
-    left: 0;
-    background-color:rgba(0, 0, 0, 0.8);
-    color: white;
-    font-size:13px;
-    text-align:justify;
-}
 
-#midCard-container-text{
-    height:50%; 
-    margin-top: 10%;
-    margin-left: 10%;
-    margin-right:10%;
+    #midCard-container-text{
+        height:50%; 
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-right:10%;
+        color: white;
 }
-#rightCard-container-text{
     
-    margin-top: 2%;
-    margin-left: 17%;
-    margin-right:5%;
 }
-#leftCard-container-text{
-    margin-top: 2%;
-    margin-left: 5%;
-    margin-right:17%;
-}
-
 .app_overview-more{
     position: absolute;
     bottom: 0;
@@ -285,7 +327,7 @@
     background: linear-gradient(180deg, rgb(240, 245, 254), rgb(249, 252, 255));
     border: 2px solid rgb(0, 128, 255);
     width: 240px;
-    height: 50px;
+    height: 45px;
     border-radius: 30px;
     text-align: center;
     line-height: 40px;
@@ -298,12 +340,45 @@
 .app_overview-more:hover{
     background: linear-gradient(180deg, rgb(0, 100, 255), rgb(70, 150, 255));
     cursor: pointer;
-    color: white;
 }
-.app_overview-more a:hover{
-    
+.app_overview-more:hover a{
+    color: white;
     font-weight: bold;
 }
+
+@keyframes ShowUp{
+    0%{
+        clip-path: polygon(0 36%, 40% 36%, 65.5% 0, 100% 67%, 58% 67%, 36% 100%);
+    }
+    50%{
+        clip-path: polygon(0 33%, 30% 5%, 65.5% 0, 100% 67%, 70% 95%, 36% 100%);
+    }
+    100%{
+        clip-path: polygon(50% 0, 100% 33%, 100% 67%, 50% 100%, 0 67%, 0 33%);
+    }
+}
+@keyframes Down{
+    0% {
+        clip-path: polygon(50% 0, 100% 33%, 100% 67%, 50% 100%, 0 67%, 0 33%);
+    }
+    50% {
+        clip-path: polygon(0 33%, 30% 5%, 65.5% 0, 100% 67%, 70% 95%, 36% 100%);
+    }
+    100% {
+        clip-path: polygon(0 36%, 40% 36%, 65.5% 0, 100% 67%, 58% 67%, 36% 100%);
+    }
+}
+
+@keyframes fadein{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+@keyframes fadeout{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+
+
 /* banner */
 .app_banner{
     position: relative;
@@ -326,18 +401,27 @@
     text-decoration: none;
     color: white;
 }
+@media screen and (max-width:1536px){
+    #app_banner-title-name{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:800px) {
+    #app_banner-title-link a, span{
+        font-size: 17px;
+    }
+    #app_banner-title-name{
+        font-size: 20px;
+    }
+}
 #app_banner-title-link a:hover, span:hover{
     color: var(--primary-color);
 }
 #app_banner-title-name{
-    font-size: 50px;
+    
     color: white;
     font-weight: bold;
     margin-left: 10%;
     margin-bottom: 5%;
 }
 
-/* Frequently asked questions */
-.app_questions{
-    height: 80vh;
-}
