@@ -19,22 +19,6 @@ document.addEventListener('DOMContentLoaded', function()
         newsCards[currentFirstIndex].classList.add('Show');
         newsCards[currentSecondIndex].classList.add('Show');
 
-        newsCards[currentFirstIndex].classList.add('fadeout');
-        newsCards[currentSecondIndex].classList.add('fadeout');
-        
-        setTimeout(() => 
-        {
-            newsCards[currentFirstIndex].classList.remove('fadeout');
-            newsCards[currentSecondIndex].classList.remove('fadeout');
-            newsCards[currentFirstIndex].classList.add('fadein');
-            newsCards[currentSecondIndex].classList.add('fadein');
-        }, 1);
-        
-        setTimeout(() => 
-        {
-            newsCards[currentFirstIndex].classList.remove('fadein');
-            newsCards[currentSecondIndex].classList.remove('fadein');
-        }, 1);
     }
     
     let intervalId; // Biến lưu trữ ID của interval

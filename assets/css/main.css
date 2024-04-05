@@ -489,20 +489,12 @@
 
 /* nghiencuu-hoptac */
 .app__nghiencuu-hoptac {
-    min-height: 100vh;
+    min-height: 80vh;
     position: relative;
-    background-color: #283ca2;
+    background-color: #ffffff;
     padding-bottom: 150px;
 }
-#app__nghiencuu-hoptac-backgroundImg{
-    background-color: #403939;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    /* filter: blur(10px); */
-}
+
 
 .app__nghiencuu-hoptac-wrapper {
     position: relative;
@@ -553,11 +545,13 @@
     font-size: var(--title-size);
     margin-bottom: 80px;
     font-weight: 600;
+    
 }
 
 .app__nghiencuu-hoptac-title span {
     padding: 0 20px 10px 20px;
     color: var(--white-color);
+    color: black;
     border-bottom: 4px solid var(--white-color);
 }
 
