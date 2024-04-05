@@ -82,14 +82,14 @@
 
 .app_journey-block-course-title h3{
 font-size: var(--text-size);
-margin-left: 50px;
+margin-left: 30px;
 }
 
 .app_journey-block-course-date h3{
 font-size: var(--text-size);
 font-weight: normal;
 color: rgb(129, 129, 145);
-margin-left: 50px;
+margin-left: 30px;
 
 }
 
