@@ -1,5 +1,4 @@
 .app_visit {
-    margin-top: 10vh;
     position: relative;
     width: 100%;
     height: 466px;
@@ -54,7 +53,7 @@
 
 /* why choose NEU */
 .app_Reason {
-    margin: 2.5vh 0;
+    margin: 0;
     background-color: rgb(245, 245, 245);
     position: relative;
 }
