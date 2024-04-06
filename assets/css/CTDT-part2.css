@@ -216,6 +216,12 @@ margin-left: 50px;
 .app_questions-questions-wrapper {
     width: 77%;
 }
+.accordion-item:hover .accordion-body{
+    background-color: white;
+}
+.accordion-body p{
+    margin-left: 4%;
+}
 @media screen and (max-width:800px) {
     .app_questions-wrapper{
         flex-direction: column;

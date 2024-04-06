@@ -19,10 +19,11 @@ document.addEventListener("DOMContentLoaded", function()
             document.getElementById('midCard-container').style.animation = "fadein 1.2s ease";
             type();
         }, 300);
-        
+        clearTimeout(clearTextTimeOutId);
     });
 
     document.getElementById('app_overview-picCardMain').addEventListener('mouseout', function() {
+        
         clearTimeout(timeoutId);
         timeoutId = setTimeout(function() {
             document.getElementById('app_overview-picContainer-para1').style.transition = "opacity 0.5s ease";
@@ -38,7 +39,9 @@ document.addEventListener("DOMContentLoaded", function()
             setTimeout(function(){
             document.getElementById('midCard-container').style.display = "none";},800);
         }, 300);
-        clear()
+        clearTextTimeOutId = setTimeout(() => {
+            clear();
+        }, 5000);
     });
     
 
