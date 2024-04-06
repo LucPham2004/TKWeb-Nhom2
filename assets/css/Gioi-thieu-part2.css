@@ -50,7 +50,71 @@
 .app_visit-block-button:hover {
     cursor: pointer;
 }
+
+
 /* why choose NEU */
+.app_Reason {
+    margin: 2.5vh 0;
+    background-color: rgb(245, 245, 245);
+    position: relative;
+}
+.app_Reason-title
+{
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    margin: 0 10vw;
+}
+.app_Reason-title h2 {
+    font-size: 30px;
+}
+.app_Reason-content {
+    margin: 0 10vw;
+    padding-bottom: 10vh;
+}
+.app_Reason-content h3 {
+    font-size: 20px;
+    font-weight: normal;
+}
+.app_Reason-grid {
+    width: 1400px;
+    max-width: 100%;
+    margin: 0 auto; 
+    background-color: rgb(217, 217, 217);
+} 
+.app_Reason-grid-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.app_Reason-block {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.app_Reason-block-title{
+    padding: 2.5vh 0;
+}
+.app_Reason-block-title  h3 {
+    font-size: 20px;
+}
+.app_Reason-block-content {
+    padding: 0 5vw;
+    text-align: center;
+}
+.app_Reason-block-content p{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+}
+.app_Reason-block-comment{
+    padding: 2.5vh 0;
+}
+.app_Reason-block-comment p {
+    font-size: 16px;
+    font-weight: 500;
+}
 
 /* register for admission */
 .app_register {
