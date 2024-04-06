@@ -70,7 +70,6 @@
 }
 .app_register-title h2{ 
     font-size: 30px;
-    font-weight: normal;
 }
 .app_register-block {
     background-color: var(--primary-color);
@@ -119,4 +118,58 @@
 }
 .app_register-block-part2-button:hover {
     cursor: pointer;
+}
+
+/* industry units */
+.app_industryUnits {
+    padding-bottom: 20vh;
+    background-color:rgb(232, 241, 255);
+}
+.app_industryUnits-grid {
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.app_industryUnits-grid-row {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap : 15px 15px;
+}
+
+.app_industryUnits-title {
+    padding-top: 6.5vh;
+    padding-bottom: 6.5vh;
+    margin: 0 13.5vw;
+}
+.app_industryUnits-title h2 {
+    font-size: 30px; 
+}
+.app_industryUnits-block {
+    width: 32%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.app_industryUnits-block-part1{
+    padding: 2vh 0;
+    height: 50%;
+}
+.app_industryUnits-block-part1 img {
+    height: 100%;
+    width: 100%;
+}
+.app_industryUnits-block-part2 {
+    padding: 3vh 3vw 8vh 3vw;
+    width: 100%;
+    height: 50%;
+    background-color: rgb(242, 242, 242);
+    text-align: center;
+}
+.app_industryUnits-block-part2 h3 {
+    font-size: 20px;
+    line-height: 1.5;
 }
