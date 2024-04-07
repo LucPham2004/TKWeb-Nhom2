@@ -91,17 +91,85 @@
 
         <!-- navigation bar -->
         <div class="app__nav">
+            <label for="nav-mobile-input" class="app__nav-bars-btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <input hidden type="checkbox" class="app__nav-input" id="nav-mobile-input">
+
+            <label for="nav-mobile-input" class="app__nav-overlay"></label>
+            <label for="nav-mobile-input" class="app__nav-mobile">
+                <label class="app__nav-mobile-close" for="nav-mobile-input">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+                <ul class="nav__mobile-list">
+                    <li >
+                        <a href="./Gioi-thieu.html" class="nav__mobile-link"> 
+                            <p>giới thiệu</p> 
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="./tintuc-sukien.html" class="nav__mobile-link"> 
+                            <p>Tin tức</p> 
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="./tintuc-sukien.html" class="nav__mobile-link"> 
+                            <p>Sự kiện nổi bật</p> 
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="./admissions.html" class="nav__mobile-link"> 
+                            <p>Tuyển sinh</p> 
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="./Chuong-trinh-dao-tao.html" class="nav__mobile-link"> 
+                            <p>Đào tạo</p> 
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="" class="nav__mobile-link"> 
+                            <p>Sinh viên</p> 
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="" class="nav__mobile-link"> 
+                            <p>Nghiên cứu</p> 
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="" class="nav__mobile-link"> 
+                            <p>Hợp tác - Đối ngoại</p> 
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="" class="nav__mobile-link"> 
+                            <p>eNEU</p> 
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </label>
             <div class="grid">
                 <div class="grid__row">
                     <ul class="app__nav-list">
-                        <li class="app__nav-item"><a href="Gioi-thieu.html" class="app__nav-item-link">GIỚI THIỆU</a>
+                        <li class="app__nav-item"><a href="./Gioi-thieu.html" class="app__nav-item-link">GIỚI THIỆU</a>
                             <ul class="app__nav-subnav">
                                 <li class="app__nav-subnav-item"><a href="">Tổng quan</a></li>
                                 <li class="app__nav-subnav-item"><a href="">Cơ cấu tổ chức</a></li>
                                 <li class="app__nav-subnav-item"><a href="">Media</a></li>
                             </ul>
                         </li>
-                        <li class="app__nav-item"><a href="" class="app__nav-item-link">TIN TỨC</a>
+                        <li class="app__nav-item"><a href="./tintuc-sukien.html" class="app__nav-item-link">TIN TỨC</a>
                             <ul class="app__nav-subnav">
                                 <li class="app__nav-subnav-item"><a href="">Hoạt động chung</a></li>
                                 <li class="app__nav-subnav-item"><a href="">Công tác Đảng và Đoàn thể</a></li>
@@ -111,7 +179,7 @@
                                 <li class="app__nav-subnav-item"><a href="">Kiểm định - Xếp hạng</a></li>
                             </ul>
                         </li>
-                        <li class="app__nav-item"><a href="" class="app__nav-item-link">SỰ KIỆN NỔI BẬT</a>
+                        <li class="app__nav-item"><a href="./tintuc-sukien.html" class="app__nav-item-link">SỰ KIỆN NỔI BẬT</a>
                             <ul class="app__nav-subnav">
                                 <li class="app__nav-subnav-item"><a href="">Thông báo chung</a></li>
                                 <li class="app__nav-subnav-item"><a href="">Hợp tác đối ngoại - Truyền thông</a></li>
@@ -122,7 +190,7 @@
                                 <li class="app__nav-subnav-item"><a href="">Sự kiện sắp diễn ra</a></li>
                             </ul>
                         </li>
-                        <li class="app__nav-item"><a href="" class="app__nav-item-link">TUYỂN SINH</a>
+                        <li class="app__nav-item"><a href="./admissions.html" class="app__nav-item-link">TUYỂN SINH</a>
                             <ul class="app__nav-subnav">
                                 <li class="app__nav-subnav-item"><a href="">Đại học</a></li>
                                 <li class="app__nav-subnav-item"><a href="">Cao học</a></li>
@@ -131,7 +199,7 @@
                                 <li class="app__nav-subnav-item"><a href="">Tiến sĩ</a></li>
                             </ul>
                         </li>
-                        <li class="app__nav-item"><a href="Chuong-trinh-dao-tao.html" class="app__nav-item-link">ĐÀO TẠO</a>
+                        <li class="app__nav-item"><a href="./Chuong-trinh-dao-tao.html" class="app__nav-item-link">ĐÀO TẠO</a>
                             <ul class="app__nav-subnav">
                                 <li class="app__nav-subnav-item"><a href="">Chính quy</a></li>
                                 <li class="app__nav-subnav-item"><a href="">Tiên tiến chất lượng cao</a></li>
