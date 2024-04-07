@@ -13,15 +13,8 @@
     margin-left: 20%;
 }
 .app-menu-item a{
-    color: black;
-    text-decoration: none;
     margin-right: 10%;
     transition: color 0.3s ease;
-}
-
-.highlight {
-    color: var(--primary-color);
-    text-decoration: underline;
 }
 
 @media screen and (min-width:960px) {
@@ -102,9 +95,6 @@
     overflow: hidden;
     transition: height 0.5s ease, background-color 0.5s ease;
 }
-::-webkit-scrollbar-button{
-    display: none;
-}
 .principal-cardInfo *{
     opacity: 0;
     text-align: justify;
@@ -172,7 +162,7 @@
     line-height: 40px;
     font-size: 14px;
 }
-#showMore-members-button:hover{
+#showMore-members-button:hover, #showIndustryUnits:hover{
     background: linear-gradient(180deg, rgb(0, 100, 255), rgb(70, 150, 255));
     cursor: pointer;
     color: white;
@@ -185,6 +175,21 @@
 
 .showMore-members-hidden{
     display: none;
+}
+#showIndustryUnits{
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    background: linear-gradient(180deg, rgb(240, 245, 254), rgb(249, 252, 255));
+    height: 45px;
+    border: 2px solid rgb(0, 128, 255);
+    color: var(--primary-color);
+    border-radius: 30px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 @keyframes showMembers {
@@ -252,6 +257,9 @@
         display: block;
         padding-bottom: 20px;
     }
+    .app_letter-medalPara i{
+        display: none;
+    }
 }
 
 @media screen and (max-width:1280px) {
@@ -262,10 +270,6 @@
         font-size: 14px;
     }
 }
-
-
-
-
 
 
 /* banner */
@@ -308,7 +312,6 @@
     opacity: 0.7;
 }
 #app_banner-title-name{
-    
     color: white;
     font-weight: bold;
     margin-left: 10%;

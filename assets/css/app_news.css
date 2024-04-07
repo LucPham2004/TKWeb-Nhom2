@@ -344,7 +344,7 @@
 
 
 /* Footer */
-.footer {
+/* .footer {
     height: 70vh;
     background-color: #0065CA;
 }
@@ -357,9 +357,9 @@
     margin-left: 5%;
     margin-right: 5%;
     color: white;
-}
+} */
 /* Left */
-#footer_info {
+/* #footer_info {
     position: relative;
     margin-top: 5%;
 }
@@ -369,14 +369,14 @@
 }
 .footer_info_schoolName{
     margin-left: 18%;
-}
+} */
 /* Middle */
-#footer_quote{
+/* #footer_quote{
     margin-top: 8%;
     text-align: center;
 }
 /* Right */
-#footer_contact{
+/* #footer_contact{
     margin-top: 6%;
     text-align: right;
 }
@@ -403,10 +403,10 @@
     #footer_container {
         flex-direction: column;
     }
-}
+} */ 
 
 /* Sidebar for social media links */
-.side_social_link {
+/* .side_social_link {
     position: sticky;
     float: right;
     z-index: 999;
@@ -449,9 +449,9 @@
         top: -20px;
         right:30px;
     }
-}
+} */
 /* Button scroll to top*/
-#scrollToTopBtn {
+/* #scrollToTopBtn {
     display: none;
     position: fixed;
     height: 45px;
@@ -472,4 +472,4 @@
 
 #scrollToTopBtn:hover {
     transform: translateY(-5px);
-}
+} */

@@ -14,14 +14,48 @@
 }
 .app_visit-block {
     position: absolute;
-    width: 42%;
-    height: 100%;
-    padding-left: 5.5vw;
-    padding-top: 20vh;
-    background-image: linear-gradient(90deg,rgb(50, 50, 50), transparent 100%);
+    flex-direction: column;
+}
+@media screen and (min-width:960px) {
+    .app_visit-block {
+        position: absolute;
+        flex-direction: column;
+        width: 42%;
+        height: 100%;
+        padding-left: 5.5vw;
+        padding-top: 20vh;
+        background-image: linear-gradient(90deg,rgb(50, 50, 50), transparent 100%);
+    }
+    .app_visit-block-title h2 {
+        font-size: 40px;
+    }
+    .app_visit-block-content h3 {
+        font-size: 21px;
+    }
+    .app_visit-block-button h3{
+        font-size: 21px;
+    }
+}
+@media screen and (max-width:1080px) {
+    .app_visit-block-title h2{
+        font-size: 30px;
+    }
+    .app_visit-block-content h3 {
+        font-size: 17px;
+    }
+    .app_visit-block-button h3{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:960px) {
+    .app_visit-block{
+        width: 100%;
+        margin-top: 30%;
+        padding: 20px;
+        background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.251), rgb(50, 50, 50) 100%);
+    }
 }
 .app_visit-block-title h2 {
-    font-size: 40px;
     font-weight: normal;
     color: white;
 }
@@ -29,7 +63,6 @@
     margin: 3vh 0;
 }
 .app_visit-block-content h3 {
-    font-size: 21px;
     font-weight: normal;
     line-height: 1.5;
     color: white;
@@ -40,13 +73,14 @@
     background-color: var(--primary-color);
     text-align: center;
     padding: 15px 0;
+    transition: all 0.5s ease;
 }
 .app_visit-block-button h3 {
     color: white;
-    font-size: 21px;
     font-weight: normal;
 }
 .app_visit-block-button:hover {
+    transform: scale(1.05);
     cursor: pointer;
 }
 
@@ -76,25 +110,78 @@
 }
 .app_Reason-grid {
     width: 1400px;
-    max-width: 100%;
-    margin: 0 auto; 
+    max-width: 80vw;
+    margin-top: 8%; 
+    margin-left: 10vw;
+    margin-right: 10vw;
     background-color: rgb(217, 217, 217);
 } 
 .app_Reason-grid-row {
     display: flex;
     justify-content: center;
+    flex-direction: row;
     flex-wrap: wrap;
 }
+
+@keyframes upAndDown{
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(-50%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+@media screen and (min-width:1280px){
+    .app_Reason-block{
+        width: 33.33%;
+    }
+    .app_Reason-block-img{
+        position: absolute;
+        top: -40%;
+    }
+    .app_Reason-block-title{
+        padding: 2.5vh 0;
+        margin-top: 35%;
+    }
+}
+@media screen and (max-width:1280px){
+    .app_Reason-block-title{
+        padding: 2.5vh 0;
+        margin-top: 5%;
+    }
+}
+@media screen and (max-width:960px) {
+    .app_Reason-grid-row{
+        flex-direction: column;
+    }
+    .app_Reason-block{
+        width: 100%;
+    }
+    .app_Reason-block-img img{
+        height: 250px;
+        width: 250px;
+    }
+    .app_Reason-block-img{
+        margin-top: 5%;
+    }
+    .app_Reason-block-title{
+        margin-top: 5%;
+    }
+}
+
 .app_Reason-block {
-    width: 33.33%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
-.app_Reason-block-title{
-    padding: 2.5vh 0;
-}
+
+
 .app_Reason-block-title  h3 {
     font-size: 20px;
 }
@@ -128,9 +215,7 @@
 .app_register-grid-row {
     justify-content: center;
 }
-.app_register-title {
-    margin-bottom: 6.5vh;
-}
+
 .app_register-title h2{ 
     font-size: 30px;
 }
@@ -138,16 +223,43 @@
     background-color: var(--primary-color);
     display: flex;
 }
-.app_register-block-part1 {
-    width: 50%;
-}
+
 .app_register-block-part1 img {
     width: 100%;
     height: 100%;
 }
-.app_register-block-part2 {
-    width: 50%;
-    margin-left: 4vw;
+
+@media screen and (min-width:960px){
+    .app_register-title {
+        margin-bottom: 6.5vh;
+    }
+    .app_register-block-part1 {
+        width: 50%;
+    }
+    .app_register-block-part2 {
+        width: 50%;
+        margin-left: 4vw;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .app_register-title {
+        margin-left: 5%;
+        margin-bottom: 6.5vh;
+    }
+    .app_register-block{
+        display: flex;
+        flex-direction: column;
+    }
+    .app_register-block-part1 {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .app_register-block-part2 {
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
 }
 .app_register-block-part2-title{
     margin-top: 4vh;
@@ -161,6 +273,7 @@
 .app_register-block-part2-content {
     margin: 4vh 0;
     padding-right: 2vw;
+    text-align: justify;
 }
 .app_register-block-part2-content h3{
     font-size: 20px;
@@ -171,6 +284,7 @@
 .app_register-block-part2-button {
     border-radius: 30px;
     background-color: white;
+    border: 2px solid rgb(0, 128, 255);
     text-align: center;
     width: 50%;
     padding: 1.5vh 0;
@@ -180,6 +294,8 @@
     font-weight: normal;
 }
 .app_register-block-part2-button:hover {
+    color: var(--primary-color);
+    border: 2px solid rgb(0, 128, 255);
     cursor: pointer;
 }
 
@@ -235,4 +351,25 @@
 .app_industryUnits-block-part2 h3 {
     font-size: 20px;
     line-height: 1.5;
+}
+
+.app_industryUnits-triangle{
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(204, 204, 204);
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+@media screen and (min-width:960px) {
+    .app_industryUnits-triangle{
+        width: 30px;
+        height: 30px;
+    }
+}
+@media screen and (max-width:960px) {
+    .app_industryUnits-triangle{
+        width: 20px;
+        height: 20px;
+    }
 }
