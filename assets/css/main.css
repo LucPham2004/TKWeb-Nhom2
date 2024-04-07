@@ -423,6 +423,7 @@
     transition: all linear 0.4s;
     max-height: 0;
     visibility: hidden;
+    z-index: 999999;
 }
 
 .app__nav-item:hover .app__nav-subnav {
