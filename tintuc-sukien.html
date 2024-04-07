@@ -90,18 +90,86 @@
 
         <!-- navigation bar -->
         <div class="app__nav">
+            <label for="nav-mobile-input" class="app__nav-bars-btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <input hidden type="checkbox" class="app__nav-input" id="nav-mobile-input">
+
+            <label for="nav-mobile-input" class="app__nav-overlay"></label>
+            <label for="nav-mobile-input" class="app__nav-mobile">
+                <label class="app__nav-mobile-close" for="nav-mobile-input">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+                <ul class="nav__mobile-list">
+                    <li >
+                        <a href="" class="nav__mobile-link"> 
+                            <p>giới thiệu</p> 
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="" class="nav__mobile-link"> 
+                            <p>Tin tức</p> 
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="" class="nav__mobile-link"> 
+                            <p>Sự kiện nổi bật</p> 
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="" class="nav__mobile-link"> 
+                            <p>Tuyển sinh</p> 
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="" class="nav__mobile-link"> 
+                            <p>Đào tạo</p> 
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="" class="nav__mobile-link"> 
+                            <p>Sinh viên</p> 
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="" class="nav__mobile-link"> 
+                            <p>Nghiên cứu</p> 
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="" class="nav__mobile-link"> 
+                            <p>Hợp tác - Đối ngoại</p> 
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="" class="nav__mobile-link"> 
+                            <p>eNEU</p> 
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </label>
             <div class="grid">
                 <div class="grid__row">
                     <ul class="app__nav-list">
-                        <li class="app__nav-item"><a href="" class="app__nav-item-link">GIỚI THIỆU</a>
-                            <ul class="app__nav-subnav">
+                        <li class="app__nav-item"><a href="./Gioi-thieu.html" class="app__nav-item-link">GIỚI THIỆU</a>
+                            <ul class="app__nav-subnav" style="z-index: 991;">
                                 <li class="app__nav-subnav-item"><a href="">Tổng quan</a></li>
                                 <li class="app__nav-subnav-item"><a href="">Cơ cấu tổ chức</a></li>
                                 <li class="app__nav-subnav-item"><a href="">Media</a></li>
                             </ul>
                         </li>
-                        <li class="app__nav-item"><a href="" class="app__nav-item-link">TIN TỨC</a>
-                            <ul class="app__nav-subnav">
+                        <li class="app__nav-item"><a href="#" class="app__nav-item-link">TIN TỨC</a>
+                            <ul class="app__nav-subnav" style="z-index: 992;">
                                 <li class="app__nav-subnav-item"><a href="">Hoạt động chung</a></li>
                                 <li class="app__nav-subnav-item"><a href="">Công tác Đảng và Đoàn thể</a></li>
                                 <li class="app__nav-subnav-item"><a href="">Tuyển sinh - Đào tạo - Công tác sinh
@@ -110,8 +178,8 @@
                                 <li class="app__nav-subnav-item"><a href="">Kiểm định - Xếp hạng</a></li>
                             </ul>
                         </li>
-                        <li class="app__nav-item"><a href="" class="app__nav-item-link">SỰ KIỆN NỔI BẬT</a>
-                            <ul class="app__nav-subnav">
+                        <li class="app__nav-item"><a href="#" class="app__nav-item-link">SỰ KIỆN NỔI BẬT</a>
+                            <ul class="app__nav-subnav" style="z-index: 993;">
                                 <li class="app__nav-subnav-item"><a href="">Thông báo chung</a></li>
                                 <li class="app__nav-subnav-item"><a href="">Hợp tác đối ngoại - Truyền thông</a></li>
                                 <li class="app__nav-subnav-item"><a href="">Tuyển sinh - Đào tạo - Công tác sinh
@@ -122,7 +190,7 @@
                             </ul>
                         </li>
                         <li class="app__nav-item"><a href="" class="app__nav-item-link">TUYỂN SINH</a>
-                            <ul class="app__nav-subnav">
+                            <ul class="app__nav-subnav" style="z-index: 994;">
                                 <li class="app__nav-subnav-item"><a href="">Đại học</a></li>
                                 <li class="app__nav-subnav-item"><a href="">Cao học</a></li>
                                 <li class="app__nav-subnav-item"><a href="">Nghiên cứu sinh</a></li>
@@ -130,8 +198,8 @@
                                 <li class="app__nav-subnav-item"><a href="">Tiến sĩ</a></li>
                             </ul>
                         </li>
-                        <li class="app__nav-item"><a href="" class="app__nav-item-link">ĐÀO TẠO</a>
-                            <ul class="app__nav-subnav">
+                        <li class="app__nav-item"><a href="./Chuong-trinh-dao-tao.html" class="app__nav-item-link">ĐÀO TẠO</a>
+                            <ul class="app__nav-subnav" style="z-index: 995;">
                                 <li class="app__nav-subnav-item"><a href="">Chính quy</a></li>
                                 <li class="app__nav-subnav-item"><a href="">Tiên tiến chất lượng cao</a></li>
                                 <li class="app__nav-subnav-item"><a href="">Hệ quốc tế</a></li>
@@ -141,7 +209,7 @@
                             </ul>
                         </li>
                         <li class="app__nav-item"><a href="" class="app__nav-item-link">SINH VIÊN</a>
-                            <ul class="app__nav-subnav">
+                            <ul class="app__nav-subnav" style="z-index: 996;">
                                 <li class="app__nav-subnav-item"><a href="">Nghiên cứu - Sáng tạo - Khởi nghiệp</a></li>
                                 <li class="app__nav-subnav-item"><a href="">Học bổng</a></li>
                                 <li class="app__nav-subnav-item"><a href="">Học phí</a></li>
@@ -155,16 +223,15 @@
                             </ul>
                         </li>
                         <li class="app__nav-item"><a href="" class="app__nav-item-link">NGHIÊN CỨU</a>
-                            <ul class="app__nav-subnav">
+                            <ul class="app__nav-subnav" style="z-index: 997;">
                                 <li class="app__nav-subnav-item"><a href="">Thông tin ứng viên GS/PGS</a></li>
-                                <li class="app__nav-subnav-item"><a href="">Hoạt động nghiên cứu khoa học và sáng
-                                        tạo</a></li>
+                                <li class="app__nav-subnav-item"><a href="">Hoạt động nghiên cứu khoa học và sáng tạo</a></li>
                                 <li class="app__nav-subnav-item"><a href="">Các đơn vị nghiên cứu</a></li>
                                 <li class="app__nav-subnav-item"><a href="">Tạp chí</a></li>
                             </ul>
                         </li>
                         <li class="app__nav-item"><a href="" class="app__nav-item-link">HỢP TÁC ĐỐI NGOẠI</a>
-                            <ul class="app__nav-subnav">
+                            <ul class="app__nav-subnav" style="z-index: 998;">
                                 <li class="app__nav-subnav-item"><a href="">Tin tức - Học bổng</a></li>
                                 <li class="app__nav-subnav-item"><a href="">Mạng lưới đối tác</a></li>
                                 <li class="app__nav-subnav-item"><a href="">Hoạt động hợp tác</a></li>
@@ -207,7 +274,7 @@
         </div>
 
         <!-- featured news -->
-        <div class="app__featured-news reveal">
+        <div class="app__featured-news">
             <div class="grid">
                 <div class="grid__row">
                     <div class="app__featured-news-wrapper">
@@ -224,17 +291,61 @@
                                 <h5 class="des">Từ việc cho phép sinh viên sử dụng AI trong quá trình học tập, kiểm tra, tới ra mắt nhiều nghiên cứu khoa học hỗ trợ sử dụng AI, đào tạo cán bộ công chức, viên chức của ngành Giáo dục Hà Nội về ứng dụng AI trong giảng dạy,… Trường Đại học Kinh tế Quốc dân […]</h5>
                             </div>
                         </div>
-                        <div class="app__featured-news-right"></div>
+                        <div class="app__featured-news-right">
+                            <div class="container flex">
+                                <div class="calendar">
+                                  <div class="month flex">
+                                    <div class="prev">
+                                      <i class="fas fa-chevron-left"></i>
+                                    </div>
+                                    <div class="content">
+                                      <h1>Tháng 5</h1>
+                                      <p>23 Tháng 5 Năm 2022</p>
+                                    </div>
+                                    <div class="next">
+                                      <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                  </div>
+                            
+                                  <div class="weekdays flex">
+                                    <div>Mon</div>
+                                    <div>Tue</div>
+                                    <div>Wed</div>
+                                    <div>Thu</div>
+                                    <div>Fri</div>
+                                    <div>Sar</div>
+                                    <div>Sun</div>
+                                  </div>
+                            
+                                  <div class="days flex">
+                                    <div class="previous-day">26</div>
+                                    <div class="previous-day">27</div>
+                                    <div class="previous-day">28</div>
+                                    <div class="previous-day">29</div>
+                                    <div class="previous-day">30</div>
+                                    <div class="previous-day">31</div>
+                                    <div class="">1</div>
+                                    <div class="today">11</div>
+                                    <div class="">31</div>
+                                    <div class="next-days">1</div>
+                                    <div class="next-days">2</div>
+                                    <div class="next-days">3</div>
+                                    <div class="next-days">4</div>
+                                    <div class="next-days">5</div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         
         <!-- Tin tức -->
-        <div class="app__tintuc reveal">
+        <div class="app__tintuc">
             <div class="grid">
                 <div class="grid__row">
-                    <div class="app__tintuc-title">TIN TỨC</div>
+                    <div class="app__tintuc-title"><i class="fa-solid fa-newspaper"></i> TIN TỨC</div>
                     <div class="app__tintuc-list">
                         <div class="app__tintuc-item">
                             <img class="app__tintuc-item-pic" src="./assets/img/tintuc4.jpg">
@@ -249,7 +360,7 @@
                             </div>
                         </div>
                         <div class="app__tintuc-item">
-                            <img class="app__tintuc-item-pic" style="height: 220.59px;" src="./assets/img/tintuc2.png">
+                            <img class="app__tintuc-item-pic" style="height: 220.59px;" src="./assets/img/tintuc5.jpg">
                                 <p class="app__tintuc-item-label">Cập nhật</p>
                             </img>
                             <div class="app__tintuc-item-text">
@@ -272,7 +383,7 @@
                                 <h5 class="des">Từ việc cho phép sinh viên sử dụng AI trong quá trình học tập, kiểm tra, tới ra mắt nhiều nghiên cứu khoa học hỗ trợ sử dụng AI, đào tạo cán bộ công chức, viên chức của ngành Giáo dục Hà Nội về ứng dụng AI trong giảng dạy,… Trường Đại học Kinh tế Quốc dân […]</h5>
                             </div>
                         </div>
-                        <div class="app__tintuc-item">
+                        <!-- <div class="app__tintuc-item">
                             <img class="app__tintuc-item-pic" src="./assets/img/tintuc5.jpg">
                                 <p class="app__tintuc-item-label">Cập nhật</p>
                             </img>
@@ -307,7 +418,7 @@
                                 <h5 class="title">NEU tiên phong đổI mớI giáo dục trong kỷ nguyên AI</h5>
                                 <h5 class="des">Từ việc cho phép sinh viên sử dụng AI trong quá trình học tập, kiểm tra, tới ra mắt nhiều nghiên cứu khoa học hỗ trợ sử dụng AI, đào tạo cán bộ công chức, viên chức của ngành Giáo dục Hà Nội về ứng dụng AI trong giảng dạy,… Trường Đại học Kinh tế Quốc dân […]</h5>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="app__tintuc-btn">
                         <i class="fa-solid fa-play"></i>
@@ -318,11 +429,81 @@
         </div>
                 
         <!-- sự kiện -->
-        <div class="app__sukien reveal">
+        <div class="app__sukien">
             <div class="grid">
                 <div class="grid__row">
-                    <div class="app__sukien-title">SỰ KIỆN</div>
-                    <div class="app__sukien-up">
+                    <div class="app__sukien-title"><i class="fa-solid fa-calendar-days"></i> SỰ KIỆN</div>
+
+                    <div class="app__sukien-container">
+                        <div class="app__sukien-card">
+                            <div class="app__sukien-card-img">
+                                <img src="./assets/img/timeline2.png" alt="">
+                            </div>
+                            <div class="app__sukien-content">
+                                <h2 class="app__sukien-content-title">Hội thảo về mở các ngành đào tạo mới</h2>
+                                <p class="app__sukien-content-des">Hội thảo "Mở các ngành đào tạo mới: Nắm bắt xu hướng, đáp ứng nhu cầu" sẽ thảo luận về những xu hướng mới trong thị trường lao động và nhu cầu về các ngành đào tạo mới.</p>
+                                <a href="" class="app__sukien-content-btn">Xem thêm</a>
+                            </div>
+                        </div>
+                        <div class="app__sukien-card">
+                            <div class="app__sukien-card-img">
+                                <img src="./assets/img/timeline1.jpg" alt="">
+
+                            </div>
+                            <div class="app__sukien-content">
+                                <h2 class="app__sukien-content-title">Chương trình "Một ngày làm sinh viên NEU"</h2>
+                                <p class="app__sukien-content-des">Bạn đang tò mò về cuộc sống sinh viên tại Đại học Kinh tế Quốc dân (NEU)? Hãy tham gia chương trình "1 ngày là sinh viên NEU" để có cơ hội trải nghiệm môi trường học tập năng động và hiện đại tại đây.</p>
+                                <a href="" class="app__sukien-content-btn">Xem thêm</a>
+                            </div>
+                        </div>
+                        <div class="app__sukien-card">
+                            <div class="app__sukien-card-img">
+                                <img src="./assets/img/sukien1.png" alt="">
+
+                            </div>
+                            <div class="app__sukien-content">
+                                <h2 class="app__sukien-content-title">Sự kiện âm nhạc NEU Youth Festival</h2>
+                                <p class="app__sukien-content-des">Sự kiện âm nhạc "NEU Youth Festival 2024" với sự góp mặt của những ca sĩ khách mời nổi tiếng hứa hẹn mang đến bầu không khí sôi động và bùng nổ cho sinh viên Kinh tế quốc dân. </p>
+                                <a href="" class="app__sukien-content-btn">Xem thêm</a>
+                            </div>
+                        </div>
+                        <!-- <div class="app__sukien-card">
+                            <div class="app__sukien-card-img">
+                                <img src="./assets/img/sukien1.png" alt="">
+                            </div>
+                            <div class="app__sukien-content">
+                                <h2 class="app__sukien-content-title">Hội thảo về mở các ngành đào tạo mới</h2>
+                                <p class="app__sukien-content-des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit officiis id iusto voluptatum explicabo sunt vitae totam maxime eaque eligendi?</p>
+                                <a href="" class="app__sukien-content-btn">Xem thêm</a>
+                            </div>
+                        </div>
+                        <div class="app__sukien-card">
+                            <div class="app__sukien-card-img">
+                                <img src="./assets/img/sukien1.png" alt="">
+                            </div>
+                            <div class="app__sukien-content">
+                                <h2 class="app__sukien-content-title">Hội thảo về mở các ngành đào tạo mới</h2>
+                                <p class="app__sukien-content-des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit officiis id iusto voluptatum explicabo sunt vitae totam maxime eaque eligendi?</p>
+                                <a href="" class="app__sukien-content-btn">Xem thêm</a>
+                            </div>
+                        </div>
+                        <div class="app__sukien-card">
+                            <div class="app__sukien-card-img">
+                                <img src="./assets/img/sukien1.png" alt="">
+                            </div>
+                            <div class="app__sukien-content">
+                                <h2 class="app__sukien-content-title">Hội thảo về mở các ngành đào tạo mới</h2>
+                                <p class="app__sukien-content-des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit officiis id iusto voluptatum explicabo sunt vitae totam maxime eaque eligendi?</p>
+                                <a href="" class="app__sukien-content-btn">Xem thêm</a>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="app__tintuc-btn">
+                        <i class="fa-solid fa-play"></i>
+                        <p>Xem Thêm</p>
+                    </div>
+
+                    <!-- <div class="app__sukien-up">
                         <div class="app__sukien-up-list">
                             <div class="app__sukien-up-item">
                                 <img class="app__sukien-up-pic" src="./assets/img/sukien1.png">
@@ -351,24 +532,26 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
                         
-        <!-- frequently asked Questions -->
-        <div class="app__lich reveal">
+        <!-- lich trinh su kien -->
+        <div class="app__lich">
             <div class="grid">
                 <div class="grid__row">
                     <div class="app__lich-detail-wrapper">
-                        <div class="app__lich-title">LỊCH TRÌNH SỰ KIỆN</div>
+                        <div class="app__lich-title"><i class="fa-solid fa-clock"></i> LỊCH TRÌNH SỰ KIỆN</div>
                         <div class="app__lich-detail">
                             <div class="app__lich-content-list">
                                 <div class="app__lich-content-item">
-                                    <img src="./assets/img/lich1.png" alt="" class="app__lich-content-img">
+                                    <img src="./assets/img/timeline2.png" alt="" class="app__lich-content-img">
                                     <div class="app__lich-content-des">
-                                        <p class="app__lich-content-text">Tọa đàm về nhu cầu nhân lực các ngành đào tạo mới trình độ đại học của Trường Đại học kinh tế Quốc dân dự kiến mở năm 2024</p>
-                                        <p class="app__lich-content-time">1 Th4, 2024</p>
+                                        <p class="app__lich-content-time"><i class="fa-solid fa-circle"></i>  <span>1 Th4, 2024</span> </p>
+                                        <p class="app__lich-content-title">Trường Đại học Kinh tế Quốc dân đã tiếp nhận Quỹ học bổng Cựu học viên Chương trình Quản lý điều hành Cao cấp Toàn cầu - Global CEO Academy.</p>
+                                        <p class="app__lich-content-detail">Global CEO Academy đã dành tặng quỹ học bổng cho các bạn sinh viên của Trường, qua đó tiếp thêm động lực giúp các em yên tâm học tập, phát triển bản thân và vươn lên trong cuộc sống.</p>
+                                        <button class="app__tintuc-btn"><i class="fa-solid fa-play"></i> <span>Xem chi tiết</span></button>
                                     </div>
                                 </div>
                             </div>
@@ -378,8 +561,10 @@
                                 <div class="app__lich-content-item">
                                     <img src="./assets/img/timeline1.jpg" alt="" class="app__lich-content-img">
                                     <div class="app__lich-content-des">
-                                        <p class="app__lich-content-text">Sự kiện "Một ngày làm sinh viên Kinh tế Quốc dân" đã đón nhận được nhiều sự quan tâm từ các bạn học sinh lớp 12</p>
-                                        <p class="app__lich-content-time">2 Th4, 2024</p>
+                                        <p class="app__lich-content-time"><i class="fa-solid fa-circle"></i>  <span>2 Th4, 2024</span> </p>
+                                        <p class="app__lich-content-title">NEU TOUR 2024</p>
+                                        <p class="app__lich-content-detail">Chương trình NEU TOUR 2024 - Ngày hội tư vấn tuyển sinh đã diễn ra tại Trường Đại học Kinh tế Quốc dân đón nhận được nhiều sự quan tâm có các bạn học sinh lớp 12 có nguyện vọng thi vào trường</p>
+                                        <button class="app__tintuc-btn"><i class="fa-solid fa-play"></i> <span>Xem chi tiết</span></button>
                                     </div>
                                 </div>
                             </div>
@@ -387,10 +572,90 @@
                         <div class="app__lich-detail active">
                             <div class="app__lich-content-list">
                                 <div class="app__lich-content-item">
-                                    <img src="./assets/img/lich1.png" alt="" class="app__lich-content-img">
+                                    <img src="./assets/img/timeline7.png" alt="" class="app__lich-content-img">
                                     <div class="app__lich-content-des">
-                                        <p class="app__lich-content-text">Tọa đàm về nhu cầu nhân lực các ngành đào tạo mới trình độ đại học của Trường Đại học kinh tế Quốc dân dự kiến mở năm 2024</p>
-                                        <p class="app__lich-content-time">3 Th4, 2024</p>
+                                        <p class="app__lich-content-time"><i class="fa-solid fa-circle"></i>  <span>3 Th4, 2024</span> </p>
+                                        <p class="app__lich-content-title">Một ngày là "Xinh" viên Kinh tế Quốc dân</p>
+                                        <p class="app__lich-content-detail">Tầng G toà A2 NEU đang nóng hơn bao giờ hết cùng hơn 6000 phụ huynh và học sinh từ khắp mọi miền Tổ quốc đến trải nghiệm chương trình “Một ngày là sinh viên Kinh tế Quốc dân”.</p>
+                                        <button class="app__tintuc-btn"><i class="fa-solid fa-play"></i> <span>Xem chi tiết</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app__lich-detail">
+                            <div class="app__lich-content-list">
+                                <div class="app__lich-content-item">
+                                    <img src="./assets/img/timeline4.png" alt="" class="app__lich-content-img">
+                                    <div class="app__lich-content-des">
+                                        <p class="app__lich-content-time"><i class="fa-solid fa-circle"></i>  <span>4 Th4, 2024</span> </p>
+                                        <p class="app__lich-content-title">Trải nghiệm một ngày làm sinh viên Kinh tế Quốc dân</p>
+                                        <p class="app__lich-content-detail"> Vừa qua, Trường Đại học Kinh tế Quốc dân đã chào đón hơn 200 bạn học sinh đến từ Trường THPT Cửa Ông và 350 học sinh Trường THPT Minh Hà (Quảng Ninh) đến tham quan và trải nghiệm tại chương trình “Một ngày làm sinh viên Kinh tế Quốc dân”</p>
+                                        <button class="app__tintuc-btn"><i class="fa-solid fa-play"></i> <span>Xem chi tiết</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app__lich-detail">
+                            <div class="app__lich-content-list">
+                                <div class="app__lich-content-item">
+                                    <img src="./assets/img/timeline5.png" alt="" class="app__lich-content-img">
+                                    <div class="app__lich-content-des">
+                                        <p class="app__lich-content-time"><i class="fa-solid fa-circle"></i>  <span>5 Th4, 2024</span> </p>
+                                        <p class="app__lich-content-title">Khai mạc tuần lễ việc làm NEU CAREER WEEK 2024</p>
+                                        <p class="app__lich-content-detail">Sáng ngày 22/3/2024, Trường Đại học Kinh tế Quốc dân đã khai mạc Tuần Nghề nghiệp và Việc làm - NEU Career Week 2024 với chủ đề "Nguồn nhân lực thích ứng với toàn cầu hoá", hứa hẹn mang đến một chuỗi hoạt động thú vị.</p>
+                                        <button class="app__tintuc-btn"><i class="fa-solid fa-play"></i> <span>Xem chi tiết</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app__lich-detail">
+                            <div class="app__lich-content-list">
+                                <div class="app__lich-content-item">
+                                    <img src="./assets/img/timeline6.png" alt="" class="app__lich-content-img">
+                                    <div class="app__lich-content-des">
+                                        <p class="app__lich-content-time"><i class="fa-solid fa-circle"></i>  <span>6 Th4, 2024</span> </p>
+                                        <p class="app__lich-content-title">11 đội thi tranh tài sôi nổi tại AEP master chef 2024</p>
+                                        <p class="app__lich-content-detail">Sáng ngày 21/3/2024, tại Sân khấu tròn ngoài trời, Viện Đào tạo Tiên tiến, Chất lượng cao và POHE đã tổ chức cuộc thi Vua Đầu bếp - AEP MasterChef 2024, mang đến những trải nghiệm thú vị, những món ăn tinh thần hấp dẫn và những kỷ niệm đáng nhớ cho các bạn sinh viên.</p>
+                                        <button class="app__tintuc-btn"><i class="fa-solid fa-play"></i> <span>Xem chi tiết</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app__lich-detail">
+                            <div class="app__lich-content-list">
+                                <div class="app__lich-content-item">
+                                    <img src="./assets/img/timeline3.png" alt="" class="app__lich-content-img">
+                                    <div class="app__lich-content-des">
+                                        <p class="app__lich-content-time"><i class="fa-solid fa-circle"></i>  <span>7 Th4, 2024</span> </p>
+                                        <p class="app__lich-content-title">Ký kết biên bản ghi nhớ hợp tác</p>
+                                        <p class="app__lich-content-detail">Trường Đại học Kinh tế Quốc dân và Trường Đại học Quốc gia Hanbat (Hàn Quốc) đã cùng nhau ký kết Biên bản ghi nhớ hợp tác nhằm thúc đẩy hợp tác học thuật và nâng cao hiểu biết về văn hóa giữa hai nước Việt Nam và Hàn Quốc</p>
+                                        <button class="app__tintuc-btn"><i class="fa-solid fa-play"></i> <span>Xem chi tiết</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app__lich-detail">
+                            <div class="app__lich-content-list">
+                                <div class="app__lich-content-item">
+                                    <img src="./assets/img/timeline8.png" alt="" class="app__lich-content-img">
+                                    <div class="app__lich-content-des">
+                                        <p class="app__lich-content-time"><i class="fa-solid fa-circle"></i>  <span>8 Th4, 2024</span> </p>
+                                        <p class="app__lich-content-title">Lãnh đạo trường thăm và chúc mừng trạm Y tế nhân kỷ niệm 69 năm ngày Thầy thuốc Việt Nam</p>
+                                        <p class="app__lich-content-detail">GS.TS Phạm Hồng Chương - Hiệu trưởng cùng các đồng chí lãnh đạo Trường, đại diện lãnh đạo các đơn vị đã đến thăm, chúc mừng cán bộ, viên chức của Trạm Y tế nhân kỷ niệm 69 năm ngày Thầy thuốc Việt Nam</p>
+                                        <button class="app__tintuc-btn"><i class="fa-solid fa-play"></i> <span>Xem chi tiết</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app__lich-detail">
+                            <div class="app__lich-content-list">
+                                <div class="app__lich-content-item">
+                                    <img src="./assets/img/timeline9.png" alt="" class="app__lich-content-img">
+                                    <div class="app__lich-content-des">
+                                        <p class="app__lich-content-time"><i class="fa-solid fa-circle"></i>  <span>9 Th4, 2024</span> </p>
+                                        <p class="app__lich-content-title">Lễ trao bằng cử nhân chương trình liên kết đào tạo</p>
+                                        <p class="app__lich-content-detail">Nhắn nhủ đến các tân sinh viên khóa 9 của chương trình, PGS. Nguyễn Thành Hiếu khẳng định trở thành sinh viên của một chương trình quốc tế sẽ mang lại rất nhiều cơ hội và thử thách để các em có thể phát huy tối đa khả năng tiềm tàng, trang bị kiến thức và kỹ năng cần thiết để trở thành một công dân toàn cầu.</p>
+                                        <button class="app__tintuc-btn"><i class="fa-solid fa-play"></i> <span>Xem chi tiết</span></button>
                                     </div>
                                 </div>
                             </div>
@@ -400,74 +665,10 @@
                                 <div class="app__lich-content-item">
                                     <img src="./assets/img/lich1.png" alt="" class="app__lich-content-img">
                                     <div class="app__lich-content-des">
-                                        <p class="app__lich-content-text">Tọa đàm về nhu cầu nhân lực các ngành đào tạo mới trình độ đại học của Trường Đại học kinh tế Quốc dân dự kiến mở năm 2024</p>
-                                        <p class="app__lich-content-time">4 Th4, 2024</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="app__lich-detail">
-                            <div class="app__lich-content-list">
-                                <div class="app__lich-content-item">
-                                    <img src="./assets/img/lich1.png" alt="" class="app__lich-content-img">
-                                    <div class="app__lich-content-des">
-                                        <p class="app__lich-content-text">Tọa đàm về nhu cầu nhân lực các ngành đào tạo mới trình độ đại học của Trường Đại học kinh tế Quốc dân dự kiến mở năm 2024</p>
-                                        <p class="app__lich-content-time">5 Th4, 2024</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="app__lich-detail">
-                            <div class="app__lich-content-list">
-                                <div class="app__lich-content-item">
-                                    <img src="./assets/img/lich1.png" alt="" class="app__lich-content-img">
-                                    <div class="app__lich-content-des">
-                                        <p class="app__lich-content-text">Tọa đàm về nhu cầu nhân lực các ngành đào tạo mới trình độ đại học của Trường Đại học kinh tế Quốc dân dự kiến mở năm 2024</p>
-                                        <p class="app__lich-content-time">6 Th4, 2024</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="app__lich-detail">
-                            <div class="app__lich-content-list">
-                                <div class="app__lich-content-item">
-                                    <img src="./assets/img/lich1.png" alt="" class="app__lich-content-img">
-                                    <div class="app__lich-content-des">
-                                        <p class="app__lich-content-text">Tọa đàm về nhu cầu nhân lực các ngành đào tạo mới trình độ đại học của Trường Đại học kinh tế Quốc dân dự kiến mở năm 2024</p>
-                                        <p class="app__lich-content-time">7 Th4, 2024</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="app__lich-detail">
-                            <div class="app__lich-content-list">
-                                <div class="app__lich-content-item">
-                                    <img src="./assets/img/lich1.png" alt="" class="app__lich-content-img">
-                                    <div class="app__lich-content-des">
-                                        <p class="app__lich-content-text">Tọa đàm về nhu cầu nhân lực các ngành đào tạo mới trình độ đại học của Trường Đại học kinh tế Quốc dân dự kiến mở năm 2024</p>
-                                        <p class="app__lich-content-time">8 Th4, 2024</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="app__lich-detail">
-                            <div class="app__lich-content-list">
-                                <div class="app__lich-content-item">
-                                    <img src="./assets/img/lich1.png" alt="" class="app__lich-content-img">
-                                    <div class="app__lich-content-des">
-                                        <p class="app__lich-content-text">Tọa đàm về nhu cầu nhân lực các ngành đào tạo mới trình độ đại học của Trường Đại học kinh tế Quốc dân dự kiến mở năm 2024</p>
-                                        <p class="app__lich-content-time">9 Th4, 2024</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="app__lich-detail">
-                            <div class="app__lich-content-list">
-                                <div class="app__lich-content-item">
-                                    <img src="./assets/img/lich1.png" alt="" class="app__lich-content-img">
-                                    <div class="app__lich-content-des">
-                                        <p class="app__lich-content-text">Tọa đàm về nhu cầu nhân lực các ngành đào tạo mới trình độ đại học của Trường Đại học kinh tế Quốc dân dự kiến mở năm 2024</p>
-                                        <p class="app__lich-content-time">10 Th4, 2024</p>
+                                        <p class="app__lich-content-time"><i class="fa-solid fa-circle"></i>  <span>10 Th4, 2024</span> </p>
+                                        <p class="app__lich-content-title">Tọa đàm về nhu cầu nhân lực các ngành đào tạo mới</p>
+                                        <p class="app__lich-content-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae culpa ducimus accusamus suscipit, tempore sunt tenetur obcaecati voluptates autem itaque.</p>
+                                        <button class="app__tintuc-btn"><i class="fa-solid fa-play"></i> <span>Xem chi tiết</span></button>
                                     </div>
                                 </div>
                             </div>
@@ -525,17 +726,6 @@
                 <div class="border02"></div>
             </div>
         </div>
-        
-        <!-- find majors -->
-        <div class="app_majors">
-            <div class="grid">
-                <div class="grid__row">
-                    <div style="height: 50vh;"></div>
-                    Tìm kiếm ngành học mong muốn
-                </div>
-            </div>
-        </div>
-
     </div>
 
     <!-- Button scroll to top -->
@@ -603,16 +793,16 @@
                         Địa chỉ Email
                     </label>
                     <input type="text" name="email" id="email" class="modal-input" placeholder="Nhập email của bạn">
-                    <span class="error-message">hello</span>
+                    <span class="error-message"></span>
                 </div>
 
                 <div class="modal-body-group">
                     <label for="ticket-quantity" class="modal-label">
                         <i class="fa-solid fa-reply"></i>
-                        Thắc mắc cái đéo gì viết ra
+                        Ý kiến phản hồi 
                     </label>
                     <input type="text" name="ticket-quantity" id="ticket-quantity" class="modal-input"
-                        placeholder="Ý kiến ý cò gì?">
+                        placeholder="Nhập ý kiến phản hồi">
                     <span class="error-message"></span>
                 </div>
 
@@ -712,6 +902,8 @@
             }
         }
     </script>
+
+    <script src="./assets/js/lich.js"></script>
 
     <!-- timeline function -->
     <script src="./assets/js/timeline.js"></script>

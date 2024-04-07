@@ -227,7 +227,7 @@
     right: 0;
     left: 0;
     color: #fff;
-    height: 66px;
+    height: auto;
 }
 
 .app__nav {
@@ -238,7 +238,7 @@
     transition: background-color .5s ease-in-out;
     /* box-shadow: 1px 1px 2px 2px #ded5d5; */
     border: 1px solid #fff;
-    padding: 8px 0;
+    padding: 0;
 }
 
 .app__nav-list {
@@ -255,7 +255,7 @@
     font-weight: bold;
     color: var(--text-color);
     text-decoration: none;
-    padding: 19px;
+    padding: 10px;
     position: relative;
     z-index: 99999;
 }
@@ -331,7 +331,7 @@
 }
 
 .app__nav-mobile {
-    z-index: 1000;
+    z-index: 1000000000;
     position: fixed;
     top: 0;
     left: 0;
@@ -409,22 +409,26 @@
 .app__nav-subnav {
     padding: 0;
     position: absolute;
-    top: 42px;
+    top: 26px;
     min-width: 200px;
     background-color: #ffffff;
     box-shadow: 1px 10px 10px #666464;
     margin-top: 18px;
     /* opacity: 0;
     z-index: -999; */
-    /* transition: all linear 0.5s; */
     border-radius: 4px;
     overflow: hidden;
-    animation: scrollNav .9s ease forwards;
-    display: none;
+    /* animation: scrollNav .9s ease forwards; */
+    /* display: none; */
+    transition: all linear 0.4s;
+    max-height: 0;
+    visibility: hidden;
 }
 
 .app__nav-item:hover .app__nav-subnav {
-    display: block;
+    /* display: block; */
+    max-height: 700px;
+    visibility: visible;
 }
 
 
@@ -464,6 +468,7 @@
 .app__nav-subnav-item a {
     flex: 1;
     width: 100%;
+    z-index: 20;
     font-weight: 400;
     padding: 16px;
     border-bottom: #f51f1f;
@@ -619,6 +624,7 @@
 /* modal css */
 .modal.open {
     display: flex;
+    z-index: 999999999999999999;
 }
 
 .modal {
@@ -631,7 +637,6 @@
     align-items: center;
     justify-content: center;
     display: none;
-    z-index: 999;
 }
 
 .modal-container {
@@ -640,8 +645,10 @@
     max-width: calc(100% - 10%);
     min-height: 200px;
     position: relative;
+    z-index: 999999999;
     background-color: #f3eded;
     animation: modalFadeIn ease .5s;
+    overflow: hidden;
 }
 
 .modal .modal-close {
@@ -668,6 +675,7 @@
     font-size: 30px;
     color: #fff;
     display: flex;
+    overflow: hidden;
     justify-content: center;
 }
 
