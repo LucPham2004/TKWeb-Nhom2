@@ -37,10 +37,11 @@
 
 .app__branch-body-box {
   display: flex;
-  height: 303px;
   justify-content: space-between;
+  height: 303px;
   margin: 28px -16px;
 }
+
 
 
 .app__branch-body-container {
@@ -64,21 +65,41 @@
 }
 
 .app__branch-body-item,
-.app__branch-body-icon {
+.app__branch-body-desc {
   width: 100%;
   height: 100%;
   position: absolute;
   backface-visibility: hidden;
 }
 
-.app__branch-body-icon {
-  background-color: #C2C2C2;
-  transform: rotateY(180deg);
+.app__branch-body-desc {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 5px 10px rgb(126, 125, 125);
+  transform: rotateY(180deg);
   justify-content: center;
   align-items: center;
   font-size: 120px;
   border-radius: 5px;
+
+}
+
+.app__branch-body-desc-icon {
+  font-size: 60px;
+  margin-bottom: 64px;
+  color: rgba(0, 101, 202, 0.6);
+}
+
+.app__branch-body-desc-content {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  padding: 0 16px;
+  font-size: var(--text-size);
+  color: var(--text-color);
 }
 
 .app__branch-body-img {}
