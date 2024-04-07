@@ -495,7 +495,7 @@
 
 /* nghiencuu-hoptac */
 .app__nghiencuu-hoptac {
-    min-height: 80vh;
+    height: fit-content;
     position: relative;
     background-color: #ffffff;
     padding-bottom: 150px;
@@ -507,7 +507,7 @@
     top: 70px;
     display: flex;
     flex-direction: row;
-    flex-wrap: no-wrap;
+    /* flex-wrap: no-wrap; */
     flex: 1;
     justify-content: center;
     align-items: center;
