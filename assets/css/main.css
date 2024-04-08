@@ -127,7 +127,7 @@
     box-shadow: 0 1px 3px #666;
     overflow: hidden;
     display: none;
-    z-index: 1;
+    z-index: 9999999999;
 }
 
 .header__search-input:focus~.header__search-history {
