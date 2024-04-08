@@ -37,8 +37,16 @@
     position: absolute;
     top: 12%;
 }
-.footer_info_schoolName{
-    margin-left: 18%;
+
+@media screen and (min-width:960px) {
+    .footer_info_schoolName{
+        margin-left: 18%;
+    }
+}
+@media screen and (max-width:960px) {
+    .footer_info_schoolName{
+        margin-left: 25%;
+    }
 }
 /* Middle */
 #footer_quote{

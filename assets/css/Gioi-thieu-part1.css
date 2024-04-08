@@ -27,7 +27,7 @@
 }
 @media screen and (max-width:959px) {
     .app-menu-item a{
-        font-size: 12px;
+        font-size: 8px;
     }
     .app-menu-item{
         margin-top: 20%;
@@ -92,8 +92,18 @@
     background-color: rgba(255, 255, 255, 0.351);
     height: 0;
     width: 100%;
-    overflow: hidden;
     transition: height 0.5s ease, background-color 0.5s ease;
+}
+@media screen and (min-width:960px) {
+    .principal-cardInfo{
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .principal-cardInfo{
+        overflow: scroll;
+    }
 }
 .principal-cardInfo *{
     opacity: 0;
@@ -147,12 +157,34 @@
     width: 100%;
     margin-bottom: 10px;
 }
+@media screen and (min-width:960px) {
+    .app_letter-neu-logo{
+        height: 60px;
+        width:60px;
+        margin-left:10%;
+        margin-top:10%;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .app_letter-neu-logo{
+        height: 30px;
+        width:30px;
+        margin-left:10%;
+        margin-top:10%;
+    }
+    #principal-table-title{
+        font-size: 12px;
+    }
+}
 
 #showMore-members-button{
     display: block;
     margin: auto;
     margin-top: 40px;
-    background: linear-gradient(180deg, rgb(240, 245, 254), rgb(249, 252, 255));
+    background: linear-gradient(to left, #fff 50%, #0065ca 50%) right;
+    background-size: 200%;
+    transition: all .3s ease-out;
     width: 180px;
     height: 45px;
     border: 2px solid rgb(0, 128, 255);
@@ -161,12 +193,12 @@
     text-align: center;
     line-height: 40px;
     font-size: 14px;
+    font-weight: bold;
 }
 #showMore-members-button:hover, #showIndustryUnits:hover{
-    background: linear-gradient(180deg, rgb(0, 100, 255), rgb(70, 150, 255));
+    background-position: left;
     cursor: pointer;
     color: white;
-    font-weight: bold;
 }
 .showMore-members{
     position: relative;
@@ -180,7 +212,9 @@
     display: block;
     margin: auto;
     margin-top: 40px;
-    background: linear-gradient(180deg, rgb(240, 245, 254), rgb(249, 252, 255));
+    background: linear-gradient(to left, #fff 50%, #0065ca 50%) right;
+    background-size: 200%;
+    transition: all .3s ease-out;
     height: 45px;
     border: 2px solid rgb(0, 128, 255);
     color: var(--primary-color);
@@ -190,6 +224,7 @@
     font-size: 14px;
     padding-left: 20px;
     padding-right: 20px;
+    font-weight: bold;
 }
 
 @keyframes showMembers {
@@ -222,6 +257,9 @@
         flex-direction: row;
         width: 100%;
     }
+    #principal-table-cards-firstCard img{
+        width: 190px;
+    }
     #app_letter-lecturers{
         flex-direction: column;
         width: 100%;
@@ -248,17 +286,30 @@
     .principal-cardInfo h3{
         font-size: 12px;
     }
-    
     #principal-table-cards-firstCard{
         margin-left: -100%;
     }
     .principal-table-cards{
-        width: 200%;
+        width: 180%;
         display: block;
         padding-bottom: 20px;
     }
     .app_letter-medalPara i{
         display: none;
+    }
+    #showMore-members-button{
+        width: 120px;
+        font-size: 10px;
+    }
+    #showIndustryUnits{
+        font-size: 10px;
+    }
+    .app_letter-main-title{
+        font-size: 14px
+    }
+    #GiangVien p, #GioiThieu p, #SuMenh p, 
+    #ThanhTuu p, #HoiDong p, #KhoiNganh p{
+        font-size: 12px;
     }
 }
 

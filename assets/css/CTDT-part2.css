@@ -246,14 +246,24 @@ margin-left: 30px;
 }
 
 .app_questions-questions-more {
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    text-align: center;
     margin-top: 8vh;
-    padding: 12px 25px;
-    width: 180px;
-    background: linear-gradient(180deg, rgb(0, 100, 255), rgb(70, 150, 255));
-    color: white;
+    height: 50px;
+    width: 220px;
+    background: linear-gradient(to left, #fff 50%, #0065ca 50%) right;
+    background-size: 200%;
+    transition: all .3s ease-out;
+    border: 2px solid rgb(0, 128, 255);
+    color: var(--primary-color);
+    font-size: 14px;
 }
+
 .app_questions-questions-more:hover {
-    background: linear-gradient(180deg, rgb(37, 123, 253), rgb(140, 187, 250));
+    background-position: left;
+    color: white;
     cursor: pointer;
 }
 
@@ -261,7 +271,7 @@ margin-left: 30px;
 .app_majors {
     padding-top: 10vh;
     background-color:rgb(247, 247, 247) ;
-    height: 60vh;
+    height: 65vh;
 }
 #app_majors-search{
     flex-direction: row;

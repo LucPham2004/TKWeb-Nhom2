@@ -2,6 +2,7 @@
 .app__daotao-sinhvien {
     padding: 50px 0;
     position: relative;
+    background-color: antiquewhite;
 }
 #app__daotao-sinhvien-backgroundImg{
     position: absolute;
@@ -28,8 +29,8 @@
         flex-direction: column;
     }
     .app__daotao-sinhvien-item, .app__daotao-sinhvien-poster{
-        width: 80%;
-        margin-left: 10%;
+        width: 60%;
+        margin-left: 20%;
         margin-top: 5%;
     }
     .app__daotao-sinhvien-shadow{

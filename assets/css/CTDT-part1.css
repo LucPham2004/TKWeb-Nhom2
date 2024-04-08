@@ -17,6 +17,7 @@
 @media screen and (min-width:1280px) {
     .app_overview{
         height: 120vh;
+        margin-bottom: 5%;
     }
     .app_overview-picContainer{
         position: relative;
@@ -199,6 +200,9 @@
     
 }
 @media screen and (max-width:1280px) {
+    .app_overview{
+        margin-bottom: 20%;
+    }
     #app_overview-title{
         margin-bottom: 10%;
         font-size: 20px;
@@ -287,14 +291,39 @@
     #app_overview-picCardMain{
         align-self: center;
         background-size: cover;
-        margin-top: 5%;
-        margin-bottom: 10%;
+        margin-top: 15%;
+        margin-bottom: 15%;
         width: 70%;
         height: 450px;
         z-index: 5;
         clip-path: polygon(0 36%, 40% 36%, 65.5% 0, 100% 67%, 58% 67%, 36% 100%);
         cursor: pointer;
     }
+    #midCard-container{
+        display: none;
+        position: absolute;
+        height:70%;
+        width:80%;
+        margin-top:15%;
+        margin-left:10%;
+        margin-right:10%;
+        background-color:rgba(0, 0, 0, 0.8);
+        font-size:17px;
+        text-align:justify;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    #midCard-container-text{
+        height:50%; 
+        font-size: 17px;
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-right:10%;
+        color: white;
+    }
+}
+
+@media screen and (max-width:768px) {
     #midCard-container{
         display: none;
         position: absolute;
@@ -308,27 +337,40 @@
         text-align:justify;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
-
     #midCard-container-text{
         height:50%; 
-        margin-top: 5%;
+        font-size: 12px;
+        margin-top: 15%;
         margin-left: 10%;
         margin-right:10%;
         color: white;
+    }
 }
-    
-}
+
 .app_overview-more{
     position: absolute;
-    bottom: 0;
-    left: 40%;
-    background: linear-gradient(180deg, rgb(240, 245, 254), rgb(249, 252, 255));
+    
+    background: linear-gradient(to left, #fff 50%, #0065ca 50%) right;
+    background-size: 200%;
+    transition: all .3s ease-out;
     border: 2px solid rgb(0, 128, 255);
     width: 240px;
     height: 45px;
+    margin-top: 5%;
     border-radius: 30px;
     text-align: center;
     line-height: 40px;
+}
+@media screen and (min-width:1280px) {
+    .app_overview-more{
+        bottom: 0;
+        left: 40%;
+    }
+}
+@media screen and (max-width:1280px) {
+    .app_overview-more{
+        left: 20%;
+    }
 }
 .app_overview-more a{
     font-weight: 500;
@@ -336,12 +378,11 @@
     font-size: 17px;
 }
 .app_overview-more:hover{
-    background: linear-gradient(180deg, rgb(0, 100, 255), rgb(70, 150, 255));
+    background-position: left;
     cursor: pointer;
 }
 .app_overview-more:hover a{
     color: white;
-    font-weight: bold;
 }
 
 @keyframes ShowUp{
