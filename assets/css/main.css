@@ -127,7 +127,7 @@
     box-shadow: 0 1px 3px #666;
     overflow: hidden;
     display: none;
-    z-index: 1;
+    z-index: 9999999999;
 }
 
 .header__search-input:focus~.header__search-history {
@@ -227,7 +227,7 @@
     right: 0;
     left: 0;
     color: #fff;
-    height: 66px;
+    height: auto;
 }
 
 .app__nav {
@@ -238,7 +238,7 @@
     transition: background-color .5s ease-in-out;
     /* box-shadow: 1px 1px 2px 2px #ded5d5; */
     border: 1px solid #fff;
-    padding: 8px 0;
+    padding: 0;
 }
 
 .app__nav-list {
@@ -255,8 +255,9 @@
     font-weight: bold;
     color: var(--text-color);
     text-decoration: none;
-    padding: 19px;
+    padding: 10px;
     position: relative;
+    z-index: 99999;
 }
 
 .app__nav-item a::after {
@@ -304,34 +305,139 @@
     color: #1460ad;
 }
 
+
+/* mobile nav  responsive*/
+.app__nav-bars-btn {
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    font-size: 24px;
+    display: none;
+    position: relative;
+    left: 10px;
+    top:  -5px;
+}
+
+.app__nav-overlay {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn ease .4s;
+}
+
+.app__nav-mobile {
+    z-index: 1000000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: #fff;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform ease .4s, opacity ease .4s; 
+}
+
+.app__nav-input:checked ~ .app__nav-overlay {
+    display: block;
+}
+
+.app__nav-input:checked ~ .app__nav-mobile {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.nav__mobile-list {
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 5px;
+}
+
+.nav__mobile-link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 10px;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #ccc;
+    margin-right: 8px;
+    font-weight: 500;
+}
+
+.nav__mobile-link p {
+    margin: 0;
+}
+
+.nav__mobile-link a {
+    text-decoration: none;
+}
+
+.app__nav-mobile-close {
+    position: absolute;
+    width: 50px;
+    font-size: 20px;
+    height: 50px;
+    top: 1px;
+    right: -20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: #302c2c;
+}
+
+@media (max-width: 1023px) {
+    .app__nav-bars-btn {
+        display: block;
+    }
+    .header-with-search,
+    .header__search-flags,
+    .header,
+    .app__nav .grid {
+        display: none;
+    }
+}
+
 /* subnav */
 .app__nav-subnav {
     padding: 0;
     position: absolute;
-    top: 42px;
+    top: 26px;
     min-width: 200px;
     background-color: #ffffff;
     box-shadow: 1px 10px 10px #666464;
     margin-top: 18px;
     /* opacity: 0;
     z-index: -999; */
-    /* transition: all linear 0.5s; */
     border-radius: 4px;
     overflow: hidden;
-    animation: scrollNav .9s ease forwards;
-    display: none;
+    /* animation: scrollNav .9s ease forwards; */
+    /* display: none; */
+    transition: all linear 0.4s;
+    max-height: 0;
+    visibility: hidden;
+    z-index: 999999;
 }
 
 .app__nav-item:hover .app__nav-subnav {
-    display: block;
+    /* display: block; */
+    max-height: 700px;
+    visibility: visible;
 }
 
 
 @keyframes scrollNav {
     from {
         z-index: -999;
-        opacity: .5;
-        transform: translateX(50px);
+        opacity: 0;
+        transform: translateY(-50px);
     }
 
     to {
@@ -363,6 +469,7 @@
 .app__nav-subnav-item a {
     flex: 1;
     width: 100%;
+    z-index: 20;
     font-weight: 400;
     padding: 16px;
     border-bottom: #f51f1f;
@@ -381,44 +488,55 @@
     background-size: auto;
     background: url(../img/banner1.jpg) top center / cover no-repeat; */
     z-index: -9999;
-    width: 124.5%;
-    height: auto;
+    width: 128.5%;
     display: block;
     margin: 0 auto;
 }
 
 /* nghiencuu-hoptac */
 .app__nghiencuu-hoptac {
-    min-height: 100vh;
+    height: fit-content;
     position: relative;
-    background-color: #283ca2;
+    background-color: #ffffff;
     padding-bottom: 150px;
 }
-#app__nghiencuu-hoptac-backgroundImg{
-    background-image: url(/assets/img/background-NCDT.jpg);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    filter: blur(10px);
-}
+
 
 .app__nghiencuu-hoptac-wrapper {
     position: relative;
     top: 70px;
     display: flex;
     flex-direction: row;
+    /* flex-wrap: no-wrap; */
     flex: 1;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin-top: 60px;
+}
 
+@media (max-width: 1023px) {
+    .app__nghiencuu-hoptac-wrapper {
+        flex-wrap: wrap;
+        flex-direction: column;
+        overflow: hidden;
+        width: 150%;
+    }
+    .app__nghiencuu-hoptac-content {
+        margin-right: 35px;
+    }
+    .app__nghiencuu-hoptac-btn {
+        margin-left: 150px;
+    }
+    .app__nghiencuu-hoptac-item {
+        width: 80%;
+    }
 }
 
 .app__nghiencuu-hoptac-item {
-    font-size: var(--text-size);
+    /* font-size: var(--text-size); */
+    width: 50%;
+    margin: 0 10px;
 }
 
 .app__nghiencuu-hoptac-description {
@@ -433,17 +551,21 @@
     font-size: var(--title-size);
     margin-bottom: 80px;
     font-weight: 600;
+    
 }
 
 .app__nghiencuu-hoptac-title span {
-    padding-bottom: 10px;
+    padding: 0 20px 10px 20px;
     color: var(--white-color);
+    color: black;
     border-bottom: 4px solid var(--white-color);
 }
 
 .app__nghiencuu-hoptac-img {
-    height: 404.82px;
-    width: calc(404.82px / 0.6984);
+    /* height: 404.82px;
+    width: calc(404.82px / 0.6984); */
+    height: 400px;
+    width: 100%;
     margin: 0 8px;
     background: url(../img/nghiencuu.png) top center / cover no-repeat;
 }
@@ -503,6 +625,7 @@
 /* modal css */
 .modal.open {
     display: flex;
+    z-index: 999999999999999999;
 }
 
 .modal {
@@ -515,7 +638,6 @@
     align-items: center;
     justify-content: center;
     display: none;
-    z-index: 999;
 }
 
 .modal-container {
@@ -524,8 +646,10 @@
     max-width: calc(100% - 10%);
     min-height: 200px;
     position: relative;
+    z-index: 999999999;
     background-color: #f3eded;
     animation: modalFadeIn ease .5s;
+    overflow: hidden;
 }
 
 .modal .modal-close {
@@ -551,6 +675,9 @@
     height: 130px;
     font-size: 30px;
     color: #fff;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
 }
 
 .modal-heading-icon {

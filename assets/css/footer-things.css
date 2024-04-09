@@ -7,11 +7,26 @@
 #footer_container {
     display: flex;
     flex-direction: row;
-    height: 90%;
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
     color: white;
+}
+@media screen and (min-width:1280px){
+    #footer_container {
+        height: 90%;
+    }
+    #bot-socialLinks{
+        display: none;
+    }
+}
+@media screen and (max-width:1280px) {
+    #footer_container{
+        height: 80%;
+    }
+    #bot-socialLinks{
+        display: inline;
+    }
 }
 /* Left */
 #footer_info {
@@ -22,8 +37,16 @@
     position: absolute;
     top: 12%;
 }
-.footer_info_schoolName{
-    margin-left: 18%;
+
+@media screen and (min-width:960px) {
+    .footer_info_schoolName{
+        margin-left: 18%;
+    }
+}
+@media screen and (max-width:960px) {
+    .footer_info_schoolName{
+        margin-left: 25%;
+    }
 }
 /* Middle */
 #footer_quote{
@@ -70,17 +93,25 @@
     background-color: transparent;
     filter: contrast(150%);
 }
+@media screen and (max-width:1280px) {
+    .side_social_link{
+        display: none;
+    }
+}
 
 #share_icon {
     margin-top: 130px;
 }
-
+#bot-social_media_icons{
+    margin: 0;
+    filter: contrast(150%);
+}
 #social_media_icons {
     margin-top: 50px;
 }
 
 #social_media_icons img,
-#share_icon img {
+#share_icon img , #bot-social_media_icons img{
     height: 30px;
     width: 30px;
     margin-left: 10px;
@@ -90,7 +121,7 @@
 }
 
 #social_media_icons img:hover,
-#share_icon img:hover {
+#share_icon img:hover , #bot-social_media_icons img:hover{
     transform: translateY(-3px);
 }
 @media screen and (max-width: 1536px) {
@@ -111,7 +142,7 @@
     position: fixed;
     height: 45px;
     width: 45px;
-    font-size: 12px;
+    
     bottom: 10px;
     right: 60px;
     z-index: 99;

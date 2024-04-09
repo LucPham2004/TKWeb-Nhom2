@@ -1,5 +1,5 @@
 .app__branch {
-  padding: 24px 0;
+  padding: 100px 0;
   background-color: #EEEEEE;
   /* height: 100vh; */
 }
@@ -39,8 +39,6 @@
 .app__branch-body-box {
   display: flex;
   justify-content: space-between;
-  height: 303px;
-  margin: 28px -16px;
 }
 
 .app__branch-body-container {
@@ -48,6 +46,36 @@
   margin: 0 16px;
   border-radius: 5px;
   color: #fff;
+}
+
+/* Thêm điều chỉnh responsive nhưng chưa xong */
+@media screen and (min-width:960px) {
+  .app__branch-body-box {
+    height: 303px;
+    margin: 28px -16px;
+    flex-direction: row;
+  }
+
+  .app__branch-body-container {
+    width: 33.33333%;
+    margin: 0 16px;
+    border-radius: 5px;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width:960px) {
+  .app__branch-body-box {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .app__branch-body-container {
+    width: 70%;
+    margin: 35% 15%;
+    border-radius: 5px;
+    color: #fff;
+  }
 }
 
 .app__branch-body-container:hover>.app__branch-body-container-card {

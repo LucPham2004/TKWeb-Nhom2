@@ -1,5 +1,5 @@
 :root {
-    --primary-color: rgb(0, 101, 202);
+    --primary-color: #0065ca;
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
@@ -21,6 +21,7 @@ html {
     line-height: 1.6rem;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .grid {
@@ -52,9 +53,9 @@ html {
 
 @keyframes growth {
     from {
-        transform: scale(var(--growth-from));
+        transform: scaleX(-1) ;
     } to {
-        transform: scale(var(--growth-to));
+        transform: scaleX(1) translateX(0);
     }
 }
 
