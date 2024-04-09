@@ -21,6 +21,24 @@
   margin: auto;
 }
 
+.app__app__admissions-banner {
+  position: absolute;
+  top: 64px;
+  display: flex;
+}
+
+.app__app__admissions-banner h5,
+.app__app__admissions-banner h5 a {
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.app__app__admissions-banner h5 a {
+  margin: 0 8px;
+}
+
 .app__admissions-banner-title {
   position: absolute;
   bottom: 0;
@@ -554,6 +572,10 @@
     display: none;
   }
 
+  .app__app__admissions-banner {
+    top: 100px;
+  }
+
 }
 
 /* tablet: 740px <= width < 1024px */
@@ -603,5 +625,9 @@
 
   .app__admissions-event-pic {
     height: auto;
+  }
+
+  .app__app__admissions-banner {
+    top: 100px;
   }
 }
