@@ -1,6 +1,6 @@
 .app__admissions-banner {
   width: 100%;
-  height: 800px;
+  height: 600px;
   margin-bottom: 96px;
 }
 
@@ -10,7 +10,7 @@
   background-position: center bottom;
   background-size: cover;
   width: 100%;
-  height: 800px;
+  height: 100%;
   position: relative;
 }
 
@@ -33,6 +33,11 @@
   text-decoration: none;
   font-weight: 400;
   color: var(--text-color);
+  opacity: 0.9;
+}
+
+.app__app__admissions-banner h5 a:hover {
+  color: var(--primary-color);
 }
 
 .app__app__admissions-banner h5 a {
@@ -514,8 +519,21 @@
   }
 
   .app__admissions-invest,
-  .app__admissions-lifeInNeu-title {
-    justify-content: center;
+  .app__admissions-lifeInNeu-title,
+  .app__admissions-advise-title,
+  .app__admissions-event-title {
+    text-align: center;
+  }
+
+  .app__admissions-advise-desc {
+    text-align: center;
+    margin: 0 0 16px;
+  }
+
+  .app__admissions-advise-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .app__admissions-invest-content,
@@ -524,9 +542,18 @@
     text-align: center;
   }
 
+  .app__admissions-invest-content {
+    margin: 0;
+  }
+
+  .app__admissions-journey-content {
+    padding-left: 0;
+  }
+
   .app__admissions-invest-img,
   .app__admissions-journey-img,
-  .app__admissions-advise-img {
+  .app__admissions-advise-img,
+  .app__admissions-signup-container {
     display: none;
   }
 
@@ -547,12 +574,13 @@
     width: 100%;
   }
 
-  .app__admissions-event-item {
-    margin: 16px;
+  .app__admissions-advise-content {
+    padding: 0;
   }
 
-  .app__admissions-event-title {
-    text-align: center;
+  .app__admissions-event-item,
+  .app__admissions-event-item-container {
+    margin: 16px;
   }
 
   .app__admissions-lifeInNeu-desc {
@@ -560,16 +588,8 @@
     margin: 16px;
   }
 
-  .app__admissions-event-item-container {
-    margin: 16px;
-  }
-
   .app__admissions-event-pic {
     height: auto;
-  }
-
-  .app__admissions-signup-container {
-    display: none;
   }
 
   .app__app__admissions-banner {
