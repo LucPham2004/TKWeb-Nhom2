@@ -175,7 +175,7 @@
 
 .app__admissions-signup-pic {
   width: 100%;
-  height: auto;
+  object-fit: cover;
 }
 
 .app__admissions-signup-content {
