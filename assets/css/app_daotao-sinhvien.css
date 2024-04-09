@@ -51,14 +51,13 @@
     left: 3%;
     background-color: rgba(153, 153, 153, 0.445);
     position: absolute;
-    z-index: -99;
+    z-index: -1;
 }
 .app__daotao-sinhvien-item:hover{
     cursor: pointer;
 }
 .app__daotao-sinhvien-item:hover .app__daotao-sinhvien-content h3{
     color: var(--primary-color);
-    transform: translateX(5px);
     cursor: pointer;
 }
 .app__daotao-sinhvien-text {
@@ -93,7 +92,6 @@
 }
 .app__daotao-sinhvien-content h3:hover {
     color: var(--primary-color);
-    transform: translateX(5px);
     cursor: pointer;
 }
 .app__daotao-sinhvien-content
