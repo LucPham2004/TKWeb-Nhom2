@@ -1,7 +1,6 @@
 .app__branch {
   padding: 24px 0;
   background-color: #EEEEEE;
-  min-height: 800px;
   /* height: 100vh; */
 }
 
@@ -9,7 +8,7 @@
   width: 1200px;
   margin: auto;
   max-width: 100%;
-  margin-bottom: 32px;
+  padding-bottom: 32px;
 }
 
 .app__branch-header {
@@ -33,7 +32,9 @@
   cursor: pointer;
 }
 
-.app__branch-body {}
+.app__branch-body {
+  display: block;
+}
 
 .app__branch-body-box {
   display: flex;

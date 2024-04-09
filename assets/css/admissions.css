@@ -25,6 +25,7 @@
   position: absolute;
   bottom: 0;
   width: 680px;
+  max-width: 100%;
   height: 80px;
   display: flex;
   align-items: center;
@@ -43,7 +44,7 @@
   justify-content: space-around;
   align-items: center;
   width: 1000px;
-  height: 100px;
+  min-height: 100px;
   padding-top: 20px;
   background-color: rgba(148, 148, 148, 0.9);
   color: var(--white-color);
@@ -56,13 +57,14 @@
 /* invest yourself */
 
 .app__admissions-invest-container {
-  border: 1px solid #E8EEF3;
+  border-top: 1px solid #E8EEF3;
   padding: 72px 0;
 }
 
 .app__admissions-invest {
   justify-content: space-between;
   flex-wrap: nowrap;
+  margin: 0 16px;
 }
 
 .app__admissions-invest-content {
@@ -255,7 +257,8 @@
 
 .app__admissions-lifeInNeu-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin: 0 -16px;
 }
 
@@ -290,6 +293,10 @@
 
 .app__admissions-lifeInNeu-item-desc {
   position: relative;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   height: 250px;
   background-color: var(--white-color);
   color: var(--text-color);
@@ -308,6 +315,7 @@
 
 .app__admissions-advise-container {
   padding: 64px 0;
+  margin: 24px;
 }
 
 .app__admissions-advise-content {
@@ -362,17 +370,20 @@
 
 .app__admissions-event-list {
   display: flex;
-  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin: 0 -16px;
 }
 
 .app__admissions-event-item {
   width: 33%;
-  margin: 0 16px;
+  max-width: 100%;
 }
 
 .app__admissions-event-item-container {
   cursor: pointer;
+  margin: 0 16px;
   border-radius: 5px;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
@@ -472,4 +483,123 @@
 
 .app__admissions-event-learmore-icon {
   margin-right: 8px;
+}
+
+
+/* mobile: width < 740px */
+@media only screen and (max-width: 739px) {
+  .app__admissions-banner-content {
+    bottom: -100px;
+    flex-direction: column;
+    max-width: 100%;
+    padding-bottom: 8px;
+  }
+
+  .app__admissions-invest,
+  .app__admissions-lifeInNeu-title {
+    justify-content: center;
+  }
+
+  .app__admissions-invest-content,
+  .app__admissions-journey-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .app__admissions-invest-img,
+  .app__admissions-journey-img,
+  .app__admissions-advise-img {
+    display: none;
+  }
+
+  .app__admissions-lifeInNeu-list {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 16px;
+  }
+
+  .app__admissions-lifeInNeu-item {
+    margin: 32px;
+  }
+
+  .app__admissions-lifeInNeu-item-container,
+  .app__admissions-lifeInNeu-item-container,
+  .app__admissions-event-item,
+  .app__admissions-advise-content {
+    width: 100%;
+  }
+
+  .app__admissions-event-item {
+    margin: 16px;
+  }
+
+  .app__admissions-event-title {
+    text-align: center;
+  }
+
+  .app__admissions-lifeInNeu-desc {
+    text-align: center;
+    margin: 16px;
+  }
+
+  .app__admissions-event-item-container {
+    margin: 16px;
+  }
+
+  .app__admissions-event-pic {
+    height: auto;
+  }
+
+  .app__admissions-signup-container {
+    display: none;
+  }
+
+}
+
+/* tablet: 740px <= width < 1024px */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .app__admissions-banner-content {
+    bottom: -100px;
+    flex-direction: column;
+    max-width: 100%;
+    padding-bottom: 8px;
+  }
+
+  .app__admissions-lifeInNeu-title,
+  .app__admissions-lifeInNeu-desc,
+  .app__admissions-event-title {
+    text-align: center;
+  }
+
+  .app__admissions-lifeInNeu-list,
+  .app__admissions-event-list,
+  .app__admissions-event-item-container,
+  .app__admissions-advise-content {
+    margin: 16px;
+  }
+
+  .app__admissions-lifeInNeu-item {
+    margin: 32px;
+  }
+
+  .app__admissions-lifeInNeu-item-container,
+  .app__admissions-event-item {
+    width: 50%;
+
+  }
+
+  .app__admissions-signup-title {
+    width: 50%;
+    left: 0;
+  }
+
+  .app__admissions-advise-content,
+  .app__admissions-advise-img {
+    width: 100%;
+    text-align: center;
+  }
+
+  .app__admissions-event-pic {
+    height: auto;
+  }
 }
