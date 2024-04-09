@@ -1,6 +1,6 @@
-# TKWeb-Nhom3
+# TKWeb-Nhom2
 
-Bài tập nhóm học phần CNTT1165(223)_01-Thiết kế WEB của Nhóm 3:
+Bài tập nhóm học phần CNTT1165(223)_01-Thiết kế WEB của Nhóm 2:
 
 Đề bài: 
 - Hãy lựa chọn 1 Website còn nhiều khiếm khuyết. 
