@@ -1,7 +1,6 @@
 .app__branch {
   padding: 100px 0;
   background-color: #EEEEEE;
-  min-height: 800px;
   /* height: 100vh; */
 }
 
@@ -9,7 +8,7 @@
   width: 1200px;
   margin: auto;
   max-width: 100%;
-  margin-bottom: 32px;
+  padding-bottom: 32px;
 }
 
 .app__branch-header {
@@ -33,19 +32,30 @@
   cursor: pointer;
 }
 
-.app__branch-body {}
+.app__branch-body {
+  display: block;
+}
 
 .app__branch-body-box {
   display: flex;
   justify-content: space-between;
 }
+
+.app__branch-body-container {
+  width: 33.33333%;
+  margin: 0 16px;
+  border-radius: 5px;
+  color: #fff;
+}
+
 /* Thêm điều chỉnh responsive nhưng chưa xong */
 @media screen and (min-width:960px) {
-  .app__branch-body-box{
+  .app__branch-body-box {
     height: 303px;
     margin: 28px -16px;
     flex-direction: row;
   }
+
   .app__branch-body-container {
     width: 33.33333%;
     margin: 0 16px;
@@ -53,13 +63,14 @@
     color: #fff;
   }
 }
+
 @media screen and (max-width:960px) {
-  .app__branch-body-box{
+  .app__branch-body-box {
     flex-direction: column;
     height: auto;
   }
+
   .app__branch-body-container {
-    
     width: 70%;
     margin: 35% 15%;
     border-radius: 5px;
