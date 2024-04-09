@@ -572,10 +572,13 @@
   }
 
   .app__admissions-lifeInNeu-list,
-  .app__admissions-event-list,
   .app__admissions-event-item-container,
   .app__admissions-advise-content {
     margin: 16px;
+  }
+
+  .app__admissions-event-list {
+    margin: 0;
   }
 
   .app__admissions-lifeInNeu-item {
@@ -585,7 +588,6 @@
   .app__admissions-lifeInNeu-item-container,
   .app__admissions-event-item {
     width: 50%;
-
   }
 
   .app__admissions-signup-title {
